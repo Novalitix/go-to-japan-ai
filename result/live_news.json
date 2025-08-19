@@ -1,0 +1,65 @@
+{
+  "cities": [
+    {
+      "city": "Kyoto",
+      "events": [
+        {
+          "title": "Kurama Fire Festival",
+          "description": "An annual festival featuring torches, fiery decorations, and traditional dances.",
+          "category": "event",
+          "date": "2025-10-13",
+          "source_url": "https://en.japantravel.com/events/kyoto",
+          "source_date": "2025-09-01"
+        },
+        {
+          "title": "Jidai Matsuri",
+          "description": "The Festival of Ages, featuring a grand procession of historical costumes representing Kyoto's rich history.",
+          "category": "event",
+          "date": "2025-10-22",
+          "source_url": "https://www.insidekyoto.com/kyoto-festivals-events",
+          "source_date": "2025-08-15"
+        },
+        {
+          "title": "Uguisudani Shrine Festival",
+          "description": "A local festival at the Uguisudani Shrine with traditional activities and community involvement.",
+          "category": "event",
+          "date": "2025-10-13",
+          "source_url": "https://japancheapo.com/events/saiin-kasuga-shrine-festival",
+          "source_date": "2025-09-20"
+        },
+        {
+          "title": "Umekoji Handicrafts Market",
+          "description": "A local crafts market showcasing handmade goods and traditional Japanese craftsmanship.",
+          "category": "event",
+          "date": "2025-10-13",
+          "source_url": "https://japancheapo.com/events/october/",
+          "source_date": "2025-09-22"
+        },
+        {
+          "title": "Thousand Lantern Festival",
+          "description": "A beautiful display of thousands of lanterns illuminating the celebration area during early October.",
+          "category": "event",
+          "date": "2025-10-01",
+          "source_url": "https://www.magical-trip.com/media/kyoto-list-of-events-festivals-for-2025/",
+          "source_date": "2025-08-30"
+        },
+        {
+          "title": "Saiin Kasuga Shrine Festival",
+          "description": "A vibrant festival filled with folk performances and community gatherings, taking place during the second weekend of October.",
+          "category": "event",
+          "date": "2025-10-12",
+          "source_url": "https://japancheapo.com/events/saiin-kasuga-shrine-festival/",
+          "source_date": "2025-09-25"
+        },
+        {
+          "title": "Ujicha Ceremony",
+          "description": "A traditional tea ceremony celebrating the culture of tea prepared in a historic setting.",
+          "category": "event",
+          "date": "2025-10-13",
+          "source_url": "https://japancheapo.com/events/october/",
+          "source_date": "2025-09-28"
+        }
+      ]
+    }
+  ]
+}

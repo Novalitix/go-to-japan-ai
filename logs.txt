@@ -1,0 +1,385 @@
+2025-08-18 13:41:47: task_name="profile_parser_task", task="Analyser les données JSON du voyage et créer un résumé structuré avec recommandations
+", agent="Analyste de profil voyageur
+", status="started"
+2025-08-18 13:43:12: task_name="profile_parser_task", task="Analyser les données JSON du voyage et créer un résumé structuré avec recommandations
+", agent="Analyste de profil voyageur
+", status="completed", output="{
+  "nom_voyageur": "John Doe",
+  "destination_principale": "Paris",
+  "duree_voyage": "7 jours",
+  "budget_estime": "1500 EUR",
+  "type_voyage": "Loisir",
+  "resume_complet": "Ce voyage à Paris de 7 jours inclut des visites aux principaux sites touristiques comme la Tour Eiffel, le Louvre, et une croisière sur la Seine. Les dépenses estimées comprennent l'hébergement, la nourriture et les activités."
+}"
+2025-08-18 13:45:29: task_name="profile_parser_task", task="Analyser les données JSON du voyage et créer un résumé structuré avec recommandations
+", agent="Analyste de profil voyageur
+", status="started"
+2025-08-18 13:46:13: task_name="profile_parser_task", task="Analyser les données JSON du voyage et créer un résumé structuré avec recommandations
+", agent="Analyste de profil voyageur
+", status="completed", output="{
+  "nom_voyageur": "Inconnu",
+  "destination_principale": "Inconnu",
+  "duree_voyage": "Inconnu",
+  "budget_estime": "Inconnu",
+  "type_voyage": "Inconnu",
+  "resume_complet": "Aucune donnée de voyage n'a été fournie."
+}"
+2025-08-18 13:47:12: task_name="profile_parser_task", task="Analyser les données JSON du voyage et créer un résumé structuré avec recommandations
+", agent="Analyste de profil voyageur
+", status="started"
+2025-08-18 13:47:16: task_name="profile_parser_task", task="Analyser les données JSON du voyage et créer un résumé structuré avec recommandations
+", agent="Analyste de profil voyageur
+", status="completed", output="{
+  "nom_voyageur": "Voyageur",
+  "destination_principale": "Destination non spécifiée",
+  "duree_voyage": "0",
+  "budget_estime": "0€",
+  "type_voyage": "Standard",
+  "resume_complet": "Voyage de 0 jours pour Voyageur vers Destination non spécifiée. Type: Standard, voyage non spécifié. Rythme: non spécifié. Budget: 0€."
+}"
+2025-08-18 13:48:37: task_name="profile_parser_task", task="Analyser les données JSON du voyage et créer un résumé structuré avec recommandations
+", agent="Analyste de profil voyageur
+", status="started"
+2025-08-18 13:48:46: task_name="profile_parser_task", task="Analyser les données JSON du voyage et créer un résumé structuré avec recommandations
+", agent="Analyste de profil voyageur
+", status="completed", output="{
+  "nom_voyageur": "Alex",
+  "destination_principale": "Paris",
+  "duree_voyage": "15 jours",
+  "budget_estime": "1500€",
+  "type_voyage": "structure",
+  "resume_complet": "Voyage de 15 jours pour Alex vers Paris. Type: structure, voyage en solo. Rythme: modéré. Intérêts: culture, gastronomie, histoire. Services: guide, hébergement. Budget: 1500€."
+}"
+2025-08-18 14:03:42: task_name="profile_parser_task", task="Analyser les données JSON du voyage et créer un résumé structuré avec recommandations
+", agent="Analyste de profil voyageur
+", status="started"
+2025-08-18 14:03:50: task_name="profile_parser_task", task="Analyser les données JSON du voyage et créer un résumé structuré avec recommandations
+", agent="Analyste de profil voyageur
+", status="completed", output="{
+  "nom_voyageur": "Voyageur",
+  "destination_principale": "Paris, Rome, Barcelone",
+  "duree_voyage": "14 jours",
+  "budget_estime": "2000€",
+  "type_voyage": "Loisir",
+  "resume_complet": "Voyage de 14 jours pour Voyageur vers Paris, Rome, Barcelone. Type: Loisir, voyage famille. Rythme: modéré. Intérêts: culture, gastronomie, plage. Services: hébergement, transport, visites guidées. Budget: 2000€."
+}"
+2025-08-18 14:42:37: task_name="profile_parser_task", task="Analyser les données JSON du voyage et créer un résumé structuré avec recommandations
+", agent="Analyste de profil voyageur
+", status="started"
+2025-08-18 14:42:41: task_name="profile_parser_task", task="Analyser les données JSON du voyage et créer un résumé structuré avec recommandations
+", agent="Analyste de profil voyageur
+", status="completed", output="{"nom_voyageur": "Voyageur", "destination_principale": "Destination non spécifiée", "duree_voyage": "0", "budget_estime": "0€", "type_voyage": "Standard", "resume_complet": "Voyage de 0 jours pour Voyageur vers Destination non spécifiée. Type: Standard, voyage non spécifié. Rythme: non spécifié. Budget: 0€."}"
+2025-08-18 14:43:42: task_name="profile_parser_task", task="Analyser les données JSON du voyage et créer un résumé structuré avec recommandations
+", agent="Analyste de profil voyageur
+", status="started"
+2025-08-18 14:43:46: task_name="profile_parser_task", task="Analyser les données JSON du voyage et créer un résumé structuré avec recommandations
+", agent="Analyste de profil voyageur
+", status="completed", output="{
+  "nom_voyageur": "Voyageur",
+  "destination_principale": "Destination non spécifiée",
+  "duree_voyage": "0",
+  "budget_estime": "0€",
+  "type_voyage": "Standard",
+  "resume_complet": "Voyage de 0 jours pour Voyageur vers Destination non spécifiée. Type: Standard, voyage non spécifié. Rythme: non spécifié. Budget: 0€."
+}"
+2025-08-18 14:47:14: task_name="profile_parser_task", task="Analyser les données JSON du voyage et créer un résumé structuré avec recommandations
+", agent="Analyste de profil voyageur
+", status="started"
+2025-08-18 14:47:22: task_name="profile_parser_task", task="Analyser les données JSON du voyage et créer un résumé structuré avec recommandations
+", agent="Analyste de profil voyageur
+", status="completed", output="{
+  "nom_voyageur": "Voyageur",
+  "destination_principale": "Paris",
+  "duree_voyage": "10 jours",
+  "budget_estime": "1500€",
+  "type_voyage": "Loisirs",
+  "resume_complet": "Voyage de 10 jours pour Voyageur vers Paris. Type: Loisirs, voyage Famille. Rythme: Détendu. Intérêts: Culture, Gastronomie, Nature. Services: Hébergement, Transports, Visites guidées. Budget: 1500€."
+}"
+2025-08-18 14:48:49: task_name="profile_parser_task", task="Analyser les données JSON du voyage et créer un résumé structuré avec recommandations
+", agent="Analyste de profil voyageur
+", status="started"
+2025-08-18 14:48:59: task_name="profile_parser_task", task="Analyser les données JSON du voyage et créer un résumé structuré avec recommandations
+", agent="Analyste de profil voyageur
+", status="completed", output="{
+  "nom_voyageur": "Jean",
+  "destination_principale": "Paris",
+  "duree_voyage": "15",
+  "budget_estime": "1500€",
+  "type_voyage": "aventure",
+  "resume_complet": "Voyage de 15 jours pour Jean vers Paris. Type: aventure, voyage amis. Rythme: rapide. Intérêts: culture, gastronomie, nuit. Services: hébergement, transports, guides. Budget: 1500€."
+}"
+2025-08-18 14:50:50: task_name="profile_parser_task", task="Analyser les données JSON du voyage et créer un résumé structuré avec recommandations
+", agent="Analyste de profil voyageur
+", status="started"
+2025-08-18 14:50:59: task_name="profile_parser_task", task="Analyser les données JSON du voyage et créer un résumé structuré avec recommandations
+", agent="Analyste de profil voyageur
+", status="completed", output="{
+  "nom_voyageur": "Client",
+  "destination_principale": "Paris",
+  "duree_voyage": "14",
+  "budget_estime": "2000€",
+  "type_voyage": "loisirs",
+  "resume_complet": "Voyage de 14 jours pour Client vers Paris. Type: loisirs, voyage amis. Rythme: modéré. Intérêts: culture, gastronomie, visites historiques. Services: hébergement, transports, guides locaux. Budget: 2000€."
+}"
+2025-08-18 14:55:56: task_name="profile_parser_task", task="Analyser les données JSON du voyage et créer un résumé structuré avec recommandations
+", agent="Analyste de profil voyageur
+", status="started"
+2025-08-18 14:56:04: task_name="profile_parser_task", task="Analyser les données JSON du voyage et créer un résumé structuré avec recommandations
+", agent="Analyste de profil voyageur
+", status="completed", output="{
+  "nom_voyageur": "Client",
+  "destination_principale": "Paris",
+  "duree_voyage": "15",
+  "budget_estime": "2000€",
+  "type_voyage": "aventure",
+  "resume_complet": "Voyage de 15 jours pour Client vers Paris. Type: aventure, voyage amis. Rythme: rapide. Intérêts: culture, gastronomie, histoire. Services: hébergement, transports, visioconférence. Budget: 2000€."
+}"
+2025-08-18 14:59:23: task_name="profile_parser_task", task="Analyser les données JSON du voyage et créer un résumé structuré avec recommandations
+", agent="Analyste de profil voyageur
+", status="started"
+2025-08-18 15:00:39: task_name="profile_parser_task", task="Analyser les données JSON du voyage et créer un résumé structuré avec recommandations
+", agent="Analyste de profil voyageur
+", status="started"
+2025-08-18 15:00:44: task_name="profile_parser_task", task="Analyser les données JSON du voyage et créer un résumé structuré avec recommandations
+", agent="Analyste de profil voyageur
+", status="completed", output="{
+  "nom_voyageur": "Voyageur",
+  "destination_principale": "Destination Principale",
+  "duree_voyage": "Durée du voyage",
+  "budget_estime": "Budget estimé€",
+  "type_voyage": "Type de voyage",
+  "resume_complet": "Voyage de Durée du voyage jours pour Voyageur vers Destination Principale. Type: Type de voyage, voyage non spécifié. Rythme: non spécifié. Budget: Budget estimé€."
+}"
+2025-08-18 15:17:13: task_name="profile_parser_task", task="Analyser les données JSON du voyage et créer un résumé structuré avec recommandations
+", agent="Analyste de profil voyageur
+", status="started"
+2025-08-18 15:17:18: task_name="profile_parser_task", task="Analyser les données JSON du voyage et créer un résumé structuré avec recommandations
+", agent="Analyste de profil voyageur
+", status="completed", output="{
+  "nom_voyageur": "Voyageur",
+  "destination_principale": "Paris",
+  "duree_voyage": "7",
+  "budget_estime": "1200€",
+  "type_voyage": "Loisirs",
+  "resume_complet": "Voyage de 7 jours pour Voyageur vers Paris. Type: Loisirs, voyage Famille. Rythme: Lent. Intérêts: Culture, Gastronomie. Budget: 1200€."
+}"
+2025-08-18 15:25:02: task_name="profile_parser_task", task="Analyser les données JSON du voyage et créer un résumé structuré avec recommandations
+", agent="Analyste de profil voyageur
+", status="started"
+2025-08-18 15:29:53: task_name="profile_parser_task", task="Traite les données de voyage avec les paramètres suivants: - planningType: explore - travelWith: solo - pace: equilibre - firstName: Yann - duration: 2 - budget: 5000 - citiesToInclude: ['Kyoto'] - interests: ['temples'] - services: ['restaurants', 'lodging', 'accommodation', 'transport']
+Utilise l'outil de traitement de voyage pour analyser ces données et créer un résumé structuré avec recommandations.
+", agent="Analyste de profil voyageur
+", status="started"
+2025-08-18 15:29:57: task_name="profile_parser_task", task="Traite les données de voyage avec les paramètres suivants: - planningType: explore - travelWith: solo - pace: equilibre - firstName: Yann - duration: 2 - budget: 5000 - citiesToInclude: ['Kyoto'] - interests: ['temples'] - services: ['restaurants', 'lodging', 'accommodation', 'transport']
+Utilise l'outil de traitement de voyage pour analyser ces données et créer un résumé structuré avec recommandations.
+", agent="Analyste de profil voyageur
+", status="completed", output="{
+  "nom_voyageur": "Yann",
+  "destination_principale": "Kyoto",
+  "duree_voyage": "2 jours",
+  "budget_estime": "5000 EUR",
+  "type_voyage": "exploration en solo",
+  "resume_complet": "Ce voyage de 2 jours à Kyoto pour Yann est parfaitement équilibré, alliant exploration culturelle et détente. Durant ce séjour, Yann aura l'occasion de découvrir les temples majestueux de Kyoto, réputés pour leur histoire et leur architecture impressionnante. Des recommandations de restaurants locaux sont inclues pour savourer la cuisine japonaise, ainsi qu'un hébergement de qualité pour assurer un confort durant la nuit. Le transport sera organisé pour faciliter les déplacements dans la ville et garantir que toutes les attractions sont facilement accessibles. Avec un budget de 5000 EUR, toutes les activités, l'hébergement, les repas et le transport seront parfaitement couverts pour rendre ce voyage inoubliable."
+}"
+2025-08-18 16:51:43: task_name="profile_parser_task", task="Analyse et résume le profil de voyage à partir des données fournies, en tenant compte des paramètres suivants :
+- Type de planification : explore - Mode de voyage (compagnons) : solo - Rythme du voyage : equilibre - Prénom du voyageur : Yann - Date de départ : 2025-10-11 - Date de retour :  - Durée du voyage (en jours) : 2 - Période de départ : [] - Villes à inclure : ['Kyoto'] - Villes à exclure : [] - Budget estimé : 5000 - Commentaires spécifiques :  - Centres d’intérêt : ['temples'] - Services souhaités : ['restaurants', 'lodging', 'accommodation', 'transport']
+Ce résumé doit présenter une vision claire du voyage prévu et mettre en avant les points essentiels.
+", agent="Analyste de profil voyageur
+", status="started"
+2025-08-18 16:51:49: task_name="profile_parser_task", task="Analyse et résume le profil de voyage à partir des données fournies, en tenant compte des paramètres suivants :
+- Type de planification : explore - Mode de voyage (compagnons) : solo - Rythme du voyage : equilibre - Prénom du voyageur : Yann - Date de départ : 2025-10-11 - Date de retour :  - Durée du voyage (en jours) : 2 - Période de départ : [] - Villes à inclure : ['Kyoto'] - Villes à exclure : [] - Budget estimé : 5000 - Commentaires spécifiques :  - Centres d’intérêt : ['temples'] - Services souhaités : ['restaurants', 'lodging', 'accommodation', 'transport']
+Ce résumé doit présenter une vision claire du voyage prévu et mettre en avant les points essentiels.
+", agent="Analyste de profil voyageur
+", status="completed", output="{
+  "nom_voyageur": "Yann",
+  "destination_principale": "Kyoto",
+  "duree_voyage": "2 jours",
+  "budget_estime": "5000",
+  "type_voyage": "explore en solo",
+  "resume_complet": "Yann prévoit un voyage de 2 jours à Kyoto, à partir du 11 octobre 2025, avec un budget de 5000 euros, explorant à un rythme équilibré et s'intéressant particulièrement aux temples, tout en recherchant des restaurants, un hébergement et des services de transport."
+}"
+2025-08-18 16:56:05: task_name="profile_parser_task", task="Analyse et résume le profil de voyage à partir des données fournies, en tenant compte des paramètres suivants :
+- Type de planification : explore - Mode de voyage (compagnons) : solo - Rythme du voyage : equilibre - Prénom du voyageur : Yann - Date de départ : 2025-10-11 - Date de retour :  - Durée du voyage (en jours) : 2 - Période de départ : [] - Villes à inclure : ['Kyoto'] - Villes à exclure : [] - Budget estimé : 5000 - Commentaires spécifiques :  - Centres d’intérêt : ['temples'] - Services souhaités : ['restaurants', 'lodging', 'accommodation', 'transport']
+Ce résumé doit présenter une vision claire du voyage prévu et mettre en avant les points essentiels.
+", agent="Analyste de profil voyageur
+", status="started"
+2025-08-18 16:56:12: task_name="profile_parser_task", task="Analyse et résume le profil de voyage à partir des données fournies, en tenant compte des paramètres suivants :
+- Type de planification : explore - Mode de voyage (compagnons) : solo - Rythme du voyage : equilibre - Prénom du voyageur : Yann - Date de départ : 2025-10-11 - Date de retour :  - Durée du voyage (en jours) : 2 - Période de départ : [] - Villes à inclure : ['Kyoto'] - Villes à exclure : [] - Budget estimé : 5000 - Commentaires spécifiques :  - Centres d’intérêt : ['temples'] - Services souhaités : ['restaurants', 'lodging', 'accommodation', 'transport']
+Ce résumé doit présenter une vision claire du voyage prévu et mettre en avant les points essentiels.
+", agent="Analyste de profil voyageur
+", status="completed", output="{
+  "nom_voyageur": "Yann",
+  "destination_principale": "Kyoto",
+  "duree_voyage": "2 jours",
+  "budget_estime": "5000",
+  "type_voyage": "solo",
+  "resume_complet": "Yann prévoit un voyage exceptionnel de 2 jours à Kyoto, du 11 au 13 octobre 2025. Ce voyage, qui privilégie la découverte en solo, sera rythmé de manière équilibrée, permettant à Yann de savourer pleinement chaque instant. Avec un budget généreux de 5000, Yann pourra explorer les magnifiques temples de Kyoto tout en profitant de services de qualité incluant des restaurants, un hébergement confortable et des services de transport adaptés à ses besoins. Ce séjour promet d'être une expérience enrichissante et mémorable au cœur d'une des plus belles villes du Japon."
+}"
+2025-08-18 17:31:38: task_name="profiler_task", task="Analyse et résume le profil de voyage à partir des données fournies, en tenant compte des paramètres suivants :
+- Type de planification : explore - Mode de voyage (compagnons) : solo - Rythme du voyage : equilibre - Prénom du voyageur : Yann - Date de départ : 2025-10-11 - Date de retour :  - Durée du voyage (en jours) : 2 - Période de départ : [] - Villes à inclure : ['Kyoto'] - Villes à exclure : [] - Budget estimé : 5000 - Commentaires spécifiques :  - Centres d’intérêt : ['temples'] - Services souhaités : ['restaurants', 'lodging', 'accommodation', 'transport']
+Ce résumé doit présenter une vision claire du voyage prévu et mettre en avant les points essentiels.
+", agent="Analyste de profil voyageur
+", status="started"
+2025-08-18 17:31:44: task_name="profiler_task", task="Analyse et résume le profil de voyage à partir des données fournies, en tenant compte des paramètres suivants :
+- Type de planification : explore - Mode de voyage (compagnons) : solo - Rythme du voyage : equilibre - Prénom du voyageur : Yann - Date de départ : 2025-10-11 - Date de retour :  - Durée du voyage (en jours) : 2 - Période de départ : [] - Villes à inclure : ['Kyoto'] - Villes à exclure : [] - Budget estimé : 5000 - Commentaires spécifiques :  - Centres d’intérêt : ['temples'] - Services souhaités : ['restaurants', 'lodging', 'accommodation', 'transport']
+Ce résumé doit présenter une vision claire du voyage prévu et mettre en avant les points essentiels.
+", agent="Analyste de profil voyageur
+", status="completed", output="{
+  "nom_voyageur": "Yann",
+  "destination_principale": "Kyoto",
+  "duree_voyage": "2 jours",
+  "budget_estime": "5000",
+  "type_voyage": "explore en solo",
+  "resume_complet": "Yann prévoit un voyage de 2 jours à Kyoto à partir du 11 octobre 2025. Il recherche une expérience équilibrée, mettant l'accent sur l'exploration des temples emblématiques de la ville. Avec un budget estimé de 5000, Yann souhaite bénéficier de services tels que des restaurants, un hébergement confortable et des options de transport adaptées. Ce voyage promet d'être une immersion enrichissante dans la culture japonaise, tout en permettant à Yann d'explorer à son rythme."
+}"
+2025-08-18 17:31:44: task_name="live_news_task", task="Réalise des recherches en ligne pour chaque ['Kyoto'] afin d’identifier les événements à venir, attractions, infrastructures et actualités importantes. Sélectionne des sources officielles et fiables et résume les informations clés pour l’équipe.
+", agent="recherche en temps réel
+", status="started"
+2025-08-18 17:32:08: task_name="live_news_task", task="Réalise des recherches en ligne pour chaque ['Kyoto'] afin d’identifier les événements à venir, attractions, infrastructures et actualités importantes. Sélectionne des sources officielles et fiables et résume les informations clés pour l’équipe.
+", agent="recherche en temps réel
+", status="completed", output="[
+    {
+        "title": "Jidai Matsuri Festival",
+        "description": "A grand parade featuring approximately 2,000 participants dressed in costumes reflecting over 1,000 years of Kyoto’s history.",
+        "category": "Événement",
+        "date": "22 octobre 2025",
+        "url": "https://kyoto.travel/en/events/",
+        "snippet": "This parade of roughly 2,000 participants dressed in period garb representing over 1,000 years of Kyoto’s history."
+    },
+    {
+        "title": "Kamogawa Riverside Dining",
+        "description": "Enjoy dining along the Kamogawa River with views of the city and the delicate atmosphere of Kyoto.",
+        "category": "Restaurant",
+        "date": "01 mai - 30 sept 2025",
+        "url": "https://kyoto.travel/en/events/",
+        "snippet": "Kamogawa Riverside Dining offers a unique dining experience along the river."
+    }
+]"
+2025-08-18 17:34:09: task_name="profiler_task", task="Analyse et résume le profil de voyage à partir des données fournies, en tenant compte des paramètres suivants :
+- Type de planification : explore - Mode de voyage (compagnons) : solo - Rythme du voyage : equilibre - Prénom du voyageur : Yann - Date de départ : 2025-10-11 - Date de retour : 2025-10-16 - Durée du voyage (en jours) : 5 - Période de départ : [] - Villes à inclure : ['Kyoto'] - Villes à exclure : [] - Budget estimé : 5000 - Commentaires spécifiques :  - Centres d’intérêt : ['temples'] - Services souhaités : ['restaurants', 'lodging', 'accommodation', 'transport']
+Ce résumé doit présenter une vision claire du voyage prévu et mettre en avant les points essentiels.
+", agent="Analyste de profil voyageur
+", status="started"
+2025-08-18 17:34:13: task_name="profiler_task", task="Analyse et résume le profil de voyage à partir des données fournies, en tenant compte des paramètres suivants :
+- Type de planification : explore - Mode de voyage (compagnons) : solo - Rythme du voyage : equilibre - Prénom du voyageur : Yann - Date de départ : 2025-10-11 - Date de retour : 2025-10-16 - Durée du voyage (en jours) : 5 - Période de départ : [] - Villes à inclure : ['Kyoto'] - Villes à exclure : [] - Budget estimé : 5000 - Commentaires spécifiques :  - Centres d’intérêt : ['temples'] - Services souhaités : ['restaurants', 'lodging', 'accommodation', 'transport']
+Ce résumé doit présenter une vision claire du voyage prévu et mettre en avant les points essentiels.
+", agent="Analyste de profil voyageur
+", status="completed", output="{
+  "nom_voyageur": "Yann",
+  "destination_principale": "Kyoto",
+  "duree_voyage": "5 jours",
+  "budget_estime": "5000",
+  "type_voyage": "solo, en mode exploration",
+  "resume_complet": "Yann prévoit un voyage de 5 jours à Kyoto, du 11 au 16 octobre 2025. Ce voyage est organisé en mode exploration, avec un rythme équilibré. Le budget estimé pour ce séjour est de 5000. Yann s'intéresse particulièrement aux temples et souhaite profiter de services tels que des restaurants, ainsi que des options d'hébergement et de transport pour rendre son expérience agréable."
+}"
+2025-08-18 17:34:13: task_name="live_news_task", task="Réalise des recherches en ligne pour chaque ['Kyoto'] afin d’identifier les événements à venir, attractions, infrastructures et actualités importantes. Sélectionne des sources officielles et fiables et résume les informations clés pour l’équipe.
+", agent="recherche en temps réel
+", status="started"
+2025-08-18 17:34:29: task_name="live_news_task", task="Réalise des recherches en ligne pour chaque ['Kyoto'] afin d’identifier les événements à venir, attractions, infrastructures et actualités importantes. Sélectionne des sources officielles et fiables et résume les informations clés pour l’équipe.
+", agent="recherche en temps réel
+", status="completed", output="{
+  "title": "Kyoto Events October 2025",
+  "description": "Explore the various events happening in Kyoto during October 2025, showcasing seasonal attractions and cultural experiences.",
+  "category": "événement",
+  "date": "October 2025",
+  "url": "https://www.insidekyoto.com/kyoto-events-october",
+  "snippet": "Kyoto Events October 2025"
+}
+{
+  "title": "October 2025 Events in Japan",
+  "description": "A comprehensive list of events, festivals, markets, exhibitions, concerts, and things to do in Japan including Kyoto.",
+  "category": "événement",
+  "date": "October 2025",
+  "url": "https://japancheapo.com/events/october/",
+  "snippet": "Events, festivals, markets, exhibitions, concerts, comedy, nightlife, and things to do in Japan in October 2025 ... Kyotophonie Borderless Music Festival Autumn ..."
+}
+{
+  "title": "Kyoto Festivals 2025: Traditional Events, Seasonal ... - Magical Trip",
+  "description": "A seasonal event guide for Kyoto in 2025, covering traditional events and festivals.",
+  "category": "événement",
+  "date": "October 2025",
+  "url": "https://www.magical-trip.com/media/kyoto-list-of-events-festivals-for-2025/",
+  "snippet": "A seasonal event guide for Kyoto in 2025. Covering traditional events and festivals from New Year's shrine visits to New Year's Eve bell ..."
+}
+{
+  "title": "Festivals & Events | Kyoto Travel",
+  "description": "Featured events happening in Kyoto, including exhibitions and cultural festivals.",
+  "category": "événement",
+  "date": "October 2025",
+  "url": "https://kyoto.travel/en/events/",
+  "snippet": "Featured Events ; Kyoto, dyed by Japan's oldest cotton merchant – Japanese towels (tenugui) exhibition. 12 Apr – 23 Oct 2025. Art / Music / Theater ; Kobo Market."
+}
+{
+  "title": "Fire Festival of Kurama Temple 2025 - October Events in Kyoto",
+  "description": "The Kurama Fire Festival is a major event that takes place on October 22, showcasing traditional celebrations.",
+  "category": "événement",
+  "date": "October 22, 2025",
+  "url": "https://en.japantravel.com/kyoto/fire-festival-kurama-temple/24248",
+  "snippet": "The Kurama Five Festival is one of the most spectacular events in Kyoto and takes place every year on the evening of October 22nd."
+}"
+2025-08-18 17:37:19: task_name="profiler_task", task="Analyse et résume le profil de voyage à partir des données fournies, en tenant compte des paramètres suivants :
+- Type de planification : explore - Mode de voyage (compagnons) : solo - Rythme du voyage : equilibre - Prénom du voyageur : Yann - Date de départ : 2025-10-11 - Date de retour : 2025-10-16 - Durée du voyage (en jours) : 5 - Période de départ : [] - Villes à inclure : ['Kyoto'] - Villes à exclure : [] - Budget estimé : 5000 - Commentaires spécifiques :  - Centres d’intérêt : ['temples'] - Services souhaités : ['restaurants', 'lodging', 'accommodation', 'transport']
+Ce résumé doit présenter une vision claire du voyage prévu et mettre en avant les points essentiels.
+", agent="Analyste de profil voyageur
+", status="started"
+2025-08-18 17:37:23: task_name="profiler_task", task="Analyse et résume le profil de voyage à partir des données fournies, en tenant compte des paramètres suivants :
+- Type de planification : explore - Mode de voyage (compagnons) : solo - Rythme du voyage : equilibre - Prénom du voyageur : Yann - Date de départ : 2025-10-11 - Date de retour : 2025-10-16 - Durée du voyage (en jours) : 5 - Période de départ : [] - Villes à inclure : ['Kyoto'] - Villes à exclure : [] - Budget estimé : 5000 - Commentaires spécifiques :  - Centres d’intérêt : ['temples'] - Services souhaités : ['restaurants', 'lodging', 'accommodation', 'transport']
+Ce résumé doit présenter une vision claire du voyage prévu et mettre en avant les points essentiels.
+", agent="Analyste de profil voyageur
+", status="completed", output="{
+  "nom_voyageur": "Yann",
+  "destination_principale": "Kyoto",
+  "duree_voyage": "5 jours",
+  "budget_estime": "5000",
+  "type_voyage": "solo",
+  "resume_complet": "Yann part en voyage solo pour une durée de 5 jours, du 11 au 16 octobre 2025, à Kyoto. Avec un budget estimé de 5000, il prévoit d'explorer les temples de la ville tout en maintenant un rythme équilibré. Les services souhaités incluent la restauration, l'hébergement et le transport, garantissant une expérience confortable et enrichissante."
+}"
+2025-08-18 17:37:23: task_name="live_news_task", task="Réalise des recherches en ligne pour chaque ['Kyoto'] afin d’identifier les événements à venir, attractions, infrastructures et actualités importantes. Sélectionne des sources officielles et fiables et résume les informations clés pour l’équipe.
+", agent="recherche en temps réel
+", status="started"
+2025-08-18 17:37:57: task_name="live_news_task", task="Réalise des recherches en ligne pour chaque ['Kyoto'] afin d’identifier les événements à venir, attractions, infrastructures et actualités importantes. Sélectionne des sources officielles et fiables et résume les informations clés pour l’équipe.
+", agent="recherche en temps réel
+", status="completed", output="{
+  "Kyoto": [
+    {
+      "title": "Jidai Matsuri",
+      "description": "L'un des festivals les plus célèbres de Kyoto, le Jidai Matsuri se déroule le 22 octobre et commémore l'histoire de la ville à travers un défilé de costumes d'époques différentes.",
+      "category": "événement",
+      "date": "22 octobre 2025",
+      "url": "https://www.japan-guide.com/event/?aMONTH=10&aYEAR=2025",
+      "snippet": "Kyoto · Jidai Matsuri (October 22)"
+    },
+    {
+      "title": "Kyotophonie Borderless Music Festival",
+      "description": "Un festival unique de musique et de gastronomie offrant des vues pittoresques, se déroulant du 11 au 13 octobre.",
+      "category": "événement",
+      "date": "11-13 octobre 2025",
+      "url": "https://japancheapo.com/events/october/",
+      "snippet": "A one-of-a-kind music and food festival with one of Japan's most scenic views."
+    },
+    {
+      "title": "Kyoto Experiment Festival",
+      "description": "Explorez des performances innovantes lors du Kyoto Experiment, un festival d'art contemporain et de théâtre.",
+      "category": "événement",
+      "date": "4-26 octobre 2025",
+      "url": "https://japancheapo.com/events/kyoto-experiment/",
+      "snippet": "Explore groundbreaking performances at the Kyoto Experiment Festival."
+    },
+    {
+      "title": "Guide des Festivals de Kyoto",
+      "description": "Un résumé des festivals et événements annuels les plus intéressants de Kyoto.",
+      "category": "attraction",
+      "date": "2025",
+      "url": "https://www.insidekyoto.com/kyoto-festivals-events",
+      "snippet": "Here is a summary of Kyoto's biggest and most interesting annual festivals and events."
+    },
+    {
+      "title": "Marché aux puces de Kyoto",
+      "description": "Un événement populaire organisé au Kōdai-ji, parfait pour découvrir des articles uniques.",
+      "category": "événement",
+      "date": "dates précises à confirmer en octobre 2025",
+      "url": "https://kyoto.travel/fr/events/",
+      "snippet": "Cette page regroupe toutes les informations touristiques sur les événements de Kyoto."
+    }
+  ]
+}"

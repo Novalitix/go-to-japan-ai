@@ -1,0 +1,62 @@
+{
+  "cities": [
+    {
+      "city": "Kyoto",
+      "accommodations": [
+        {
+          "name": "Sakura Terrace The Gallery",
+          "type": "hotel",
+          "price_per_night": {
+            "eur": "81.63",
+            "jpy": 12000
+          },
+          "total_estimate": {
+            "eur": "408.13",
+            "jpy": 60000
+          },
+          "pros": [
+            "Proche de la gare de Kyoto",
+            "Spa et sauna disponibles",
+            "Bon petit-déjeuner inclus"
+          ],
+          "cons": [
+            "Peut être cher pour les petits budgets",
+            "Pas de parking sur place"
+          ],
+          "link": "https://www.booking.com/hotel/jp/sakura-terrace-the-gallery.fr.html",
+          "source_date": "2023-10-02"
+        },
+        {
+          "name": "K's House Kyoto",
+          "type": "hostel",
+          "price_per_night": {
+            "eur": "27.06",
+            "jpy": 4000
+          },
+          "total_estimate": {
+            "eur": "135.31",
+            "jpy": 20000
+          },
+          "pros": [
+            "Ambiance conviviale",
+            "Équipements de cuisine partagés",
+            "Près de plusieurs sites touristiques"
+          ],
+          "cons": [
+            "Chambres partagées peuvent ne pas convenir à tous",
+            "Bruits possibles dans les espaces communs"
+          ],
+          "link": "https://www.hostelworld.com/hosteldetails.php/Ks-House-Kyoto/Kyoto/45746",
+          "source_date": "2023-10-02"
+        }
+      ]
+    }
+  ],
+  "fx": {
+    "base": "EUR",
+    "quote": "JPY",
+    "rate": "0.0068",
+    "as_of": "2023-10-02",
+    "source_url": "https://www.xe.com/"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "cities": [
+    {
+      "city": "Kyoto",
+      "events": [
+        {
+          "title": "Kyotophonie Borderless Music Festival Autumn 2025",
+          "description": "A one-of-a-kind music and food festival with one of Japan's most scenic views.",
+          "category": "événement",
+          "date": "2025-10-11",
+          "source_url": "https://japancheapo.com/events/october/",
+          "source_date": "Not specified"
+        },
+        {
+          "title": "Kurama Fire Festival",
+          "description": "A significant annual festival featuring a spectacular display of fire and traditional rituals.",
+          "category": "événement",
+          "date": "2025-10-13",
+          "source_url": "https://www.magical-trip.com/media/kyoto-in-october-2024-early-autumn-highlights-events-festivals/",
+          "source_date": "Not specified"
+        },
+        {
+          "title": "Kyoto Music Expo",
+          "description": "A music event spotlighting various artists, set to take place at Umekoji Park Lawn.",
+          "category": "événement",
+          "date": "2025-10-11",
+          "source_url": "https://www.japanconcerttickets.com/japan-october-2025/",
+          "source_date": "Not specified"
+        }
+      ]
+    }
+  ]
+}

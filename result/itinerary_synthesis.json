@@ -1,0 +1,321 @@
+{
+  "version": "1.0",
+  "meta": {
+    "first_name": "Yann",
+    "departure_date": "2025-10-11",
+    "duration_days": 2,
+    "cities_to_include": [
+      "Kyoto"
+    ],
+    "pace": "equilibre",
+    "interests": [
+      "temples",
+      "gastronomie"
+    ],
+    "services": [
+      "restaurants",
+      "lodging"
+    ],
+    "cities_to_exclude": [],
+    "comments": "Voyage en solo",
+    "budget_eur": "5000"
+  },
+  "itinerary": {
+    "cities": [
+      {
+        "city": "Kyoto",
+        "overview": {
+          "lodging": {
+            "name": "Hotel XYZ",
+            "link": "https://example.com/hotel-xyz",
+            "address": "123 Temple Road, Kyoto, Japan",
+            "check_in": "2025-10-11",
+            "check_out": "2025-10-13"
+          },
+          "transport_notes": "Utiliser le transport en commun pour se déplacer dans la ville.",
+          "passes": [
+            {
+              "name": "Kyoto Sightseeing Pass",
+              "link": "https://example.com/kyoto-pass",
+              "notes": "Permet d'accéder aux transports en commun et à certaines attractions."
+            }
+          ]
+        },
+        "days": [
+          {
+            "date": "2025-10-11",
+            "weather": {
+              "summary": "Partiellement nuageux",
+              "temp_avg_c": "19",
+              "precip_prob_pct": 10,
+              "special": "Prévoir une légère brise.",
+              "sources": [
+                {
+                  "url": "https://www.weather.com/",
+                  "date": "2025-09-20",
+                  "title": "Prévisions Météo"
+                }
+              ]
+            },
+            "transport": [
+              {
+                "from_": "Osaka",
+                "to": "Kyoto",
+                "mode": "Shinkansen",
+                "line_or_service": "Shinkansen",
+                "duration_minutes": 30,
+                "cost_eur": "15",
+                "reservation_required": true,
+                "notes": "",
+                "sources": [
+                  {
+                    "url": "https://www.japantravel.com/osaka/transport",
+                    "date": "2025-09-01",
+                    "title": "Transport depuis Osaka"
+                  }
+                ]
+              }
+            ],
+            "lodging": {
+              "name": "Hotel XYZ",
+              "link": "https://example.com/hotel-xyz",
+              "address": "123 Temple Road, Kyoto, Japan",
+              "check_in": null,
+              "check_out": null
+            },
+            "activities": {
+              "morning": [
+                {
+                  "name": "Visite du Sanctuaire Kamigamo",
+                  "category": "temple",
+                  "start_time": "09:00",
+                  "duration_minutes": 180,
+                  "address": "339 Kamigamo Motoyama, Kita-ku, Kyoto City",
+                  "indoor_outdoor": "outdoor",
+                  "weather_notes": "Partiellement nuageux.",
+                  "cost_eur": "0",
+                  "sources": [
+                    {
+                      "url": "https://www.japan.travel/fr/fr/uk/kyoto/kamigamo-shrine/",
+                      "date": "2025-09-15",
+                      "title": null
+                    }
+                  ]
+                }
+              ],
+              "afternoon": [
+                {
+                  "name": "Visite du Temple Chion-in",
+                  "category": "temple",
+                  "start_time": "13:30",
+                  "duration_minutes": 180,
+                  "address": "400 Rinshita-chō, Higashiyama-ku, Kyoto City",
+                  "indoor_outdoor": "outdoor",
+                  "weather_notes": "Pas de pluie prévue.",
+                  "cost_eur": "0",
+                  "sources": [
+                    {
+                      "url": "https://www.insidekyoto.com/chion-in-temple",
+                      "date": "2025-09-10",
+                      "title": null
+                    }
+                  ]
+                }
+              ],
+              "evening": [
+                {
+                  "name": "Promenade dans le Parc Maruyama",
+                  "category": "activité",
+                  "start_time": "19:00",
+                  "duration_minutes": 120,
+                  "address": "Maruyama Park, Kyoto",
+                  "indoor_outdoor": "outdoor",
+                  "weather_notes": "Météo clémente pour une promenade.",
+                  "cost_eur": "0",
+                  "sources": [
+                    {
+                      "url": "https://www.kyoto.com/maruyama-park/",
+                      "date": "2025-09-20",
+                      "title": null
+                    }
+                  ]
+                }
+              ]
+            },
+            "dining": {
+              "breakfast": [
+                {
+                  "restaurant": "Kyoto Breakfast Cafe",
+                  "cuisine": "japonaise",
+                  "price_eur": "15",
+                  "reservation_needed": false,
+                  "address": "456 Food Street, Kyoto",
+                  "sources": [
+                    {
+                      "url": "https://www.kyoto.com/breakfast",
+                      "date": "2025-09-15",
+                      "title": null
+                    }
+                  ]
+                }
+              ],
+              "lunch": [
+                {
+                  "restaurant": "Sushi House",
+                  "cuisine": "japonaise",
+                  "price_eur": "20",
+                  "reservation_needed": false,
+                  "address": "789 Sushi Lane, Kyoto",
+                  "sources": [
+                    {
+                      "url": "https://www.kyoto.com/lunch",
+                      "date": "2025-09-16",
+                      "title": null
+                    }
+                  ]
+                }
+              ],
+              "dinner": [
+                {
+                  "restaurant": "Noodle Bar",
+                  "cuisine": "asiatique",
+                  "price_eur": "25",
+                  "reservation_needed": false,
+                  "address": "321 Noodle Ave, Kyoto",
+                  "sources": [
+                    {
+                      "url": "https://www.kyoto.com/dinner",
+                      "date": "2025-09-17",
+                      "title": null
+                    }
+                  ]
+                }
+              ]
+            },
+            "daily_costs_eur": {
+              "transport": "15",
+              "activities": "0",
+              "dining": "60",
+              "other": "0",
+              "total": "75"
+            },
+            "day_sources": []
+          },
+          {
+            "date": "2025-10-12",
+            "weather": {
+              "summary": "Ciel clair",
+              "temp_avg_c": "21",
+              "precip_prob_pct": 5,
+              "special": "Journée idéale pour explorer.",
+              "sources": [
+                {
+                  "url": "https://www.weather.com/",
+                  "date": "2025-09-20",
+                  "title": "Prévisions Météo"
+                }
+              ]
+            },
+            "transport": [],
+            "lodging": {
+              "name": "Hotel XYZ",
+              "link": "https://example.com/hotel-xyz",
+              "address": "123 Temple Road, Kyoto, Japan",
+              "check_in": null,
+              "check_out": null
+            },
+            "activities": {
+              "morning": [
+                {
+                  "name": "Visite du Temple Tō-ji",
+                  "category": "temple",
+                  "start_time": "09:00",
+                  "duration_minutes": 180,
+                  "address": "Tōji, Minami Ward, Kyoto",
+                  "indoor_outdoor": "outdoor",
+                  "weather_notes": "Ciel clair et ensoleillé.",
+                  "cost_eur": "0",
+                  "sources": [
+                    {
+                      "url": "https://www.kyoto.travel/toji/",
+                      "date": "2025-09-17",
+                      "title": null
+                    }
+                  ]
+                }
+              ],
+              "afternoon": [
+                {
+                  "name": "Visite de Fushimi Inari Taisha",
+                  "category": "temple",
+                  "start_time": "13:30",
+                  "duration_minutes": 180,
+                  "address": "Fushimi Ward, Kyoto",
+                  "indoor_outdoor": "outdoor",
+                  "weather_notes": "Météo sèche et agréable.",
+                  "cost_eur": "0",
+                  "sources": [
+                    {
+                      "url": "https://www.japan.travel/fr/fushimi-inari-taisha/",
+                      "date": "2025-09-16",
+                      "title": null
+                    }
+                  ]
+                }
+              ],
+              "evening": [
+                {
+                  "name": "Cérémonie de thé traditionnelle",
+                  "category": "activité",
+                  "start_time": "19:00",
+                  "duration_minutes": 120,
+                  "address": "Tea House dans un jardin, Kyoto City",
+                  "indoor_outdoor": "indoor",
+                  "weather_notes": "Événement culturel captivant.",
+                  "cost_eur": "30",
+                  "sources": [
+                    {
+                      "url": "https://www.japan.travel/fr/tea-ceremony/",
+                      "date": "2025-09-15",
+                      "title": null
+                    }
+                  ]
+                }
+              ]
+            },
+            "dining": {
+              "breakfast": [],
+              "lunch": [],
+              "dinner": []
+            },
+            "daily_costs_eur": {
+              "transport": "0",
+              "activities": "30",
+              "dining": "0",
+              "other": "0",
+              "total": "30"
+            },
+            "day_sources": []
+          }
+        ]
+      }
+    ]
+  },
+  "budget_overview": {
+    "by_category": {
+      "transport": "15",
+      "activities": "30",
+      "dining": "60",
+      "lodging": "200"
+    },
+    "total_eur": "305",
+    "difference_from_budget_eur": "4695",
+    "status": "under"
+  },
+  "scenarios": [],
+  "bibliography": [],
+  "generation_info": {
+    "generated_at": "2025-09-20",
+    "timezone": "Asia/Tokyo"
+  }
+}

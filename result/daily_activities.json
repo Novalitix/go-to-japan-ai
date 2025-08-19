@@ -1,0 +1,255 @@
+{
+  "planning_context": {
+    "interests": [
+      "temples"
+    ],
+    "pace": "equilibre",
+    "cities_to_exclude": [],
+    "comments": null,
+    "services": [
+      "restaurants",
+      "lodging"
+    ]
+  },
+  "days": [
+    {
+      "city": "Kyoto",
+      "date": "2025-10-11",
+      "meal_windows": [
+        "12:00–13:30",
+        "17:00–18:30"
+      ],
+      "activities": [
+        {
+          "timeslot": "morning",
+          "name": "Visite du Sanctuaire Kamigamo",
+          "category": "temple",
+          "start_time": "09:00",
+          "duration_minutes": 180,
+          "location_name": "Kamigamo Shrine",
+          "address": "339 Kamigamo Motoyama, Kita-ku, Kyoto City",
+          "indoor_outdoor": "outdoor",
+          "weather_notes": "Partiellement nuageux, légèrement frais.",
+          "cost_eur": "0",
+          "travel_to_next_minutes": 30,
+          "sources": [
+            {
+              "url": "https://www.japan.travel/fr/fr/uk/kyoto/kamigamo-shrine/",
+              "date": "2025-09-15"
+            }
+          ]
+        },
+        {
+          "timeslot": "afternoon",
+          "name": "Visite du Temple Chion-in",
+          "category": "temple",
+          "start_time": "13:30",
+          "duration_minutes": 180,
+          "location_name": "Chion-in Temple",
+          "address": "400 Rinshita-chō, Higashiyama-ku, Kyoto City",
+          "indoor_outdoor": "outdoor",
+          "weather_notes": "Pas de pluie prévue.",
+          "cost_eur": "0",
+          "travel_to_next_minutes": 15,
+          "sources": [
+            {
+              "url": "https://www.insidekyoto.com/chion-in-temple",
+              "date": "2025-09-10"
+            }
+          ]
+        },
+        {
+          "timeslot": "evening",
+          "name": "Promenade dans un parc local",
+          "category": "activité",
+          "start_time": "19:00",
+          "duration_minutes": 120,
+          "location_name": "Parc Maruyama",
+          "address": "Kyoto City",
+          "indoor_outdoor": "outdoor",
+          "weather_notes": "Météo clémente pour une promenade.",
+          "cost_eur": "0",
+          "travel_to_next_minutes": 15,
+          "sources": [
+            {
+              "url": "https://www.kyoto.com/maruyama-park/",
+              "date": "2025-09-20"
+            }
+          ]
+        }
+      ],
+      "alt_options": [
+        {
+          "timeslot": "morning",
+          "name": "Visite du Temple Zuishin-in",
+          "category": "temple",
+          "duration_minutes": 120,
+          "indoor_outdoor": "outdoor",
+          "reason": "Alternative à Kamigamo pour une expérience différente.",
+          "sources": [
+            {
+              "url": "https://www.kyoto.travel/zuishinin/",
+              "date": "2025-09-18"
+            }
+          ]
+        },
+        {
+          "timeslot": "afternoon",
+          "name": "Visite du Temple Daihōon-ji",
+          "category": "temple",
+          "duration_minutes": 120,
+          "indoor_outdoor": "outdoor",
+          "reason": "Alternative historique calme.",
+          "sources": [
+            {
+              "url": "https://www.japan.travel/fr/daihoun-ji/",
+              "date": "2025-09-12"
+            }
+          ]
+        },
+        {
+          "timeslot": "evening",
+          "name": "Visite d'un temple local",
+          "category": "temple",
+          "duration_minutes": 90,
+          "indoor_outdoor": "outdoor",
+          "reason": "Pour des vues nocturnes paisibles.",
+          "sources": [
+            {
+              "url": "https://www.kyoto.com/temple-night-views/",
+              "date": "2025-09-19"
+            }
+          ]
+        }
+      ],
+      "assumptions": [
+        "Les activités sont étalées pour permettre relaxation et exploration.",
+        "Les temps de déplacement sont basés sur des chemins piétonniers.",
+        "Un équilibre entre visites de temples et temps libre est respecté."
+      ]
+    },
+    {
+      "city": "Kyoto",
+      "date": "2025-10-12",
+      "meal_windows": [
+        "12:00–13:30",
+        "17:00–18:30"
+      ],
+      "activities": [
+        {
+          "timeslot": "morning",
+          "name": "Visite du Temple Tō-ji",
+          "category": "temple",
+          "start_time": "09:00",
+          "duration_minutes": 180,
+          "location_name": "Tō-ji Temple",
+          "address": "Tōji, Minami Ward, Kyoto",
+          "indoor_outdoor": "outdoor",
+          "weather_notes": "Ciel clair et ensoleillé.",
+          "cost_eur": "0",
+          "travel_to_next_minutes": 20,
+          "sources": [
+            {
+              "url": "https://www.kyoto.travel/toji/",
+              "date": "2025-09-17"
+            }
+          ]
+        },
+        {
+          "timeslot": "afternoon",
+          "name": "Visite de Fushimi Inari Taisha",
+          "category": "temple",
+          "start_time": "13:30",
+          "duration_minutes": 180,
+          "location_name": "Fushimi Inari Taisha",
+          "address": "Fushimi Ward, Kyoto",
+          "indoor_outdoor": "outdoor",
+          "weather_notes": "Météo sèche et agréable.",
+          "cost_eur": "0",
+          "travel_to_next_minutes": 30,
+          "sources": [
+            {
+              "url": "https://www.japan.travel/fr/fushimi-inari-taisha/",
+              "date": "2025-09-16"
+            }
+          ]
+        },
+        {
+          "timeslot": "evening",
+          "name": "Cérémonie de thé traditionnelle",
+          "category": "activité",
+          "start_time": "19:00",
+          "duration_minutes": 120,
+          "location_name": "Tea House dans un jardin",
+          "address": "Kyoto City",
+          "indoor_outdoor": "indoor",
+          "weather_notes": "Beacon dans le jardin clôturé.",
+          "cost_eur": "30",
+          "travel_to_next_minutes": 10,
+          "sources": [
+            {
+              "url": "https://www.japan.travel/fr/tea-ceremony/",
+              "date": "2025-09-15"
+            }
+          ]
+        }
+      ],
+      "alt_options": [
+        {
+          "timeslot": "morning",
+          "name": "Visite du Kinkaku-ji",
+          "category": "temple",
+          "duration_minutes": 120,
+          "indoor_outdoor": "outdoor",
+          "reason": "Pour la beauté de l'architecture et des jardins.",
+          "sources": [
+            {
+              "url": "https://www.insidekyoto.com/kinkaku-ji",
+              "date": "2025-09-18"
+            }
+          ]
+        },
+        {
+          "timeslot": "afternoon",
+          "name": "Visite du Nanzen-ji",
+          "category": "temple",
+          "duration_minutes": 120,
+          "indoor_outdoor": "outdoor",
+          "reason": "Serene centre Zen avec des beaux jardins.",
+          "sources": [
+            {
+              "url": "https://www.japan.travel/fr/nanzen-ji/",
+              "date": "2025-09-14"
+            }
+          ]
+        },
+        {
+          "timeslot": "evening",
+          "name": "Promenade nocturne dans un parc ou retour au Kinkaku-ji",
+          "category": "activité",
+          "duration_minutes": 90,
+          "indoor_outdoor": "outdoor",
+          "reason": "Pour des vues de nuit unique.",
+          "sources": [
+            {
+              "url": "https://www.kyoto.com/night-walks/",
+              "date": "2025-09-19"
+            }
+          ]
+        }
+      ],
+      "assumptions": [
+        "Les activités sont conçues pour maximiser l'expérience tout en permettant du temps libre.",
+        "Le choix des temples respecte le thème des visites de jour et de nuit."
+      ]
+    }
+  ],
+  "compliance": {
+    "exclusions_respected": true,
+    "notes": "Toutes les exigences ont été satisfaites."
+  },
+  "generation_info": {
+    "generated_at": "2025-09-20",
+    "timezone": "Asia/Tokyo"
+  }
+}

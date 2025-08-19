@@ -1,0 +1,396 @@
+{
+  "languages": [
+    "fr",
+    "en",
+    "ja"
+  ],
+  "translation_policy": {
+    "preserve_keys": true,
+    "preserve_enums": true,
+    "preserve_formats": [
+      "dates",
+      "times",
+      "amounts"
+    ],
+    "preserve_urls": true,
+    "preserve_numbers": true,
+    "proper_nouns_policy": "unchanged"
+  },
+  "translations": {
+    "fr": {
+      "i18n_labels": {},
+      "translated": {
+        "version": "1.0",
+        "meta": {
+          "first_name": "Yann",
+          "departure_date": "2025-10-11",
+          "duration_days": 2,
+          "cities_to_include": [
+            "Kyoto"
+          ],
+          "pace": "équilibré",
+          "interests": [
+            "temples"
+          ],
+          "services": [
+            "restaurants",
+            "lodging"
+          ],
+          "cities_to_exclude": [],
+          "comments": "Voyage en solo",
+          "budget_eur": 5000
+        },
+        "itinerary": {
+          "cities": [
+            {
+              "city": "Kyoto",
+              "overview": {
+                "lodging": {
+                  "name": "Hotel XYZ",
+                  "link": "https://example.com/hotel-xyz",
+                  "address": "123 Temple Road, Kyoto, Japan",
+                  "check_in": "2025-10-11",
+                  "check_out": "2025-10-13"
+                },
+                "transport_notes": "Utiliser le transport en commun pour se déplacer.",
+                "passes": []
+              },
+              "days": [
+                {
+                  "date": "2025-10-11",
+                  "weather": {
+                    "summary": "Partiellement nuageux",
+                    "temp_avg_c": 20,
+                    "precip_prob_pct": 10,
+                    "special": "Prévoir une légère brise."
+                  },
+                  "transport": [],
+                  "lodging": {
+                    "name": "Hotel XYZ",
+                    "link": "https://example.com/hotel-xyz",
+                    "address": "123 Temple Road, Kyoto, Japan"
+                  },
+                  "activities": {
+                    "morning": [],
+                    "afternoon": [],
+                    "evening": []
+                  },
+                  "dining": {
+                    "breakfast": [],
+                    "lunch": [],
+                    "dinner": []
+                  },
+                  "daily_costs_eur": {
+                    "transport": 0,
+                    "activities": 0,
+                    "dining": 0,
+                    "other": 0,
+                    "total": 0
+                  }
+                },
+                {
+                  "date": "2025-10-12",
+                  "weather": {
+                    "summary": "Ciel clair",
+                    "temp_avg_c": 21,
+                    "precip_prob_pct": 5
+                  },
+                  "transport": [],
+                  "lodging": {
+                    "name": "Hotel XYZ",
+                    "link": "https://example.com/hotel-xyz",
+                    "address": "123 Temple Road, Kyoto, Japan"
+                  },
+                  "activities": {
+                    "morning": [],
+                    "afternoon": [],
+                    "evening": []
+                  },
+                  "dining": {
+                    "breakfast": [],
+                    "lunch": [],
+                    "dinner": []
+                  },
+                  "daily_costs_eur": {
+                    "transport": 0,
+                    "activities": 0,
+                    "dining": 0,
+                    "other": 0,
+                    "total": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "budget_overview": {
+          "by_category": {
+            "transport": 0,
+            "activities": 0,
+            "dining": 0,
+            "lodging": 200,
+            "total_eur": 305
+          },
+          "total_eur": 5000,
+          "difference_from_budget_eur": -4695
+        }
+      },
+      "stats": {
+        "strings_translated": 0,
+        "strings_preserved": 0,
+        "char_count": 0
+      },
+      "warnings": []
+    },
+    "en": {
+      "i18n_labels": {},
+      "translated": {
+        "version": "1.0",
+        "meta": {
+          "first_name": "Yann",
+          "departure_date": "2025-10-11",
+          "duration_days": 2,
+          "cities_to_include": [
+            "Kyoto"
+          ],
+          "pace": "balanced",
+          "interests": [
+            "temples"
+          ],
+          "services": [
+            "restaurants",
+            "lodging"
+          ],
+          "cities_to_exclude": [],
+          "comments": "Solo trip",
+          "budget_eur": 5000
+        },
+        "itinerary": {
+          "cities": [
+            {
+              "city": "Kyoto",
+              "overview": {
+                "lodging": {
+                  "name": "Hotel XYZ",
+                  "link": "https://example.com/hotel-xyz",
+                  "address": "123 Temple Road, Kyoto, Japan",
+                  "check_in": "2025-10-11",
+                  "check_out": "2025-10-13"
+                },
+                "transport_notes": "Use public transportation to get around.",
+                "passes": []
+              },
+              "days": [
+                {
+                  "date": "2025-10-11",
+                  "weather": {
+                    "summary": "Partially cloudy",
+                    "temp_avg_c": 20,
+                    "precip_prob_pct": 10,
+                    "special": "Expect a light breeze."
+                  },
+                  "transport": [],
+                  "lodging": {
+                    "name": "Hotel XYZ",
+                    "link": "https://example.com/hotel-xyz",
+                    "address": "123 Temple Road, Kyoto, Japan"
+                  },
+                  "activities": {
+                    "morning": [],
+                    "afternoon": [],
+                    "evening": []
+                  },
+                  "dining": {
+                    "breakfast": [],
+                    "lunch": [],
+                    "dinner": []
+                  },
+                  "daily_costs_eur": {
+                    "transport": 0,
+                    "activities": 0,
+                    "dining": 0,
+                    "other": 0,
+                    "total": 0
+                  }
+                },
+                {
+                  "date": "2025-10-12",
+                  "weather": {
+                    "summary": "Clear sky",
+                    "temp_avg_c": 21,
+                    "precip_prob_pct": 5
+                  },
+                  "transport": [],
+                  "lodging": {
+                    "name": "Hotel XYZ",
+                    "link": "https://example.com/hotel-xyz",
+                    "address": "123 Temple Road, Kyoto, Japan"
+                  },
+                  "activities": {
+                    "morning": [],
+                    "afternoon": [],
+                    "evening": []
+                  },
+                  "dining": {
+                    "breakfast": [],
+                    "lunch": [],
+                    "dinner": []
+                  },
+                  "daily_costs_eur": {
+                    "transport": 0,
+                    "activities": 0,
+                    "dining": 0,
+                    "other": 0,
+                    "total": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "budget_overview": {
+          "by_category": {
+            "transport": 0,
+            "activities": 0,
+            "dining": 0,
+            "lodging": 200,
+            "total_eur": 305
+          },
+          "total_eur": 5000,
+          "difference_from_budget_eur": -4695
+        }
+      },
+      "stats": {
+        "strings_translated": 0,
+        "strings_preserved": 0,
+        "char_count": 0
+      },
+      "warnings": []
+    },
+    "ja": {
+      "i18n_labels": {},
+      "translated": {
+        "version": "1.0",
+        "meta": {
+          "first_name": "ヤン",
+          "departure_date": "2025-10-11",
+          "duration_days": 2,
+          "cities_to_include": [
+            "京都"
+          ],
+          "pace": "バランス",
+          "interests": [
+            "寺院"
+          ],
+          "services": [
+            "レストラン",
+            "宿泊"
+          ],
+          "cities_to_exclude": [],
+          "comments": "一人旅行",
+          "budget_eur": 5000
+        },
+        "itinerary": {
+          "cities": [
+            {
+              "city": "京都",
+              "overview": {
+                "lodging": {
+                  "name": "ホテルXYZ",
+                  "link": "https://example.com/hotel-xyz",
+                  "address": "京都市、寺の道123番地",
+                  "check_in": "2025-10-11",
+                  "check_out": "2025-10-13"
+                },
+                "transport_notes": "公共交通機関を利用して移動します。",
+                "passes": []
+              },
+              "days": [
+                {
+                  "date": "2025-10-11",
+                  "weather": {
+                    "summary": "部分的に曇り",
+                    "temp_avg_c": 20,
+                    "precip_prob_pct": 10,
+                    "special": "少しの風が吹くことを期待してください。"
+                  },
+                  "transport": [],
+                  "lodging": {
+                    "name": "ホテルXYZ",
+                    "link": "https://example.com/hotel-xyz",
+                    "address": "京都市、寺の道123番地"
+                  },
+                  "activities": {
+                    "morning": [],
+                    "afternoon": [],
+                    "evening": []
+                  },
+                  "dining": {
+                    "breakfast": [],
+                    "lunch": [],
+                    "dinner": []
+                  },
+                  "daily_costs_eur": {
+                    "transport": 0,
+                    "activities": 0,
+                    "dining": 0,
+                    "other": 0,
+                    "total": 0
+                  }
+                },
+                {
+                  "date": "2025-10-12",
+                  "weather": {
+                    "summary": "快晴",
+                    "temp_avg_c": 21,
+                    "precip_prob_pct": 5
+                  },
+                  "transport": [],
+                  "lodging": {
+                    "name": "ホテルXYZ",
+                    "link": "https://example.com/hotel-xyz",
+                    "address": "京都市、寺の道123番地"
+                  },
+                  "activities": {
+                    "morning": [],
+                    "afternoon": [],
+                    "evening": []
+                  },
+                  "dining": {
+                    "breakfast": [],
+                    "lunch": [],
+                    "dinner": []
+                  },
+                  "daily_costs_eur": {
+                    "transport": 0,
+                    "activities": 0,
+                    "dining": 0,
+                    "other": 0,
+                    "total": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "budget_overview": {
+          "by_category": {
+            "transport": 0,
+            "activities": 0,
+            "dining": 0,
+            "lodging": 200,
+            "total_eur": 305
+          },
+          "total_eur": 5000,
+          "difference_from_budget_eur": -4695
+        }
+      },
+      "stats": {
+        "strings_translated": 0,
+        "strings_preserved": 0,
+        "char_count": 0
+      },
+      "warnings": []
+    }
+  }
+}

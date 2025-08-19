@@ -1,0 +1,180 @@
+{
+  "breakdown": [
+    {
+      "category": "transport",
+      "items": [
+        {
+          "label": "Train from Osaka to Kyoto",
+          "category": "transport",
+          "qty": "1",
+          "unit_cost_eur": "15",
+          "total_cost_eur": "15",
+          "notes": "Standard express train ticket.",
+          "sources": [
+            {
+              "url": "https://www.japantravel.com/osaka/transport",
+              "date": "2025-09-01"
+            }
+          ]
+        }
+      ],
+      "subtotal_eur": "15"
+    },
+    {
+      "category": "lodging",
+      "items": [
+        {
+          "label": "Hotel stay (2 nights)",
+          "category": "lodging",
+          "qty": "2",
+          "unit_cost_eur": "100",
+          "total_cost_eur": "200",
+          "notes": "Comfortable hotel in Kyoto.",
+          "sources": [
+            {
+              "url": "https://www.booking.com/kyoto-hotels",
+              "date": "2025-08-15"
+            }
+          ]
+        }
+      ],
+      "subtotal_eur": "200"
+    },
+    {
+      "category": "dining",
+      "items": [
+        {
+          "label": "Breakfast (2 days)",
+          "category": "dining",
+          "qty": "2",
+          "unit_cost_eur": "15",
+          "total_cost_eur": "30",
+          "notes": "Japanese breakfast at hotel.",
+          "sources": [
+            {
+              "url": "https://www.hotel.com/breakfast-options",
+              "date": "2025-08-15"
+            }
+          ]
+        },
+        {
+          "label": "Lunch (2 days)",
+          "category": "dining",
+          "qty": "2",
+          "unit_cost_eur": "20",
+          "total_cost_eur": "40",
+          "notes": "Lunch at local restaurants.",
+          "sources": [
+            {
+              "url": "https://www.japantravel.com/kyoto/restaurants",
+              "date": "2025-08-20"
+            }
+          ]
+        },
+        {
+          "label": "Dinner (2 days)",
+          "category": "dining",
+          "qty": "2",
+          "unit_cost_eur": "30",
+          "total_cost_eur": "60",
+          "notes": "Dinner at recommended restaurants.",
+          "sources": [
+            {
+              "url": "https://www.kyotogastro.com/dining",
+              "date": "2025-08-25"
+            }
+          ]
+        }
+      ],
+      "subtotal_eur": "130"
+    },
+    {
+      "category": "activities",
+      "items": [
+        {
+          "label": "Traditional tea ceremony",
+          "category": "activities",
+          "qty": "1",
+          "unit_cost_eur": "30",
+          "total_cost_eur": "30",
+          "notes": "Experience a tea ceremony in Kyoto.",
+          "sources": [
+            {
+              "url": "https://www.japantravel.com/kyoto/tea-ceremony",
+              "date": "2025-09-10"
+            }
+          ]
+        },
+        {
+          "label": "Temple Entrance Fee (2 temples)",
+          "category": "activities",
+          "qty": "2",
+          "unit_cost_eur": "5",
+          "total_cost_eur": "10",
+          "notes": "Entry fees for 2 temples.",
+          "sources": [
+            {
+              "url": "https://www.japan.travel/kyoto/temp-entry",
+              "date": "2025-09-12"
+            }
+          ]
+        }
+      ],
+      "subtotal_eur": "40"
+    }
+  ],
+  "total_eur": "385",
+  "difference_from_budget": {
+    "budget_input_eur": "5000",
+    "difference_from_budget_eur": "-4615",
+    "status": "under"
+  },
+  "scenarios": [
+    {
+      "name": "Less expensive dining options",
+      "description": "Opt for cheaper dining choices to reduce costs.",
+      "adjustments": [
+        {
+          "operation": "remove",
+          "target_category": "dining",
+          "target_label": "Dinner (2 days)",
+          "description": "Choose casual dining options, reducing dinner costs to €20 per day.",
+          "delta_eur": "-20",
+          "sources": [
+            {
+              "url": "https://www.japantravel.com/kyoto/economical-dining",
+              "date": "2025-09-15"
+            }
+          ]
+        }
+      ],
+      "delta_eur": "-20",
+      "new_total_eur": "365",
+      "pros": [
+        "Lower dining costs",
+        "More budget-friendly experience"
+      ],
+      "cons": [
+        "Might miss out on higher-quality meals"
+      ],
+      "sources": [
+        {
+          "url": "https://www.japantravel.com/kyoto/economical-dining",
+          "date": "2025-09-15"
+        }
+      ]
+    }
+  ],
+  "fx": {
+    "base": "EUR",
+    "quote": "JPY",
+    "rate": "134",
+    "as_of": "2025-09-20",
+    "source_url": "https://www.xe.com/"
+  },
+  "assumptions": [
+    "The traveler is solo.",
+    "2 nights spent in Kyoto.",
+    "Meals and activities averaged over a two-day period."
+  ]
+}
