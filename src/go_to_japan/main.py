@@ -13,29 +13,31 @@ warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 # Replace with inputs you want to test with, it will automatically
 # interpolate any tasks and agents information
 
-inputs = {
-    'planningType': 'explore',
-    'travelWith': 'solo',
-    'pace': 'equilibre',
-    'firstName': 'Yann',
-    'departureDate': '2025-10-11',
-    'returnDate': '2025-10-13',
-    'duration': '2',
-    'departurePeriod': [],
-    'citiesToInclude': ['Kyoto'],
-    'citiesToExclude': [],
-    'budget': '5000',
-    'comments': '',
-    'interests': [
-        'temples'
-    ],
-    'services': [
-        'restaurants',
-        'lodging',
-    ],
-}
+
 
 def run():
+
+    inputs = {
+        'planningType': 'explore',
+        'travelWith': 'solo',
+        'pace': 'equilibre',
+        'firstName': 'Yann',
+        'departureDate': '2025-10-11',
+        'returnDate': '2025-10-13',
+        'duration': '2',
+        'departurePeriod': [],
+        'citiesToInclude': ['Kyoto'],
+        'citiesToExclude': [],
+        'budget': '5000',
+        'comments': '',
+        'interests': [
+            'temples'
+        ],
+        'services': [
+            'restaurants',
+            'lodging',
+        ],
+    }
     """
     Run the crew.
     """
