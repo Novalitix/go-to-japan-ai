@@ -13,7 +13,7 @@ warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 # Replace with inputs you want to test with, it will automatically
 # interpolate any tasks and agents information
 
-donnees_voyage = {
+inputs = {
     'planningType': 'explore',
     'travelWith': 'solo',
     'pace': 'equilibre',
@@ -42,7 +42,7 @@ def run():
     
     try:
         print("Début de la mission :", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
-        resultats = GoToJapan().crew().kickoff(inputs=donnees_voyage)
+        resultats = GoToJapan().crew().kickoff(inputs=inputs)
         print("Résultats de la mission :", resultats)
         print("Fin de la mission :", datetime.now().strftime("%Y-%m-%d %H:%M:%S")) 
     except Exception as e:
