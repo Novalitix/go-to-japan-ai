@@ -73,6 +73,15 @@ class GoToJapan():
     #################### Agents #####################
     #################################################    
 
+    # @agent
+    # def orchestration_agent(self) -> Agent:
+    #     return Agent(
+    #         config=self.agents_config['orchestration_agent'],
+    #         verbose=True,
+    #         allow_delegation=True,
+    #         llm=llm,
+    #     )
+    
     @agent
     def profiler_agent (self) -> Agent:
         return Agent(
@@ -178,27 +187,28 @@ class GoToJapan():
             llm=llm,
         )   
     
-
-    @agent
-    def orchestration_agent(self) -> Agent:
-        return Agent(
-            config=self.agents_config['orchestration_agent'],
-            verbose=True,
-            allow_delegation=True,
-            llm=llm,
-        )
-    
     #################################################
     ##################### Tasks #####################
     #################################################    
 
+    # @task
+    # def orchestration_task(self) -> Task:
+    #     return Task(
+    #         config=self.tasks_config['orchestration_task'],
+    #         agent=self.orchestration_agent(),
+    #         output_json=OrchestrationBootReport,
+    #         output_file="result/orchestration_plan.json",
+        
+    #     )
+
+    
     @task
     def profiler_task(self) -> Task:
         return Task(
             config=self.tasks_config['profiler_task'],
             agent=self.profiler_agent(),
             output_json= ResumeVoyage,
-            output_file="./result/profile.json", 
+            output_file="result/profile.json", 
         )
     
     @task
@@ -208,7 +218,7 @@ class GoToJapan():
             agent=self.live_news_agent(),
             contexts=['profiler_task'],
             output_json=LiveNewsOutput,
-            output_file="./result/live_news.json", 
+            output_file="result/live_news.json", 
         )
 
     @task
@@ -218,7 +228,7 @@ class GoToJapan():
             agent=self.weather_analyst_agent(),
             contexts=['profiler_task', 'live_news_task'],
             output_json=CityMeteoInfo,
-            output_file="./result/weather_analyst.json", 
+            output_file="result/weather_analyst.json", 
         )
     
     @task
@@ -229,7 +239,7 @@ class GoToJapan():
             condition=has_restaurants,
             contexts=['profiler_task', 'live_news_task', 'weather_analyst_task'],
             output_json=TransportCityPlan,
-            output_file="./result/transport_planner.json",
+            output_file="result/transport_planner.json",
         )
 
 
@@ -241,7 +251,7 @@ class GoToJapan():
             condition=has_lodging or has_accommodation,
             contexts=['profiler_task', 'live_news_task', 'weather_analyst_task'],
             output_json=LodgingOptionsByCity,
-            output_file="./result/lodging_specialist.json", 
+            output_file="result/lodging_specialist.json", 
         )
     
     @task
@@ -251,7 +261,7 @@ class GoToJapan():
             agent=self.daily_activities_sequencing_designer_agent(),
             contexts=['profiler_task', 'live_news_task', 'weather_analyst_task', 'transport_planner_task', 'lodging_specialist_task'],
             output_json=DailyActivitiesPlan,
-            output_file="./result/daily_activities.json", 
+            output_file="result/daily_activities.json", 
         )
     
     @task
@@ -262,7 +272,7 @@ class GoToJapan():
             condition=has_restaurants,
             contexts=['profiler_task', 'live_news_task', 'weather_analyst_task', 'transport_planner_task', 'lodging_specialist_task'],
             output_json=DiningPlan,
-            output_file="./result/dining_recommender.json", 
+            output_file="result/dining_recommender.json", 
         )
     
     @task
@@ -272,7 +282,7 @@ class GoToJapan():
             agent=self.budget_feasibility_controller_agent(),
             contexts=['profiler_task', 'live_news_task', 'weather_analyst_task', 'transport_planner_task', 'lodging_specialist_task', 'daily_activities_sequencing_task', 'dining_recommender_task'],
             output_json=BudgetAggregationOutput,
-            output_file="./result/budget_aggregation.json", 
+            output_file="result/budget_aggregation.json", 
         )
     
     @task
@@ -282,7 +292,7 @@ class GoToJapan():
             agent=self.quality_consistency_auditor_agent(),
             contexts=['profiler_task', 'live_news_task', 'weather_analyst_task', 'transport_planner_task', 'lodging_specialist_task', 'daily_activities_sequencing_task', 'dining_recommender_task', 'budget_aggregation_and_variants_task'],
             output_json=QualityAuditOutput,
-            output_file="./result/quality_consistency_audit.json", 
+            output_file="result/quality_consistency_audit.json", 
         )
     
     @task
@@ -292,7 +302,7 @@ class GoToJapan():
             agent=self.itinerary_synthesizer_agent(),
             contexts=['profiler_task', 'live_news_task', 'weather_analyst_task', 'transport_planner_task', 'lodging_specialist_task', 'daily_activities_sequencing_task', 'dining_recommender_task', 'budget_aggregation_and_variants_task', 'quality_and_consistency_audit_task'],
             output_json=ItinerarySynthesisJSON,
-            output_file="./result/itinerary_synthesis.json", 
+            output_file="result/itinerary_synthesis.json", 
         )
     
     @task
@@ -302,19 +312,7 @@ class GoToJapan():
             agent=self.translation_agent(),
             contexts=['itinerary_synthesizer_task'],
             output_json=MultilingualItineraryTranslations,
-            output_file="./result/itinerary_translation.json", 
-        )
-    
-
-    
-    @task
-    def orchestration_task(self) -> Task:
-        return Task(
-            config=self.tasks_config['orchestration_task'],
-            agent=self.orchestration_agent(),
-            output_json=OrchestrationBootReport,
-            output_file="./result/orchestration_plan.json",
-        
+            output_file="result/itinerary_translation.json", 
         )
     
     #################################################
@@ -340,8 +338,9 @@ class GoToJapan():
                 self.translation_agent(),
             ], # Automatically created by the @agent decorator
             tasks=self.tasks, # Automatically created by the @task decorator
-            process=Process.hierarchical,
-            manager_agent=self.orchestration_agent(),
+            # process=Process.hierarchical,
+            # manager_agent=self.orchestration_agent(),
+            process=Process.sequential,
             verbose=True,
-            output_log_file="./result/crew.json"
+            output_log_file="result/crew.json"
         )

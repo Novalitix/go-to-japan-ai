@@ -6,6 +6,8 @@ from datetime import datetime
 
 from go_to_japan.crew import GoToJapan
 
+from typing import Dict, Any
+
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 
 # This main file is intended to be a way for you to run your
@@ -15,29 +17,7 @@ warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 
 
 
-def run():
-
-    inputs = {
-        'planningType': 'explore',
-        'travelWith': 'solo',
-        'pace': 'equilibre',
-        'firstName': 'Yann',
-        'departureDate': '2025-10-11',
-        'returnDate': '2025-10-13',
-        'duration': '2',
-        'departurePeriod': [],
-        'citiesToInclude': ['Kyoto'],
-        'citiesToExclude': [],
-        'budget': '5000',
-        'comments': '',
-        'interests': [
-            'temples'
-        ],
-        'services': [
-            'restaurants',
-            'lodging',
-        ],
-    }
+def run(inputs: Dict[str, Any]) -> Dict[str, Any]:
     """
     Run the crew.
     """
@@ -48,31 +28,10 @@ def run():
         raise Exception(f"An error occurred while running the crew: {e}")
 
 
-def train():
+def train(inputs: Dict[str, Any]) -> Dict[str, Any]:
     """
     Train the crew for a given number of iterations.
     """
-    inputs = {
-        'planningType': 'explore',
-        'travelWith': 'solo',
-        'pace': 'equilibre',
-        'firstName': 'Yann',
-        'departureDate': '2025-10-11',
-        'returnDate': '2025-10-13',
-        'duration': '2',
-        'departurePeriod': [],
-        'citiesToInclude': ['Kyoto'],
-        'citiesToExclude': [],
-        'budget': '5000',
-        'comments': '',
-        'interests': [
-            'temples'
-        ],
-        'services': [
-            'restaurants',
-            'lodging',
-        ],
-    }
     try:
         GoToJapan().crew().train(n_iterations=int(sys.argv[1]), filename=sys.argv[2], inputs=inputs)
 
@@ -89,32 +48,10 @@ def replay():
     except Exception as e:
         raise Exception(f"An error occurred while replaying the crew: {e}")
 
-def test():
+def test(inputs: Dict[str, Any]) -> Dict[str, Any]:   
     """
     Test the crew execution and returns the results.
     """
-    inputs = {
-        'planningType': 'explore',
-        'travelWith': 'solo',
-        'pace': 'equilibre',
-        'firstName': 'Yann',
-        'departureDate': '2025-10-11',
-        'returnDate': '2025-10-13',
-        'duration': '2',
-        'departurePeriod': [],
-        'citiesToInclude': ['Kyoto'],
-        'citiesToExclude': [],
-        'budget': '5000',
-        'comments': '',
-        'interests': [
-            'temples'
-        ],
-        'services': [
-            'restaurants',
-            'lodging',
-        ],
-    }
-
     
     try:
         GoToJapan().crew().test(n_iterations=1, eval_llm=sys.argv[2], inputs=inputs)

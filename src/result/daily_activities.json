@@ -1,0 +1,258 @@
+{
+  "planning_context": {
+    "interests": [
+      "temples"
+    ],
+    "pace": "equilibre",
+    "cities_to_exclude": [],
+    "comments": null,
+    "services": [
+      "restaurants",
+      "lodging",
+      "accommodation",
+      "transport"
+    ]
+  },
+  "days": [
+    {
+      "city": "Kyoto",
+      "date": "2025-10-11",
+      "meal_windows": [
+        "12:00–14:00",
+        "19:00–21:00"
+      ],
+      "activities": [
+        {
+          "timeslot": "morning",
+          "name": "Guided Tour at Kinkaku-ji",
+          "category": "temple",
+          "start_time": "10:00",
+          "duration_minutes": 60,
+          "location_name": "Kinkaku-ji (Golden Pavilion)",
+          "address": "1 Kinkakujicho, Kita Ward, Kyoto",
+          "indoor_outdoor": "outdoor",
+          "weather_notes": "Expect partial cloud with possible rain.",
+          "cost_eur": "10",
+          "travel_to_next_minutes": 20,
+          "sources": [
+            {
+              "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/kinkaku-ji-golden-pavilion/",
+              "date": "October 2023"
+            }
+          ]
+        },
+        {
+          "timeslot": "afternoon",
+          "name": "Zen Meditation Experience at Ryoan-ji",
+          "category": "temple",
+          "start_time": "14:30",
+          "duration_minutes": 60,
+          "location_name": "Ryoan-ji",
+          "address": "13 Ryoanji Goryonoshitacho, Ukyo Ward, Kyoto",
+          "indoor_outdoor": "indoor",
+          "weather_notes": null,
+          "cost_eur": "15",
+          "travel_to_next_minutes": 10,
+          "sources": [
+            {
+              "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/ryoan-ji-temple/",
+              "date": "October 2023"
+            }
+          ]
+        },
+        {
+          "timeslot": "evening",
+          "name": "Evening Temple Walk at Ninna-ji",
+          "category": "temple",
+          "start_time": "17:00",
+          "duration_minutes": 60,
+          "location_name": "Ninna-ji",
+          "address": "33 Sakaricho, Ukyo Ward, Kyoto",
+          "indoor_outdoor": "outdoor",
+          "weather_notes": null,
+          "cost_eur": "8",
+          "travel_to_next_minutes": 20,
+          "sources": [
+            {
+              "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/ninna-ji-temple/",
+              "date": "October 2023"
+            }
+          ]
+        }
+      ],
+      "alt_options": [
+        {
+          "timeslot": "morning",
+          "name": "Self-guided Tour at Kinkaku-ji",
+          "category": "temple",
+          "duration_minutes": 60,
+          "indoor_outdoor": "outdoor",
+          "reason": "For flexibility with timing and personal exploration.",
+          "sources": [
+            {
+              "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/kinkaku-ji-golden-pavilion/",
+              "date": "October 2023"
+            }
+          ]
+        },
+        {
+          "timeslot": "afternoon",
+          "name": "Self-guided Tour at Ryoan-ji",
+          "category": "temple",
+          "duration_minutes": 60,
+          "indoor_outdoor": "indoor",
+          "reason": "Allows for personal reflection time in Zen gardens.",
+          "sources": [
+            {
+              "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/ryoan-ji-temple/",
+              "date": "October 2023"
+            }
+          ]
+        },
+        {
+          "timeslot": "evening",
+          "name": "Walk in the gardens of Ninna-ji",
+          "category": "temple",
+          "duration_minutes": 60,
+          "indoor_outdoor": "outdoor",
+          "reason": "Provides a peaceful ending to the day.",
+          "sources": [
+            {
+              "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/ninna-ji-temple/",
+              "date": "October 2023"
+            }
+          ]
+        }
+      ],
+      "assumptions": [
+        "The itinerary focuses on temples as the main interest.",
+        "Activities are planned with a balanced pace.",
+        "Meal windows are strategically placed between activities."
+      ]
+    },
+    {
+      "city": "Kyoto",
+      "date": "2025-10-12",
+      "meal_windows": [
+        "12:00–14:00",
+        "19:00–21:00"
+      ],
+      "activities": [
+        {
+          "timeslot": "morning",
+          "name": "Hiking at Fushimi Inari-taisha",
+          "category": "temple",
+          "start_time": "09:00",
+          "duration_minutes": 120,
+          "location_name": "Fushimi Inari-taisha",
+          "address": "68 Furitsu, Fushimi Ward, Kyoto",
+          "indoor_outdoor": "outdoor",
+          "weather_notes": "Bring an umbrella; rain is expected.",
+          "cost_eur": "0",
+          "travel_to_next_minutes": 30,
+          "sources": [
+            {
+              "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/fushimi-inari-taisha/",
+              "date": "October 2023"
+            }
+          ]
+        },
+        {
+          "timeslot": "afternoon",
+          "name": "Zen Garden Exploration at Tofuku-ji",
+          "category": "temple",
+          "start_time": "14:30",
+          "duration_minutes": 60,
+          "location_name": "Tofuku-ji",
+          "address": "15 Tofukuji Takagamine-cho, Higashiyama Ward, Kyoto",
+          "indoor_outdoor": "outdoor",
+          "weather_notes": "Enjoy the garden serenity.",
+          "cost_eur": "8",
+          "travel_to_next_minutes": 20,
+          "sources": [
+            {
+              "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/tofuku-ji-temple/",
+              "date": "October 2023"
+            }
+          ]
+        },
+        {
+          "timeslot": "evening",
+          "name": "Panorama View at Kiyomizu-dera",
+          "category": "temple",
+          "start_time": "17:30",
+          "duration_minutes": 120,
+          "location_name": "Kiyomizu-dera",
+          "address": "1 Kiyomizu, Higashiyama Ward, Kyoto",
+          "indoor_outdoor": "outdoor",
+          "weather_notes": "May experience rain; check the forecast.",
+          "cost_eur": "10",
+          "travel_to_next_minutes": 30,
+          "sources": [
+            {
+              "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/kiyomizu-dera/",
+              "date": "October 2023"
+            }
+          ]
+        }
+      ],
+      "alt_options": [
+        {
+          "timeslot": "morning",
+          "name": "Self-guided Tour at Fushimi Inari-taisha",
+          "category": "temple",
+          "duration_minutes": 120,
+          "indoor_outdoor": "outdoor",
+          "reason": "For a personalized visiting pace.",
+          "sources": [
+            {
+              "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/fushimi-inari-taisha/",
+              "date": "October 2023"
+            }
+          ]
+        },
+        {
+          "timeslot": "afternoon",
+          "name": "Explore Tofuku-ji Gardens",
+          "category": "temple",
+          "duration_minutes": 60,
+          "indoor_outdoor": "outdoor",
+          "reason": "Allows flexible timing and interaction with nature.",
+          "sources": [
+            {
+              "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/tofuku-ji-temple/",
+              "date": "October 2023"
+            }
+          ]
+        },
+        {
+          "timeslot": "evening",
+          "name": "Twilight View at Kiyomizu-dera",
+          "category": "temple",
+          "duration_minutes": 60,
+          "indoor_outdoor": "outdoor",
+          "reason": "Perfect for a memorable ending to the day.",
+          "sources": [
+            {
+              "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/kiyomizu-dera/",
+              "date": "October 2023"
+            }
+          ]
+        }
+      ],
+      "assumptions": [
+        "The itinerary is rich in temple visits.",
+        "Activities planned optimize the balance between exploration and enjoyment.",
+        "Arrival times at each location are estimated for a smooth experience."
+      ]
+    }
+  ],
+  "compliance": {
+    "exclusions_respected": true,
+    "notes": "No cities were excluded from the itinerary."
+  },
+  "generation_info": {
+    "generated_at": "2023-10-11",
+    "timezone": "Asia/Tokyo"
+  }
+}

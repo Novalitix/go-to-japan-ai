@@ -274,17 +274,17 @@ translation_task:
           ja: { i18n_labels: {...}, translated: <ItinerarySynthesisJSON en JA>, stats: {...}, warnings: [...] }
 
 
-orchestration_task:
-  description: >
-    Initialiser la collaboration multi-agents en fixant les conventions globales (formats de dates/heures,
-    unités, devise, fuseau), en clarifiant les responsabilités de chaque agent, les artefacts produits et
-    consommés, et les contrats de données attendus. Aucune séquence imposée, pas de conditions de passage :
-    les agents peuvent travailler en parallèle et publier leurs artefacts au fur et à mesure.
-  expected_output: >
-    Un rapport JSON concis contenant :
-      - conventions : fuseau, devise, unités, politique FX
-      - agents_overview : pour chaque agent, responsabilités, artefacts produits/consommés, critères de succès
-      - data_contracts : liste des artefacts avec référence de schéma et champs requis
-      - artifacts_registry : registre des artefacts (nom, propriétaire, description)
-      - execution_mode : "parallel"
-      - notes : remarques utiles (hypothèses, contraintes connues)
+# orchestration_task:
+#   description: >
+#     Initialiser la collaboration multi-agents en fixant les conventions globales (formats de dates/heures,
+#     unités, devise, fuseau), en clarifiant les responsabilités de chaque agent, les artefacts produits et
+#     consommés, et les contrats de données attendus. Aucune séquence imposée, pas de conditions de passage :
+#     les agents peuvent travailler en parallèle et publier leurs artefacts au fur et à mesure.
+#   expected_output: >
+#     Un rapport JSON concis contenant :
+#       - conventions : fuseau, devise, unités, politique FX
+#       - agents_overview : pour chaque agent, responsabilités, artefacts produits/consommés, critères de succès
+#       - data_contracts : liste des artefacts avec référence de schéma et champs requis
+#       - artifacts_registry : registre des artefacts (nom, propriétaire, description)
+#       - execution_mode : "parallel"
+#       - notes : remarques utiles (hypothèses, contraintes connues)

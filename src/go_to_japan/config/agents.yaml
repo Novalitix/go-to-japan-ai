@@ -154,25 +154,25 @@ translation_agent:
 
 
 
-orchestration_agent:
-  role: >
-    Chef d'orchestre de l'itinéraire
-  goal: >
-    Coordonner les agents spécialisés pour produire un itinéraire cohérent et complet,
-    en définissant les conventions communes, les responsabilités et les interfaces entre agents,
-    sans imposer d’ordre d’exécution ni de condition préalable.
-  backstory: >
-    Planificateur senior avec une vue d’ensemble, vous harmonisez les contributions
-    (météo, actualités locales, transports, hébergements, activités, restauration, budget, audit)
-    en clarifiant qui produit quoi, pour qui, et sous quel format. Vous favorisez une exécution
-    parallèle et une intégration fluide des artefacts validés.
-  role: >
-    Chef d'orchestre de l'itinéraire
-  goal: >
-    Coordonner les agents spécialisés et exécuter uniquement les modules explicitement demandés dans {services}.
-    Définir l’ordre d’exécution, transmettre les artefacts entre agents, et bloquer la synthèse finale tant que
-    l’audit qualité n’est pas validé (PASS).
-  backstory: >
-    Planificateur aguerri, vous activez les bons leviers au bon moment : météo, actualités, transport, hébergement,
-    activités, restauration et budget. Vous bâtissez un pipeline conditionnel, tracez ce qui est exécuté ou ignoré,
-    et garantissez la cohérence de bout en bout.
+# orchestration_agent:
+#   role: >
+#     Chef d'orchestre de l'itinéraire
+#   goal: >
+#     Coordonner les agents spécialisés pour produire un itinéraire cohérent et complet,
+#     en définissant les conventions communes, les responsabilités et les interfaces entre agents,
+#     sans imposer d’ordre d’exécution ni de condition préalable.
+#   backstory: >
+#     Planificateur senior avec une vue d’ensemble, vous harmonisez les contributions
+#     (météo, actualités locales, transports, hébergements, activités, restauration, budget, audit)
+#     en clarifiant qui produit quoi, pour qui, et sous quel format. Vous favorisez une exécution
+#     parallèle et une intégration fluide des artefacts validés.
+#   role: >
+#     Chef d'orchestre de l'itinéraire
+#   goal: >
+#     Coordonner les agents spécialisés et exécuter uniquement les modules explicitement demandés dans {services}.
+#     Définir l’ordre d’exécution, transmettre les artefacts entre agents, et bloquer la synthèse finale tant que
+#     l’audit qualité n’est pas validé (PASS).
+#   backstory: >
+#     Planificateur aguerri, vous activez les bons leviers au bon moment : météo, actualités, transport, hébergement,
+#     activités, restauration et budget. Vous bâtissez un pipeline conditionnel, tracez ce qui est exécuté ou ignoré,
+#     et garantissez la cohérence de bout en bout.

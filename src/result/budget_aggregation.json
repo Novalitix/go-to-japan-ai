@@ -1,0 +1,152 @@
+{
+  "breakdown": [
+    {
+      "category": "transport",
+      "items": [
+        {
+          "label": "Tokaido Shinkansen Hikari",
+          "category": "transport",
+          "qty": "2",
+          "unit_cost_eur": "150",
+          "total_cost_eur": "300",
+          "notes": "Round trip ticket from Tokyo to Kyoto",
+          "sources": [
+            {
+              "url": "http://example.com/ticket-price",
+              "date": "2023-01-01"
+            }
+          ]
+        }
+      ],
+      "subtotal_eur": "300"
+    },
+    {
+      "category": "lodging",
+      "items": [
+        {
+          "label": "Hotel Tokyo",
+          "category": "lodging",
+          "qty": "3",
+          "unit_cost_eur": "100",
+          "total_cost_eur": "300",
+          "notes": "3 nights stay in Tokyo",
+          "sources": [
+            {
+              "url": "http://example.com/hotel-price",
+              "date": "2023-01-01"
+            }
+          ]
+        }
+      ],
+      "subtotal_eur": "300"
+    },
+    {
+      "category": "dining",
+      "items": [
+        {
+          "label": "Sushi Dinner",
+          "category": "dining",
+          "qty": "4",
+          "unit_cost_eur": "30",
+          "total_cost_eur": "120",
+          "notes": "Dinner for 4 people",
+          "sources": [
+            {
+              "url": "http://example.com/dining-price",
+              "date": "2023-01-01"
+            }
+          ]
+        }
+      ],
+      "subtotal_eur": "120"
+    },
+    {
+      "category": "activities",
+      "items": [
+        {
+          "label": "Kyoto Temple Tour",
+          "category": "activities",
+          "qty": "2",
+          "unit_cost_eur": "50",
+          "total_cost_eur": "100",
+          "notes": "Guided tour for 2 people",
+          "sources": [
+            {
+              "url": "http://example.com/activity-price",
+              "date": "2023-01-01"
+            }
+          ]
+        }
+      ],
+      "subtotal_eur": "100"
+    }
+  ],
+  "total_eur": "920",
+  "difference_from_budget": {
+    "budget_input_eur": "1000",
+    "difference_from_budget_eur": "-80",
+    "status": "under"
+  },
+  "scenarios": [
+    {
+      "name": "JR Pass Kansai + Hostel",
+      "description": "Switching to a JR Pass and staying in a hostel to save costs.",
+      "adjustments": [
+        {
+          "operation": "replace",
+          "target_category": "transport",
+          "target_label": "Tokaido Shinkansen Hikari",
+          "description": "Replace Shinkansen tickets with JR Pass for unlimited travel.",
+          "delta_eur": "-50",
+          "sources": [
+            {
+              "url": "http://example.com/jr-pass-price",
+              "date": "2023-01-01"
+            }
+          ]
+        },
+        {
+          "operation": "upgrade",
+          "target_category": "lodging",
+          "target_label": null,
+          "description": "Upgrade to a more expensive hostel room.",
+          "delta_eur": "20",
+          "sources": [
+            {
+              "url": "http://example.com/hostel-price",
+              "date": "2023-01-01"
+            }
+          ]
+        }
+      ],
+      "delta_eur": "-30",
+      "new_total_eur": "890",
+      "pros": [
+        "Cost-effective transport option",
+        "Flexibility in travel"
+      ],
+      "cons": [
+        "Potentially longer travel times",
+        "Limited availability during peak seasons"
+      ],
+      "sources": [
+        {
+          "url": "http://example.com/scenario-source",
+          "date": "2023-01-01"
+        }
+      ]
+    }
+  ],
+  "fx": {
+    "base": "EUR",
+    "quote": "JPY",
+    "rate": "140",
+    "as_of": "2023-01-01",
+    "source_url": "http://example.com/exchange-rate"
+  },
+  "assumptions": [
+    "2 travelers",
+    "3 nights in Tokyo",
+    "Prices include taxes"
+  ]
+}

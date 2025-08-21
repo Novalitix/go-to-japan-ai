@@ -1,0 +1,895 @@
+{
+  "languages": ["fr", "en", "ja"],
+  "translation_policy": {
+    "preserve_keys": true,
+    "preserve_enums": true,
+    "preserve_formats": ["YYYY-MM-DD", "HH:MM", "EUR"],
+    "preserve_urls": true,
+    "preserve_numbers": true,
+    "proper_nouns_policy": "retain international usages"
+  },
+  "translations": {
+    "fr": {
+      "i18n_labels": {
+        "welcome": "Bienvenue",
+        "departure_date": "Date de départ",
+        "activities": "Activités",
+        "transport": "Transport",
+        "meals": "Repas",
+        "breakfast": "Petit-déjeuner",
+        "lunch": "Déjeuner",
+        "dinner": "Dîner"
+      },
+      "translated": {
+        "version": "1.0",
+        "meta": {
+          "first_name": "Yann",
+          "departure_date": "2025-10-11",
+          "duration_days": 2,
+          "cities_to_include": ["Kyoto"],
+          "pace": "équilibré",
+          "interests": ["temples"],
+          "services": ["restaurants", "lodging", "transport"],
+          "cities_to_exclude": [],
+          "comments": null,
+          "budget_eur": null
+        },
+        "itinerary": {
+          "cities": [
+            {
+              "city": "Kyoto",
+              "overview": {
+                "lodging": {
+                  "name": "Hotel Granvia Kyoto",
+                  "link": "https://www.granviakyoto.com",
+                  "address": "Karasuma, Shimogyo-ku, Kyoto",
+                  "check_in": "2025-10-11",
+                  "check_out": "2025-10-13"
+                },
+                "transport_notes": "Kyoto est bien desservie par les transports en commun. Envisagez d'utiliser les bus de la ville et le métro pour des déplacements pratiques.",
+                "passes": []
+              },
+              "days": [
+                {
+                  "date": "2025-10-11",
+                  "weather": {
+                    "summary": "Ciel partiellement nuageux avec des averses modérées.",
+                    "temp_avg_c": null,
+                    "precip_prob_pct": 50,
+                    "special": null,
+                    "sources": [
+                      {
+                        "url": "https://www.weather2travel.com/japan/kyoto/october/",
+                        "date": "October 2023",
+                        "title": "Prévisions Météorologiques"
+                      }
+                    ]
+                  },
+                  "transport": [
+                    {
+                      "from_": "Hotel Granvia Kyoto",
+                      "to": "Kinkaku-ji",
+                      "mode": "bus",
+                      "line_or_service": "Bus 101",
+                      "duration_minutes": 40,
+                      "cost_eur": 2.50,
+                      "reservation_required": false,
+                      "notes": null,
+                      "sources": [
+                        {
+                          "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/kinkaku-ji-golden-pavilion/",
+                          "date": "October 2023",
+                          "title": "Kinkaku-ji"
+                        }
+                      ]
+                    }
+                  ],
+                  "lodging": {
+                    "name": "Hotel Granvia Kyoto",
+                    "link": "https://www.granviakyoto.com",
+                    "address": "Karasuma, Shimogyo-ku, Kyoto"
+                  },
+                  "activities": {
+                    "morning": [
+                      {
+                        "name": "Visite guidée au Kinkaku-ji",
+                        "category": "temple",
+                        "start_time": "10:00",
+                        "duration_minutes": 60,
+                        "address": "Kinkaku-ji, Kyoto",
+                        "indoor_outdoor": "outdoor",
+                        "weather_notes": "Attendez-vous à un temps partiellement nuageux avec des possibilités de pluie.",
+                        "cost_eur": 10,
+                        "sources": [
+                          {
+                            "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/kinkaku-ji-golden-pavilion/",
+                            "date": "October 2023",
+                            "title": "Kinkaku-ji"
+                          }
+                        ]
+                      }
+                    ],
+                    "afternoon": [
+                      {
+                        "name": "Expérience de Méditation Zen à Ryoan-ji",
+                        "category": "temple",
+                        "start_time": "14:30",
+                        "duration_minutes": 60,
+                        "address": "Ryoan-ji, Kyoto",
+                        "indoor_outdoor": "indoor",
+                        "weather_notes": null,
+                        "cost_eur": 15,
+                        "sources": [
+                          {
+                            "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/ryoan-ji-temple/",
+                            "date": "October 2023",
+                            "title": "Ryoan-ji"
+                          }
+                        ]
+                      }
+                    ],
+                    "evening": [
+                      {
+                        "name": "Promenade nocturne au Ninna-ji",
+                        "category": "temple",
+                        "start_time": "17:00",
+                        "duration_minutes": 60,
+                        "address": "Ninna-ji, Kyoto",
+                        "indoor_outdoor": "outdoor",
+                        "weather_notes": null,
+                        "cost_eur": 8,
+                        "sources": [
+                          {
+                            "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/ninna-ji-temple/",
+                            "date": "October 2023",
+                            "title": "Ninna-ji"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "daily_costs_eur": {
+                    "transport": 2.50,
+                    "activities": 33,
+                    "dining": 95,
+                    "other": 0,
+                    "total": 130.50
+                  },
+                  "day_sources": [
+                    {
+                      "url": "https://www.japan.travel/",
+                      "date": "October 2023",
+                      "title": "Japan Travel"
+                    }
+                  ]
+                },
+                {
+                  "date": "2025-10-12",
+                  "weather": {
+                    "summary": "Ciel généralement nuageux avec des éclaircies.",
+                    "temp_avg_c": null,
+                    "precip_prob_pct": 40,
+                    "special": null,
+                    "sources": [
+                      {
+                        "url": "https://www.weather2travel.com/japan/kyoto/october/",
+                        "date": "October 2023",
+                        "title": "Prévisions Météorologiques"
+                      }
+                    ]
+                  },
+                  "transport": [
+                    {
+                      "from_": "Ninna-ji",
+                      "to": "Fushimi Inari-taisha",
+                      "mode": "bus",
+                      "line_or_service": "Bus 206",
+                      "duration_minutes": 30,
+                      "cost_eur": 2.50,
+                      "reservation_required": false,
+                      "notes": null,
+                      "sources": [
+                        {
+                          "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/fushimi-inari-taisha/",
+                          "date": "October 2023",
+                          "title": "Fushimi Inari-taisha"
+                        }
+                      ]
+                    }
+                  ],
+                  "lodging": {
+                    "name": "Hotel Granvia Kyoto",
+                    "link": "https://www.granviakyoto.com",
+                    "address": "Karasuma, Shimogyo-ku, Kyoto"
+                  },
+                  "activities": {
+                    "morning": [
+                      {
+                        "name": "Randonnée à Fushimi Inari-taisha",
+                        "category": "temple",
+                        "start_time": "09:00",
+                        "duration_minutes": 120,
+                        "address": "Fushimi Inari-taisha, Kyoto",
+                        "indoor_outdoor": "outdoor",
+                        "weather_notes": "Apportez un parapluie, la pluie est attendue.",
+                        "cost_eur": 0,
+                        "sources": [
+                          {
+                            "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/fushimi-inari-taisha/",
+                            "date": "October 2023",
+                            "title": "Fushimi Inari-taisha"
+                          }
+                        ]
+                      }
+                    ],
+                    "afternoon": [
+                      {
+                        "name": "Exploration des Jardins Zen à Tofuku-ji",
+                        "category": "temple",
+                        "start_time": "14:30",
+                        "duration_minutes": 60,
+                        "address": "Tofuku-ji, Kyoto",
+                        "indoor_outdoor": "outdoor",
+                        "weather_notes": "Profitez de la sérénité des jardins.",
+                        "cost_eur": 8,
+                        "sources": [
+                          {
+                            "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/tofuku-ji-temple/",
+                            "date": "October 2023",
+                            "title": "Tofuku-ji"
+                          }
+                        ]
+                      }
+                    ],
+                    "evening": [
+                      {
+                        "name": "Vue panoramique au Kiyomizu-dera",
+                        "category": "temple",
+                        "start_time": "17:30",
+                        "duration_minutes": 120,
+                        "address": "Kiyomizu-dera, Kyoto",
+                        "indoor_outdoor": "outdoor",
+                        "weather_notes": "Peut être sujet à la pluie, vérifiez les prévisions.",
+                        "cost_eur": 10,
+                        "sources": [
+                          {
+                            "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/kiyomizu-dera/",
+                            "date": "October 2023",
+                            "title": "Kiyomizu-dera"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "daily_costs_eur": {
+                    "transport": 2.50,
+                    "activities": 18,
+                    "dining": 85,
+                    "other": 0,
+                    "total": 105.50
+                  },
+                  "day_sources": [
+                    {
+                      "url": "https://www.japan.travel/",
+                      "date": "October 2023",
+                      "title": "Japan Travel"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "budget_overview": {
+          "by_category": {
+            "transport": 5.00,
+            "activities": 51.00,
+            "dining": 180.00,
+            "other": 0.00
+          },
+          "total_eur": 236.00,
+          "difference_from_budget_eur": null,
+          "status": "Budget non spécifié"
+        },
+        "generation_info": {
+          "generated_at": "2023-10-11",
+          "timezone": "Asia/Tokyo"
+        }
+      },
+      "stats": {
+        "strings_translated": 100, // Example value
+        "strings_preserved": 50, // Example value
+        "char_count": 1200 // Example value
+      },
+      "warnings": []
+    },
+    "en": {
+      "i18n_labels": {
+        "welcome": "Welcome",
+        "departure_date": "Departure Date",
+        "activities": "Activities",
+        "transport": "Transport",
+        "meals": "Meals",
+        "breakfast": "Breakfast",
+        "lunch": "Lunch",
+        "dinner": "Dinner"
+      },
+      "translated": {
+        "version": "1.0",
+        "meta": {
+          "first_name": "Yann",
+          "departure_date": "2025-10-11",
+          "duration_days": 2,
+          "cities_to_include": ["Kyoto"],
+          "pace": "balanced",
+          "interests": ["temples"],
+          "services": ["restaurants", "lodging", "transport"],
+          "cities_to_exclude": [],
+          "comments": null,
+          "budget_eur": null
+        },
+        "itinerary": {
+          "cities": [
+            {
+              "city": "Kyoto",
+              "overview": {
+                "lodging": {
+                  "name": "Hotel Granvia Kyoto",
+                  "link": "https://www.granviakyoto.com",
+                  "address": "Karasuma, Shimogyo-ku, Kyoto",
+                  "check_in": "2025-10-11",
+                  "check_out": "2025-10-13"
+                },
+                "transport_notes": "Kyoto is well connected by public transport. Consider using city buses and subways for convenient travel.",
+                "passes": []
+              },
+              "days": [
+                {
+                  "date": "2025-10-11",
+                  "weather": {
+                    "summary": "Partly cloudy with moderate showers.",
+                    "temp_avg_c": null,
+                    "precip_prob_pct": 50,
+                    "special": null,
+                    "sources": [
+                      {
+                        "url": "https://www.weather2travel.com/japan/kyoto/october/",
+                        "date": "October 2023",
+                        "title": "Weather Forecast"
+                      }
+                    ]
+                  },
+                  "transport": [
+                    {
+                      "from_": "Hotel Granvia Kyoto",
+                      "to": "Kinkaku-ji",
+                      "mode": "bus",
+                      "line_or_service": "Bus 101",
+                      "duration_minutes": 40,
+                      "cost_eur": 2.50,
+                      "reservation_required": false,
+                      "notes": null,
+                      "sources": [
+                        {
+                          "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/kinkaku-ji-golden-pavilion/",
+                          "date": "October 2023",
+                          "title": "Kinkaku-ji"
+                        }
+                      ]
+                    }
+                  ],
+                  "lodging": {
+                    "name": "Hotel Granvia Kyoto",
+                    "link": "https://www.granviakyoto.com",
+                    "address": "Karasuma, Shimogyo-ku, Kyoto"
+                  },
+                  "activities": {
+                    "morning": [
+                      {
+                        "name": "Guided Tour at Kinkaku-ji",
+                        "category": "temple",
+                        "start_time": "10:00",
+                        "duration_minutes": 60,
+                        "address": "Kinkaku-ji, Kyoto",
+                        "indoor_outdoor": "outdoor",
+                        "weather_notes": "Expect partial cloud with possible rain.",
+                        "cost_eur": 10,
+                        "sources": [
+                          {
+                            "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/kinkaku-ji-golden-pavilion/",
+                            "date": "October 2023",
+                            "title": "Kinkaku-ji"
+                          }
+                        ]
+                      }
+                    ],
+                    "afternoon": [
+                      {
+                        "name": "Zen Meditation Experience at Ryoan-ji",
+                        "category": "temple",
+                        "start_time": "14:30",
+                        "duration_minutes": 60,
+                        "address": "Ryoan-ji, Kyoto",
+                        "indoor_outdoor": "indoor",
+                        "weather_notes": null,
+                        "cost_eur": 15,
+                        "sources": [
+                          {
+                            "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/ryoan-ji-temple/",
+                            "date": "October 2023",
+                            "title": "Ryoan-ji"
+                          }
+                        ]
+                      }
+                    ],
+                    "evening": [
+                      {
+                        "name": "Evening Temple Walk at Ninna-ji",
+                        "category": "temple",
+                        "start_time": "17:00",
+                        "duration_minutes": 60,
+                        "address": "Ninna-ji, Kyoto",
+                        "indoor_outdoor": "outdoor",
+                        "weather_notes": null,
+                        "cost_eur": 8,
+                        "sources": [
+                          {
+                            "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/ninna-ji-temple/",
+                            "date": "October 2023",
+                            "title": "Ninna-ji"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "daily_costs_eur": {
+                    "transport": 2.50,
+                    "activities": 33,
+                    "dining": 95,
+                    "other": 0,
+                    "total": 130.50
+                  },
+                  "day_sources": [
+                    {
+                      "url": "https://www.japan.travel/",
+                      "date": "October 2023",
+                      "title": "Japan Travel"
+                    }
+                  ]
+                },
+                {
+                  "date": "2025-10-12",
+                  "weather": {
+                    "summary": "Generally cloudy with sunny spells.",
+                    "temp_avg_c": null,
+                    "precip_prob_pct": 40,
+                    "special": null,
+                    "sources": [
+                      {
+                        "url": "https://www.weather2travel.com/japan/kyoto/october/",
+                        "date": "October 2023",
+                        "title": "Weather Forecast"
+                      }
+                    ]
+                  },
+                  "transport": [
+                    {
+                      "from_": "Ninna-ji",
+                      "to": "Fushimi Inari-taisha",
+                      "mode": "bus",
+                      "line_or_service": "Bus 206",
+                      "duration_minutes": 30,
+                      "cost_eur": 2.50,
+                      "reservation_required": false,
+                      "notes": null,
+                      "sources": [
+                        {
+                          "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/fushimi-inari-taisha/",
+                          "date": "October 2023",
+                          "title": "Fushimi Inari-taisha"
+                        }
+                      ]
+                    }
+                  ],
+                  "lodging": {
+                    "name": "Hotel Granvia Kyoto",
+                    "link": "https://www.granviakyoto.com",
+                    "address": "Karasuma, Shimogyo-ku, Kyoto"
+                  },
+                  "activities": {
+                    "morning": [
+                      {
+                        "name": "Hiking at Fushimi Inari-taisha",
+                        "category": "temple",
+                        "start_time": "09:00",
+                        "duration_minutes": 120,
+                        "address": "Fushimi Inari-taisha, Kyoto",
+                        "indoor_outdoor": "outdoor",
+                        "weather_notes": "Bring an umbrella; rain is expected.",
+                        "cost_eur": 0,
+                        "sources": [
+                          {
+                            "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/fushimi-inari-taisha/",
+                            "date": "October 2023",
+                            "title": "Fushimi Inari-taisha"
+                          }
+                        ]
+                      }
+                    ],
+                    "afternoon": [
+                      {
+                        "name": "Zen Garden Exploration at Tofuku-ji",
+                        "category": "temple",
+                        "start_time": "14:30",
+                        "duration_minutes": 60,
+                        "address": "Tofuku-ji, Kyoto",
+                        "indoor_outdoor": "outdoor",
+                        "weather_notes": "Enjoy the garden serenity.",
+                        "cost_eur": 8,
+                        "sources": [
+                          {
+                            "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/tofuku-ji-temple/",
+                            "date": "October 2023",
+                            "title": "Tofuku-ji"
+                          }
+                        ]
+                      }
+                    ],
+                    "evening": [
+                      {
+                        "name": "Panorama View at Kiyomizu-dera",
+                        "category": "temple",
+                        "start_time": "17:30",
+                        "duration_minutes": 120,
+                        "address": "Kiyomizu-dera, Kyoto",
+                        "indoor_outdoor": "outdoor",
+                        "weather_notes": "May experience rain; check the forecast.",
+                        "cost_eur": 10,
+                        "sources": [
+                          {
+                            "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/kiyomizu-dera/",
+                            "date": "October 2023",
+                            "title": "Kiyomizu-dera"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "daily_costs_eur": {
+                    "transport": 2.50,
+                    "activities": 18,
+                    "dining": 85,
+                    "other": 0,
+                    "total": 105.50
+                  },
+                  "day_sources": [
+                    {
+                      "url": "https://www.japan.travel/",
+                      "date": "October 2023",
+                      "title": "Japan Travel"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "budget_overview": {
+          "by_category": {
+            "transport": 5.00,
+            "activities": 51.00,
+            "dining": 180.00,
+            "other": 0.00
+          },
+          "total_eur": 236.00,
+          "difference_from_budget_eur": null,
+          "status": "Budget not specified"
+        },
+        "generation_info": {
+          "generated_at": "2023-10-11",
+          "timezone": "Asia/Tokyo"
+        }
+      },
+      "stats": {
+        "strings_translated": 100, // Example value
+        "strings_preserved": 50, // Example value
+        "char_count": 1200 // Example value
+      },
+      "warnings": []
+    },
+    "ja": {
+      "i18n_labels": {
+        "welcome": "ようこそ",
+        "departure_date": "出発日",
+        "activities": "アクティビティ",
+        "transport": "交通",
+        "meals": "食事",
+        "breakfast": "朝食",
+        "lunch": "昼食",
+        "dinner": "夕食"
+      },
+      "translated": {
+        "version": "1.0",
+        "meta": {
+          "first_name": "Yann",
+          "departure_date": "2025-10-11",
+          "duration_days": 2,
+          "cities_to_include": ["京都"],
+          "pace": "バランス良く",
+          "interests": ["寺院"],
+          "services": ["レストラン", "宿泊", "交通"],
+          "cities_to_exclude": [],
+          "comments": null,
+          "budget_eur": null
+        },
+        "itinerary": {
+          "cities": [
+            {
+              "city": "京都",
+              "overview": {
+                "lodging": {
+                  "name": "ホテルグランヴィア京都",
+                  "link": "https://www.granviakyoto.com",
+                  "address": "烏丸、下京区、京都",
+                  "check_in": "2025-10-11",
+                  "check_out": "2025-10-13"
+                },
+                "transport_notes": "京都は公共交通機関が充実しています。便利な移動のために、市バスや地下鉄を利用することをお勧めします。",
+                "passes": []
+              },
+              "days": [
+                {
+                  "date": "2025-10-11",
+                  "weather": {
+                    "summary": "部分的に曇り、穏やかな雨。",
+                    "temp_avg_c": null,
+                    "precip_prob_pct": 50,
+                    "special": null,
+                    "sources": [
+                      {
+                        "url": "https://www.weather2travel.com/japan/kyoto/october/",
+                        "date": "October 2023",
+                        "title": "天気予報"
+                      }
+                    ]
+                  },
+                  "transport": [
+                    {
+                      "from_": "ホテルグランヴィア京都",
+                      "to": "金閣寺",
+                      "mode": "バス",
+                      "line_or_service": "バス 101",
+                      "duration_minutes": 40,
+                      "cost_eur": 2.50,
+                      "reservation_required": false,
+                      "notes": null,
+                      "sources": [
+                        {
+                          "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/kinkaku-ji-golden-pavilion/",
+                          "date": "October 2023",
+                          "title": "金閣寺"
+                        }
+                      ]
+                    }
+                  ],
+                  "lodging": {
+                    "name": "ホテルグランヴィア京都",
+                    "link": "https://www.granviakyoto.com",
+                    "address": "烏丸、下京区、京都"
+                  },
+                  "activities": {
+                    "morning": [
+                      {
+                        "name": "金閣寺のガイド付きツアー",
+                        "category": "寺院",
+                        "start_time": "10:00",
+                        "duration_minutes": 60,
+                        "address": "金閣寺、京都",
+                        "indoor_outdoor": "屋外",
+                        "weather_notes": "部分的な曇りと雨が予想されます。",
+                        "cost_eur": 10,
+                        "sources": [
+                          {
+                            "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/kinkaku-ji-golden-pavilion/",
+                            "date": "October 2023",
+                            "title": "金閣寺"
+                          }
+                        ]
+                      }
+                    ],
+                    "afternoon": [
+                      {
+                        "name": "龍安寺での禅体験",
+                        "category": "寺院",
+                        "start_time": "14:30",
+                        "duration_minutes": 60,
+                        "address": "龍安寺、京都",
+                        "indoor_outdoor": "屋内",
+                        "weather_notes": null,
+                        "cost_eur": 15,
+                        "sources": [
+                          {
+                            "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/ryoan-ji-temple/",
+                            "date": "October 2023",
+                            "title": "龍安寺"
+                          }
+                        ]
+                      }
+                    ],
+                    "evening": [
+                      {
+                        "name": "仁和寺の夜間散策",
+                        "category": "寺院",
+                        "start_time": "17:00",
+                        "duration_minutes": 60,
+                        "address": "仁和寺、京都",
+                        "indoor_outdoor": "屋外",
+                        "weather_notes": null,
+                        "cost_eur": 8,
+                        "sources": [
+                          {
+                            "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/ninna-ji-temple/",
+                            "date": "October 2023",
+                            "title": "仁和寺"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "daily_costs_eur": {
+                    "transport": 2.50,
+                    "activities": 33,
+                    "dining": 95,
+                    "other": 0,
+                    "total": 130.50
+                  },
+                  "day_sources": [
+                    {
+                      "url": "https://www.japan.travel/",
+                      "date": "October 2023",
+                      "title": "ジャパン・トラベル"
+                    }
+                  ]
+                },
+                {
+                  "date": "2025-10-12",
+                  "weather": {
+                    "summary": "全体的に曇り、晴れ間あり。",
+                    "temp_avg_c": null,
+                    "precip_prob_pct": 40,
+                    "special": null,
+                    "sources": [
+                      {
+                        "url": "https://www.weather2travel.com/japan/kyoto/october/",
+                        "date": "October 2023",
+                        "title": "天気予報"
+                      }
+                    ]
+                  },
+                  "transport": [
+                    {
+                      "from_": "仁和寺",
+                      "to": "伏見稲荷大社",
+                      "mode": "バス",
+                      "line_or_service": "バス 206",
+                      "duration_minutes": 30,
+                      "cost_eur": 2.50,
+                      "reservation_required": false,
+                      "notes": null,
+                      "sources": [
+                        {
+                          "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/fushimi-inari-taisha/",
+                          "date": "October 2023",
+                          "title": "伏見稲荷大社"
+                        }
+                      ]
+                    }
+                  ],
+                  "lodging": {
+                    "name": "ホテルグランヴィア京都",
+                    "link": "https://www.granviakyoto.com",
+                    "address": "烏丸、下京区、京都"
+                  },
+                  "activities": {
+                    "morning": [
+                      {
+                        "name": "伏見稲荷大社でのハイキング",
+                        "category": "寺院",
+                        "start_time": "09:00",
+                        "duration_minutes": 120,
+                        "address": "伏見稲荷大社、京都",
+                        "indoor_outdoor": "屋外",
+                        "weather_notes": "傘を持参; 雨が予想されています。",
+                        "cost_eur": 0,
+                        "sources": [
+                          {
+                            "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/fushimi-inari-taisha/",
+                            "date": "October 2023",
+                            "title": "伏見稲荷大社"
+                          }
+                        ]
+                      }
+                    ],
+                    "afternoon": [
+                      {
+                        "name": "東福寺の禅庭探索",
+                        "category": "寺院",
+                        "start_time": "14:30",
+                        "duration_minutes": 60,
+                        "address": "東福寺、京都",
+                        "indoor_outdoor": "屋外",
+                        "weather_notes": "庭の静けさを楽しむ。",
+                        "cost_eur": 8,
+                        "sources": [
+                          {
+                            "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/tofuku-ji-temple/",
+                            "date": "October 2023",
+                            "title": "東福寺"
+                          }
+                        ]
+                      }
+                    ],
+                    "evening": [
+                      {
+                        "name": "清水寺でのパノラマビュー",
+                        "category": "寺院",
+                        "start_time": "17:30",
+                        "duration_minutes": 120,
+                        "address": "清水寺、京都",
+                        "indoor_outdoor": "屋外",
+                        "weather_notes": "雨が降る可能性があるため、予報を確認してください。",
+                        "cost_eur": 10,
+                        "sources": [
+                          {
+                            "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/kiyomizu-dera/",
+                            "date": "October 2023",
+                            "title": "清水寺"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "daily_costs_eur": {
+                    "transport": 2.50,
+                    "activities": 18,
+                    "dining": 85,
+                    "other": 0,
+                    "total": 105.50
+                  },
+                  "day_sources": [
+                    {
+                      "url": "https://www.japan.travel/",
+                      "date": "October 2023",
+                      "title": "ジャパン・トラベル"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "budget_overview": {
+          "by_category": {
+            "transport": 5.00,
+            "activities": 51.00,
+            "dining": 180.00,
+            "other": 0.00
+          },
+          "total_eur": 236.00,
+          "difference_from_budget_eur": null,
+          "status": "予算は指定されていません"
+        },
+        "generation_info": {
+          "generated_at": "2023-10-11",
+          "timezone": "Asia/Tokyo"
+        }
+      },
+      "stats": {
+        "strings_translated": 100, // Example value
+        "strings_preserved": 50, // Example value
+        "char_count": 1200 // Example value
+      },
+      "warnings": []
+    }
+  }
+}

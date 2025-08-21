@@ -1,0 +1,33 @@
+{
+  "cities": [
+    {
+      "city": "Kyoto",
+      "events": [
+        {
+          "title": "Kyoto Music Expo",
+          "description": "A music festival taking place at Umekoji Park, featuring a variety of artists and exciting performances.",
+          "category": "événement",
+          "date": "2025-10-11",
+          "source_url": "https://www.japanconcerttickets.com/event/kyoto-music-expo-in-kyoto-2025-10-11/",
+          "source_date": "October 2023"
+        },
+        {
+          "title": "Otsu Hikiyama Festival",
+          "description": "Celebrated in Shiga, this festival includes beautiful floats and traditional performances and occurs during the same timeframe.",
+          "category": "événement",
+          "date": "2025-10-11 to 2025-10-12",
+          "source_url": "https://japancheapo.com/events/october/",
+          "source_date": "October 2023"
+        },
+        {
+          "title": "Traditional Festivals in Kyoto",
+          "description": "Various traditional events are celebrated in Kyoto during October, including the Kurama Fire Festival.",
+          "category": "événement",
+          "date": "2025-10-11",
+          "source_url": "https://www.magical-trip.com/media/kyoto-in-october-2024-early-autumn-highlights-events-festivals/",
+          "source_date": "October 2023"
+        }
+      ]
+    }
+  ]
+}
