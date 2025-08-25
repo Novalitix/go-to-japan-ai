@@ -178,14 +178,14 @@ class GoToJapan():
             llm=llm,
         )
     
-    @agent
-    def translation_agent(self) -> Agent:
-        return Agent(
-            config=self.agents_config['translation_agent'],
-            verbose=True,
-            allow_delegation=True,
-            llm=llm,
-        )   
+    # @agent
+    # def translation_agent(self) -> Agent:
+    #     return Agent(
+    #         config=self.agents_config['translation_agent'],
+    #         verbose=True,
+    #         allow_delegation=True,
+    #         llm=llm,
+    #     )   
     
     #################################################
     ##################### Tasks #####################
@@ -302,18 +302,19 @@ class GoToJapan():
             agent=self.itinerary_synthesizer_agent(),
             contexts=['profiler_task', 'live_news_task', 'weather_analyst_task', 'transport_planner_task', 'lodging_specialist_task', 'daily_activities_sequencing_task', 'dining_recommender_task', 'budget_aggregation_and_variants_task', 'quality_and_consistency_audit_task'],
             output_json=ItinerarySynthesisJSON,
-            output_file="result/itinerary_synthesis.json", 
+            output_file="result/itinerary_synthesis.json",
+            output_pydantic=ItinerarySynthesisJSON
         )
     
-    @task
-    def translation_task(self) -> Task:
-        return Task(
-            config=self.tasks_config['translation_task'],
-            agent=self.translation_agent(),
-            contexts=['itinerary_synthesizer_task'],
-            output_json=MultilingualItineraryTranslations,
-            output_file="result/itinerary_translation.json", 
-        )
+    # @task
+    # def translation_task(self) -> Task:
+    #     return Task(
+    #         config=self.tasks_config['translation_task'],
+    #         agent=self.translation_agent(),
+    #         contexts=['itinerary_synthesizer_task'],
+    #         output_json=MultilingualItineraryTranslations,
+    #         output_file="result/itinerary_translation.json", 
+    #     )
     
     #################################################
     ##################### Crew ######################
