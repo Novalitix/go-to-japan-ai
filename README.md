@@ -1,53 +1,94 @@
-# 🌍 Go To Japan AI 
 
-Cette API permet de générer des itinéraires de voyage personnalisés.  
-Développée avec *FastAPI*, elle peut être déployée sur un serveur 
+
+````md
+# 🌍 Go To Japan AI
+
+API pour générer des itinéraires de voyage personnalisés.
 
 ---
 
 ## 📦 Prérequis
 
-- *Python 3.11+*
-- *pip* ou *pipenv*
+- Python **>=3.10 <3.14**
+- `pip` ou `pipenv`
 
-## Créer l'environement
+---
 
- 
+## 🔧 Création de l’environnement
+
+```bash
 python -m venv venv
 source venv/bin/activate    # Linux / Mac
 venv\Scripts\activate       # Windows
+````
 
-## Installation des dépendances 
+---
 
+## 📥 Installation des dépendances
 
-First, if you haven't already, install uv:
+> Option rapide (si vous utilisez `uv` et le CLI CrewAI)
 
 ```bash
 pip install uv
-```
-
-Next, navigate to your project directory and install the dependencies:
-
-(Optional) Lock the dependencies and install them by using the CLI command:
-```bash
 crewai install
 ```
+
+> Option standard
+
+```bash
 pip install --upgrade pip
 pip install -r requirements.txt
+```
 
-### Customizing
+---
 
-**Add your `OPENAI_API_KEY` into the `.env` file**
+## 🔐 Variables d’environnement
 
+Créer un fichier `.env` à la racine :
 
-## Lancer l'application 
+```env
+OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxx
+MODEL=gpt-4o-mini
+SERPER_API_KEY= xxxxxxxxxxxxxxxxxxxxxxxxxx
 
+```
 
-Se placer dans le repertoire src et lancer 
+---
 
+## ▶️ Lancer l’application
+
+Depuis le dossier `src` :
+
+```bash
 uvicorn api:gtjia --reload
+```
 
-## Ouvrir dans postman 
+Par défaut : [http://localhost:8000](http://localhost:8000)
 
-http://localhost:8000/kickoff
+---
 
+## 🧪 Tester dans Postman ou cURL
+
+**Endpoint :** `POST http://localhost:8000/kickoff`
+
+Exemple `curl` :
+
+```bash
+curl -X POST "http://localhost:8000/kickoff" \
+  -H "Content-Type: application/json" \
+  -d '{
+        "planningType": "explore",
+        "travelWith": "solo",
+        "pace": "equilibre",
+        "firstName": "John",
+        "departureDate": "2025-10-11",
+        "returnDate": "2025-10-13",
+        "duration": 2,
+        "citiesToInclude": ["Kyoto"],
+        "citiesToExclude": [],
+        "budget": 5000,
+        "comments": "",
+        "interests": ["temples"],
+        "services": ["restaurants", "lodging"]
+      }'
+```
