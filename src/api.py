@@ -36,7 +36,8 @@ def kickoff_get(inputs: str):
         data = json.loads(inputs)  # parse le dict JSON depuis l’URL
         if not isinstance(data, dict):
             raise ValueError("`inputs` doit être un objet JSON (dict)")
-        return {"ok": True, "data": run(data)}
+        output = run(data)
+        return {"ok": True, "data": output["raw"]}
     except Exception as e:
         raise HTTPException(status_code=400, detail=f"Bad inputs: {e}")
 
