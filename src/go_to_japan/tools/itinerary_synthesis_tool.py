@@ -8,7 +8,7 @@ from pydantic import BaseModel, Field, HttpUrl, conint, condecimal
 # ---------- SOURCES & MÉTA ----------
 
 class SourceRef(BaseModel):
-    url: HttpUrl = Field(..., description="URL de la source fiable")
+    url: str = Field(..., description="URL de la source fiable")
     date: str = Field(..., description="Date de publication/consultation (YYYY-MM-DD)")
     title: Optional[str] = Field(None, description="Titre ou émetteur (optionnel)")
 
@@ -30,14 +30,14 @@ class ItineraryMeta(BaseModel):
 
 class LodgingOverview(BaseModel):
     name: str = Field(..., description="Nom de l’hébergement")
-    link: Optional[HttpUrl] = Field(None, description="Lien vers la page de l’hébergement")
+    link: Optional[str] = Field(None, description="Lien vers la page de l’hébergement")
     address: str = Field(..., description="Adresse complète")
     check_in: Optional[str] = Field(None, description='Heure "HH:MM" si applicable')
     check_out: Optional[str] = Field(None, description='Heure "HH:MM" si applicable')
 
 class PassNote(BaseModel):
     name: str = Field(..., description="Nom du pass")
-    link: Optional[HttpUrl] = Field(None, description="Lien d’information/achat")
+    link: Optional[str] = Field(None, description="Lien d’information/achat")
     notes: Optional[str] = Field(None, description="Détails utiles (zones, validité, etc.)")
 
 class CityOverview(BaseModel):

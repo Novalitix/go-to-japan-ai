@@ -3,8 +3,17 @@ from crewai.tasks.conditional_task import ConditionalTask
 from crewai.tasks.task_output import TaskOutput
 from crewai.project import CrewBase, agent, crew, task
 from crewai.agents.agent_builder.base_agent import BaseAgent
-from typing import List
+from crewai.memory.storage.ltm_sqlite_storage import LTMSQLiteStorage
+from crewai.memory.storage.rag_storage import RAGStorage
+from crewai.memory.storage.mem0_storage import Mem0Storage
+from crewai.memory import LongTermMemory
+from crewai.memory.entity.entity_memory import EntityMemory
+from crewai.memory.short_term.short_term_memory import ShortTermMemory
 
+
+from typing import List
+import os
+from pathlib import Path
 
 
 from go_to_japan.tools.activity_tool import DailyActivitiesPlan
@@ -26,10 +35,17 @@ from crewai_tools import SerperDevTool, ScrapeWebsiteTool, WebsiteSearchTool
 
 llm = 'openai/gpt-4o-mini'
 
+# Store in project directory
+project_root = Path(__file__).parent
+storage_dir = project_root / "go_to_japan_ai_storage"
+
+os.environ["CREWAI_STORAGE_DIR"] = str(storage_dir)
+
 #################################################
 #### Fonctions condition pour chaque service ####
-#################################################  
-    
+#################################################
+
+
 def has_restaurants(output: TaskOutput) -> bool:
     # Accéder aux inputs via le crew directement
     crew = output.agent.crew if hasattr(output, 'agent') and hasattr(output.agent, 'crew') else None
@@ -87,6 +103,7 @@ class GoToJapan():
         return Agent(
             config=self.agents_config['profiler_agent'],
             verbose=True,
+            memory=True,
             llm=llm,
         )
     
@@ -97,6 +114,7 @@ class GoToJapan():
             verbose=True,
             tools=[SerperDevTool()],
             allow_delegation=True,
+            memory=True,
             llm=llm,
         )
     
@@ -107,6 +125,7 @@ class GoToJapan():
             verbose=True,
             tools=[SerperDevTool()],
             allow_delegation=True,
+            memory=True,
             llm=llm,
         )
     
@@ -117,6 +136,7 @@ class GoToJapan():
             verbose=True,
             tools=[ScrapeWebsiteTool(), WebsiteSearchTool()],
             allow_delegation=True,
+            memory=True,
             llm=llm,
         )
     
@@ -127,6 +147,7 @@ class GoToJapan():
             verbose=True,
             tools=[ScrapeWebsiteTool(), WebsiteSearchTool()],
             allow_delegation=True,
+            memory=True,
             llm=llm,
         )
     
@@ -137,6 +158,7 @@ class GoToJapan():
             verbose=True,
             tools=[ScrapeWebsiteTool(), WebsiteSearchTool()],
             allow_delegation=True,
+            memory=True,
             llm=llm,
         )
     
@@ -147,6 +169,7 @@ class GoToJapan():
             verbose=True,
             tools=[ScrapeWebsiteTool(), WebsiteSearchTool()],
             allow_delegation=True,
+            memory=True,
             llm=llm,
         )
     
@@ -157,6 +180,7 @@ class GoToJapan():
             verbose=True,
             tools=[ScrapeWebsiteTool(), WebsiteSearchTool()],
             allow_delegation=True,
+            memory=True,
             llm=llm,
         )
     
@@ -166,6 +190,7 @@ class GoToJapan():
             config=self.agents_config['quality_consistency_auditor_agent'],
             verbose=True,
             allow_delegation=True,
+            memory=True,
             llm=llm,
         )
     
@@ -175,6 +200,7 @@ class GoToJapan():
             config=self.agents_config['itinerary_synthesizer_agent'],
             verbose=True,
             allow_delegation=True,
+            memory=True,
             llm=llm,
         )
     
@@ -301,7 +327,7 @@ class GoToJapan():
             config=self.tasks_config['itinerary_synthesizer_task'],
             agent=self.itinerary_synthesizer_agent(),
             contexts=['profiler_task', 'live_news_task', 'weather_analyst_task', 'transport_planner_task', 'lodging_specialist_task', 'daily_activities_sequencing_task', 'dining_recommender_task', 'budget_aggregation_and_variants_task', 'quality_and_consistency_audit_task'],
-            output_json=ItinerarySynthesisJSON,
+            #output_json=ItinerarySynthesisJSON,
             output_file="result/itinerary_synthesis.json",
             output_pydantic=ItinerarySynthesisJSON
         )
@@ -336,12 +362,29 @@ class GoToJapan():
                 self.budget_feasibility_controller_agent(),
                 self.quality_consistency_auditor_agent(),
                 self.itinerary_synthesizer_agent(),
-                self.translation_agent(),
+                # self.translation_agent(),
             ], # Automatically created by the @agent decorator
             tasks=self.tasks, # Automatically created by the @task decorator
             # process=Process.hierarchical,
             # manager_agent=self.orchestration_agent(),
             process=Process.sequential,
             verbose=True,
-            output_log_file="result/crew.json"
+            # memory=True,
+            # long_term_memory=LongTermMemory(
+            #     storage=LTMSQLiteStorage(
+            #         db_path=f"{storage_dir}/long_memory.db"
+            #     )
+            # ),
+
+            # short_term_memory=ShortTermMemory(
+            #     storage=RAGStorage(
+            #         type="short_term",
+            #     )
+            # ),
+            # entity_memory=EntityMemory(
+            #     storage=RAGStorage(
+            #         type="entity_memory",
+            #     )
+            # ),
+            # output_log_file="result/crew.json"
         )

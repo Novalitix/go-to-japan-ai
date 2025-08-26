@@ -1,7 +1,7 @@
 {
   "audit_summary": {
     "status": "attention",
-    "score_percent": 75,
+    "score_percent": 70,
     "total_issues": 3,
     "critical_count": 1,
     "major_count": 1,
@@ -9,70 +9,44 @@
   },
   "inconsistencies": [
     {
-      "id": "001",
-      "severity": "major",
-      "component": "activities",
-      "json_path": "$.days[0].activities[0].weather_notes",
-      "message": "The weather indicated partial cloud and rain, while the activity planned was outdoor without clear alternatives mentioned.",
-      "evidence": null,
-      "suggestion": "Include alternative indoor activities in case of rain or adjust outdoor timings",
-      "related_ids": []
-    },
-    {
-      "id": "002",
+      "id": "1",
       "severity": "critical",
       "component": "budget",
-      "json_path": "$.budget_items_count",
-      "message": "The budget is not specified, which is critical for planning.",
+      "json_path": "$.breakdown",
+      "message": "Total budget is not specified.",
       "evidence": null,
-      "suggestion": "Define a specific budget for the trip based on categories such as accommodation, dining, and activities",
+      "suggestion": "Set a clear budget to ensure adherence to estimated costs.",
       "related_ids": []
     },
     {
-      "id": "003",
-      "severity": "minor",
+      "id": "2",
+      "severity": "major",
       "component": "transport",
-      "json_path": "$.days[1].activities[0].travel_to_next_minutes",
-      "message": "The travel time from Fushimi Inari-taisha to Tofuku-ji is overly optimistic given the average public transport connections.",
+      "json_path": "$.transport_segments",
+      "message": "Connections between some activities are unrealistic given the travel times.",
       "evidence": null,
-      "suggestion": "Adjust the travel time to at least 40 minutes",
+      "suggestion": "Review the transport plans to allocate adequate time for travel between locations.",
       "related_ids": []
     }
   ],
-  "missing_elements": [
-    {
-      "component": "budget",
-      "json_path": "$.budget_estime",
-      "description": "Estimated budget for the trip is not defined.",
-      "suggestion": "Specify a total trip budget to enhance planning accuracy."
-    }
-  ],
+  "missing_elements": [],
   "recommendations": [
     {
       "priority": "high",
-      "action": "Define a total trip budget",
-      "rationale": "Without a defined budget, it's difficult to ensure expenses are kept within limits and to make the most of the budget.",
-      "expected_impact_eur": "1000",
+      "action": "Define the total budget for the trip.",
+      "rationale": "Helps in evaluating the cost of activities and choosing affordable options.",
+      "expected_impact_eur": null,
       "fixes_issue_ids": [
-        "002"
+        "1"
       ]
     },
     {
       "priority": "medium",
-      "action": "Adjust travel times between activities",
-      "rationale": "Accurate travel times ensure a more relaxed itinerary and prevent missed activities.",
+      "action": "Adjust the itinerary to allow more realistic travel times.",
+      "rationale": "Ensures a smoother travel experience without rushing.",
       "expected_impact_eur": null,
       "fixes_issue_ids": [
-        "003"
-      ]
-    },
-    {
-      "priority": "low",
-      "action": "Include alternative activities in case of bad weather",
-      "rationale": "This improves flexibility and overall experience in case of adverse weather conditions.",
-      "expected_impact_eur": null,
-      "fixes_issue_ids": [
-        "001"
+        "2"
       ]
     }
   ],
@@ -86,19 +60,19 @@
   },
   "metrics": {
     "days_planned": 2,
-    "activities_count": 6,
-    "activities_with_sources": 6,
-    "transport_segments_count": 3,
-    "transport_with_sources": 0,
+    "activities_count": 8,
+    "activities_with_sources": 8,
+    "transport_segments_count": 4,
+    "transport_with_sources": 2,
     "accommodations_count": 1,
     "accommodations_with_sources": 1,
-    "meals_count": 6,
-    "meals_with_sources": 0,
-    "budget_items_count": 0,
-    "budget_items_with_sources": 0
+    "meals_count": 4,
+    "meals_with_sources": 4,
+    "budget_items_count": 4,
+    "budget_items_with_sources": 4
   },
   "generation_info": {
-    "generated_at": "2023-10-11",
+    "generated_at": "2023-10-10",
     "timezone": "Asia/Tokyo"
   }
 }

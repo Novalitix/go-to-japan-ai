@@ -4,149 +4,156 @@
       "category": "transport",
       "items": [
         {
-          "label": "Tokaido Shinkansen Hikari",
+          "label": "Kyoto Sightseeing Card (2 days)",
           "category": "transport",
-          "qty": "2",
-          "unit_cost_eur": "150",
-          "total_cost_eur": "300",
-          "notes": "Round trip ticket from Tokyo to Kyoto",
+          "qty": "1",
+          "unit_cost_eur": "7.4",
+          "total_cost_eur": "7.4",
+          "notes": "Unlimited use of Kyoto's two subway lines and most buses.",
           "sources": [
             {
-              "url": "http://example.com/ticket-price",
-              "date": "2023-01-01"
+              "url": "https://www.japan.travel/en/uk/",
+              "date": "2025-01-10"
             }
           ]
         }
       ],
-      "subtotal_eur": "300"
+      "subtotal_eur": "7.4"
     },
     {
       "category": "lodging",
       "items": [
         {
-          "label": "Hotel Tokyo",
+          "label": "Mitsuki Kyoto (Ryokan)",
           "category": "lodging",
-          "qty": "3",
-          "unit_cost_eur": "100",
-          "total_cost_eur": "300",
-          "notes": "3 nights stay in Tokyo",
+          "qty": "1",
+          "unit_cost_eur": "92",
+          "total_cost_eur": "92",
+          "notes": "Budget-friendly ryokan.",
           "sources": [
             {
-              "url": "http://example.com/hotel-price",
-              "date": "2023-01-01"
+              "url": "https://www.booking.com/hotel/jp/mitsuki-kyoto.en-gb.html",
+              "date": "2023-10-10"
             }
           ]
         }
       ],
-      "subtotal_eur": "300"
+      "subtotal_eur": "92"
     },
     {
       "category": "dining",
       "items": [
         {
-          "label": "Sushi Dinner",
+          "label": "Meals (2 days)",
           "category": "dining",
-          "qty": "4",
-          "unit_cost_eur": "30",
-          "total_cost_eur": "120",
-          "notes": "Dinner for 4 people",
+          "qty": "1",
+          "unit_cost_eur": "90",
+          "total_cost_eur": "90",
+          "notes": "Estimated costs based on breakfast, lunch, and dinner.",
           "sources": [
             {
-              "url": "http://example.com/dining-price",
-              "date": "2023-01-01"
+              "url": "https://www.japan.travel/en/uk/",
+              "date": "2023-10-10"
             }
           ]
         }
       ],
-      "subtotal_eur": "120"
+      "subtotal_eur": "90"
     },
     {
       "category": "activities",
       "items": [
         {
-          "label": "Kyoto Temple Tour",
+          "label": "Kinkaku-ji (Temple d'or)",
           "category": "activities",
-          "qty": "2",
-          "unit_cost_eur": "50",
-          "total_cost_eur": "100",
-          "notes": "Guided tour for 2 people",
+          "qty": "1",
+          "unit_cost_eur": "2.5",
+          "total_cost_eur": "2.5",
+          "notes": "Entry fee.",
           "sources": [
             {
-              "url": "http://example.com/activity-price",
-              "date": "2023-01-01"
-            }
-          ]
-        }
-      ],
-      "subtotal_eur": "100"
-    }
-  ],
-  "total_eur": "920",
-  "difference_from_budget": {
-    "budget_input_eur": "1000",
-    "difference_from_budget_eur": "-80",
-    "status": "under"
-  },
-  "scenarios": [
-    {
-      "name": "JR Pass Kansai + Hostel",
-      "description": "Switching to a JR Pass and staying in a hostel to save costs.",
-      "adjustments": [
-        {
-          "operation": "replace",
-          "target_category": "transport",
-          "target_label": "Tokaido Shinkansen Hikari",
-          "description": "Replace Shinkansen tickets with JR Pass for unlimited travel.",
-          "delta_eur": "-50",
-          "sources": [
-            {
-              "url": "http://example.com/jr-pass-price",
-              "date": "2023-01-01"
+              "url": "https://www.japan.travel/en/uk/",
+              "date": "2023-10-10"
             }
           ]
         },
         {
-          "operation": "upgrade",
-          "target_category": "lodging",
-          "target_label": null,
-          "description": "Upgrade to a more expensive hostel room.",
-          "delta_eur": "20",
+          "label": "Ryoan-ji (Jardin de pierres)",
+          "category": "activities",
+          "qty": "1",
+          "unit_cost_eur": "3.3",
+          "total_cost_eur": "3.3",
+          "notes": "Entry fee.",
           "sources": [
             {
-              "url": "http://example.com/hostel-price",
-              "date": "2023-01-01"
+              "url": "https://www.japan.travel/en/uk/",
+              "date": "2023-10-10"
+            }
+          ]
+        },
+        {
+          "label": "Tenryu-ji (Temple classé UNESCO)",
+          "category": "activities",
+          "qty": "1",
+          "unit_cost_eur": "3.3",
+          "total_cost_eur": "3.3",
+          "notes": "Entry fee.",
+          "sources": [
+            {
+              "url": "https://www.japan.travel/en/uk/",
+              "date": "2023-10-10"
+            }
+          ]
+        },
+        {
+          "label": "Traditional Tea Ceremony",
+          "category": "activities",
+          "qty": "1",
+          "unit_cost_eur": "110",
+          "total_cost_eur": "110",
+          "notes": "Cultural experience.",
+          "sources": [
+            {
+              "url": "https://www.japan.travel/en/uk/",
+              "date": "2023-10-10"
+            }
+          ]
+        },
+        {
+          "label": "Nishiki Market Food Tour",
+          "category": "activities",
+          "qty": "1",
+          "unit_cost_eur": "48",
+          "total_cost_eur": "48",
+          "notes": "Guided food tour.",
+          "sources": [
+            {
+              "url": "https://www.japan.travel/en/uk/",
+              "date": "2023-10-10"
             }
           ]
         }
       ],
-      "delta_eur": "-30",
-      "new_total_eur": "890",
-      "pros": [
-        "Cost-effective transport option",
-        "Flexibility in travel"
-      ],
-      "cons": [
-        "Potentially longer travel times",
-        "Limited availability during peak seasons"
-      ],
-      "sources": [
-        {
-          "url": "http://example.com/scenario-source",
-          "date": "2023-01-01"
-        }
-      ]
+      "subtotal_eur": "167.4"
     }
   ],
+  "total_eur": "356.8",
+  "difference_from_budget": {
+    "budget_input_eur": "0",
+    "difference_from_budget_eur": "356.8",
+    "status": "over"
+  },
+  "scenarios": [],
   "fx": {
     "base": "EUR",
     "quote": "JPY",
-    "rate": "140",
-    "as_of": "2023-01-01",
-    "source_url": "http://example.com/exchange-rate"
+    "rate": "154.4",
+    "as_of": "2023-10-10",
+    "source_url": "https://www.japan.travel/en/uk/"
   },
   "assumptions": [
-    "2 travelers",
-    "3 nights in Tokyo",
-    "Prices include taxes"
+    "2 days of travel in Kyoto from October 11 to 12, 2025.",
+    "1 traveler.",
+    "All costs are estimated based on current rates."
   ]
 }

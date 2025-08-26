@@ -39,4 +39,5 @@ def kickoff_get(inputs: str):
         return {"ok": True, "data": run(data)}
     except Exception as e:
         raise HTTPException(status_code=400, detail=f"Bad inputs: {e}")
-    
+
+

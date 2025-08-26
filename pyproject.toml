@@ -1,7 +1,7 @@
 [project]
 name = "go_to_japan"
 version = "0.1.0"
-description = "go-to-japan using crewAI"
+description = "go-to-japan multi agent system"
 authors = [{ name = "Brell SANWOUO", email = "brell.sanwouo@novalitix.com" }]
 requires-python = ">=3.10,<3.14"
 dependencies = [

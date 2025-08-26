@@ -1,10 +1,24 @@
-# GoToJapan Crew
+# 🌍 Go To Japan AI 
 
-Welcome to the GoToJapan Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+Cette API permet de générer des itinéraires de voyage personnalisés.  
+Développée avec *FastAPI*, elle peut être déployée sur un serveur 
 
-## Installation
+---
 
-Ensure you have Python >=3.10 <3.14 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
+## 📦 Prérequis
+
+- *Python 3.11+*
+- *pip* ou *pipenv*
+
+## Créer l'environement
+
+ 
+python -m venv venv
+source venv/bin/activate    # Linux / Mac
+venv\Scripts\activate       # Windows
+
+## Installation des dépendances 
+
 
 First, if you haven't already, install uv:
 
@@ -18,37 +32,22 @@ Next, navigate to your project directory and install the dependencies:
 ```bash
 crewai install
 ```
+pip install --upgrade pip
+pip install -r requirements.txt
+
 ### Customizing
 
 **Add your `OPENAI_API_KEY` into the `.env` file**
 
-- Modify `src/go_to_japan/config/agents.yaml` to define your agents
-- Modify `src/go_to_japan/config/tasks.yaml` to define your tasks
-- Modify `src/go_to_japan/crew.py` to add your own logic, tools and specific args
-- Modify `src/go_to_japan/main.py` to add custom inputs for your agents and tasks
 
-## Running the Project
+## Lancer l'application 
 
-To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
 
-```bash
-$ crewai run
-```
+Se placer dans le repertoire src et lancer 
 
-This command initializes the go-japan Crew, assembling the agents and assigning them tasks as defined in your configuration.
+uvicorn api:gtjia --reload
 
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
+## Ouvrir dans postman 
 
-## Understanding Your Crew
+http://localhost:8000/kickoff
 
-The go-japan Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
-
-## Support
-
-For support, questions, or feedback regarding the GoToJapan Crew or crewAI.
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
-
-Let's create wonders together with the power and simplicity of crewAI.

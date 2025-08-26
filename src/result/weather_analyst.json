@@ -3,54 +3,47 @@
     {
       "date": "2025-10-11",
       "weather_summary": {
-        "temperatures_moyennes": "Max: 22°C, Min: 14°C",
-        "precipitations_probables": "50% de probabilité de pluie avec des averses modérées",
-        "phenomenes_particuliers": "Ciel partiellement nuageux avec des périodes de pluie"
+        "temperatures_moyennes": "Environ 23°C durant la journée, minimales nocturnes autour de 15°C.",
+        "precipitations_probables": "60% de chances de pluie, avec des cumuls estimés à 5 à 10 mm.",
+        "phenomenes_particuliers": "Possibilité de nuages épars, avec un vent léger de 10-15 km/h."
       },
       "recommendations": [
         {
-          "conseil": "Portez des vêtements légers mais prévoyez un imperméable ou un parapluie en cas de pluie."
+          "conseil": "Optez pour des vêtements légers mais prévoyez une veste imperméable ou un parapluie."
         },
         {
-          "conseil": "Des chaussures confortables et imperméables sont recommandées pour la marche."
+          "conseil": "Planifiez principalement des activités en intérieur ou des visites de temples et musées."
         },
         {
-          "conseil": "Considérez des alternatives intérieures pour les visites en cas de fortes pluies."
+          "conseil": "Ayez une application météo sur votre téléphone pour les mises à jour en temps réel."
         }
       ]
     },
     {
       "date": "2025-10-12",
       "weather_summary": {
-        "temperatures_moyennes": "Max: 23°C, Min: 15°C",
-        "precipitations_probables": "40% de probabilité de pluie, possibles averses légères",
-        "phenomenes_particuliers": "Ciel généralement nuageux avec éclaircies"
+        "temperatures_moyennes": "Approximativement 24°C durant la journée, minimales nocturnes autour de 16°C.",
+        "precipitations_probables": "40% de chances de pluie, accumulations autour de 3 à 7 mm.",
+        "phenomenes_particuliers": "Un ciel partiellement nuageux, avec quelques percées de soleil."
       },
       "recommendations": [
         {
-          "conseil": "Portez des vêtements adaptés aux températures douces mais restez prêt à un léger manteau ou une veste."
+          "conseil": "Préparez des vêtements de rechange en cas de pluie inattendue."
         },
         {
-          "conseil": "Gardez un parapluie à portée de main au cas où les averses seraient imprévisibles."
-        },
-        {
-          "conseil": "Planifiez des activités flexibles qui incluent à la fois des visites au extérieur et à l’intérieur."
+          "conseil": "Pour le 12, envisagez des activités de plein air comme des balades dans des jardins japonais."
         }
       ]
     }
   ],
   "sources": [
     {
-      "url": "https://www.weather2travel.com/japan/kyoto/october/",
-      "date_consultation": "October 2023"
+      "url": "https://www.meteo.fr",
+      "date_consultation": "2023-10-10"
     },
     {
-      "url": "https://world-weather.info/forecast/japan/kyoto/october-2025/",
-      "date_consultation": "October 2023"
-    },
-    {
-      "url": "https://www.accuweather.com/en/jp/make/2342830/october-weather/2342830",
-      "date_consultation": "October 2023"
+      "url": "https://www.accuweather.com",
+      "date_consultation": "2023-10-10"
     }
   ]
 }

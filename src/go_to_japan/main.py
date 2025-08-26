@@ -23,7 +23,8 @@ def run(inputs: Dict[str, Any]) -> Dict[str, Any]:
     """
     
     try:
-        GoToJapan().crew().kickoff(inputs=inputs)
+        result = GoToJapan().crew().kickoff(inputs=inputs)
+        return result
     except Exception as e:
         raise Exception(f"An error occurred while running the crew: {e}")
 
