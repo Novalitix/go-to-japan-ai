@@ -386,5 +386,5 @@ class GoToJapan():
             #         type="entity_memory",
             #     )
             # ),
-            # output_log_file="result/crew.json"
+            output_log_file="result/crew.json"
         )
