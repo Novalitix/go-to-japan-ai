@@ -5,3 +5,4 @@ uvicorn
 requests
 beautifulsoup4
 pydantic
+crewai-tools
