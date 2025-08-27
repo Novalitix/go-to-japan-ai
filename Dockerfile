@@ -21,6 +21,7 @@ RUN pip install --no-cache-dir --upgrade pip \
 # (Optionnel) Installer uv et crewai si nécessaires
 RUN pip install uv
 RUN crewai install
+RUN uv tool install crewai
 
 # Copier le code de l’application
 COPY . .
