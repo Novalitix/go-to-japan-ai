@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import os
 import json
 
-from go_to_japan.main import run, train, replay, test
+from go_to_japan.main import run
 
 # Load environment variables from .env file
 load_dotenv()
