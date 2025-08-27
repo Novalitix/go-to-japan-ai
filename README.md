@@ -82,6 +82,7 @@ curl -X POST "http://localhost:8000/kickoff" \
         "pace": "equilibre",
         "firstName": "John",
         "departureDate": "2025-10-11",
+        "departurePeriod": "",
         "returnDate": "2025-10-13",
         "duration": 2,
         "citiesToInclude": ["Kyoto"],
