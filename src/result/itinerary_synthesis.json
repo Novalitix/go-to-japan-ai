@@ -1,1 +1,434 @@
-{"version":"1.0","meta":{"first_name":"Yann","departure_date":"2025-10-11","duration_days":2,"cities_to_include":["Kyoto"],"pace":"equilibre","interests":["temples"],"services":["restaurants","lodging","transport"],"cities_to_exclude":[],"comments":null,"budget_eur":null},"itinerary":{"cities":[{"city":"Kyoto","overview":{"lodging":{"name":"Kyoto Ryokan Gion Sano","link":"https://www.booking.com","address":"Gion district, Kyoto","check_in":"2025-10-11","check_out":"2025-10-12"},"transport_notes":"Utilisation du One-Day Bus & Subway Pass pour tous les trajets.","passes":[{"name":"One-Day Bus & Subway Pass","link":"https://www.japan.travel","notes":"Accès illimité aux transports de la ville sur 24 heures."}]},"days":[{"date":"2025-10-11","weather":{"summary":"Environ 23°C durant la journée, minimales nocturnes autour de 15°C avec des nuages épars et 60% de chances de pluie.","temp_avg_c":"23","precip_prob_pct":60,"special":"Prévoir un parapluie.","sources":[{"url":"https://www.meteo.fr","date":"2023-10-10","title":"Prévisions Météo"}]},"transport":[{"from_":"Kyoto Station","to":"Kinkaku-ji","mode":"Bus","line_or_service":"101","duration_minutes":40,"cost_eur":"2.5","reservation_required":false,"notes":"Prendre le bus 101 pour Kinkaku-ji.","sources":[{"url":"https://www.japan.travel","date":"2023-10-10","title":"Transports en commun à Kyoto"}]}],"lodging":{"name":"Kyoto Ryokan Gion Sano","link":"https://www.booking.com","address":"Gion district, Kyoto","check_in":null,"check_out":null},"activities":{"morning":[{"name":"Visite du Kinkaku-ji (Temple d'or)","category":"temple","start_time":"09:00","duration_minutes":120,"address":"1 Kinkakujicho, Kita Ward, Kyoto","indoor_outdoor":"outdoor","weather_notes":"Prévoir un parapluie en cas de pluie.","cost_eur":"3.33","sources":[{"url":"https://www.japan.travel/en/uk/itineraries/kyoto-temples-and-sightseeing/","date":"2023-10-10","title":"Visite de Kinkaku-ji"}]},{"name":"Visite du Ryoan-ji (Jardin de pierres)","category":"temple","start_time":"11:00","duration_minutes":90,"address":"Gardens of Ryoan-ji, 1 Ryoanji Sato, Ukyo Ward, Kyoto","indoor_outdoor":"outdoor","weather_notes":null,"cost_eur":"4.17","sources":[{"url":"https://www.japan.travel/en/uk/itineraries/kyoto-temples-and-sightseeing/","date":"2023-10-10","title":"Visite de Ryoan-ji"}]}],"afternoon":[{"name":"Visite du Tenryu-ji (Temple classé UNESCO)","category":"temple","start_time":"14:00","duration_minutes":120,"address":"68 Saga Tenryuji Yamanouchi-cho, Ukyo Ward, Kyoto","indoor_outdoor":"indoor","weather_notes":"Visite sous abri en cas de pluie.","cost_eur":"4.17","sources":[{"url":"https://www.japan.travel/en/uk/itineraries/kyoto-temples-and-sightseeing/","date":"2023-10-10","title":"Visite de Tenryu-ji"}]},{"name":"Balade dans la bambouseraie d'Arashiyama","category":"nature","start_time":"16:30","duration_minutes":60,"address":"Arashiyama, Ukyo Ward, Kyoto","indoor_outdoor":"outdoor","weather_notes":"Prévoir de bonnes chaussures.","cost_eur":"0","sources":[{"url":"https://www.japan.travel/en/uk/itineraries/kyoto-temples-and-sightseeing/","date":"2023-10-10","title":"Bambouseraie d'Arashiyama"}]}],"evening":[]},"dining":{"breakfast":[{"restaurant":"Kyoto Ryokan Gion Sano","cuisine":"japonaise","price_eur":"15","reservation_needed":false,"address":"Gion district, Kyoto","sources":[{"url":"https://www.booking.com","date":"2023-10-10","title":"Petit déjeuner à Gion Sano"}]}],"lunch":[{"restaurant":"Nanzenji Junsei","cuisine":"japonaise","price_eur":"20","reservation_needed":false,"address":"Nanzenji, Kyoto","sources":[{"url":"https://www.japan.travel","date":"2023-10-10","title":"Yudofu chez Junsei"}]}],"dinner":[{"restaurant":"Kikunoi Honten","cuisine":"kaiseki","price_eur":"80","reservation_needed":true,"address":"Gion, Kyoto","sources":[{"url":"https://www.japan.travel","date":"2023-10-10","title":"Dîner Kaiseki"}]}]},"daily_costs_eur":{"transport":"7.4","activities":"21.5","dining":"115","other":"0","total":"143.9"},"day_sources":[{"url":"https://www.japan.travel","date":"2023-10-10","title":"Sources d'activités à Kyoto"}]},{"date":"2025-10-12","weather":{"summary":"Approximativement 24°C durant la journée, minimales nocturnes autour de 16°C avec 40% de chances de pluie.","temp_avg_c":"24","precip_prob_pct":40,"special":"Prévoir des vêtements de rechange.","sources":[{"url":"https://www.meteo.fr","date":"2023-10-10","title":"Prévisions Météo"}]},"transport":[{"from_":"Kyoto Station","to":"Fushimi Inari-taisha","mode":"Metro","line_or_service":"JR Nara Line","duration_minutes":15,"cost_eur":"2.5","reservation_required":false,"notes":"Prendre le train de la station JR de Kyoto.","sources":[{"url":"https://www.japan.travel","date":"2023-10-10","title":"Transports en commun à Kyoto"}]}],"lodging":{"name":"Kyoto Ryokan Gion Sano","link":"https://www.booking.com","address":"Gion district, Kyoto","check_in":null,"check_out":null},"activities":{"morning":[{"name":"Visite du Fushimi Inari-taisha (sanctuaire aux milliers de torii)","category":"sanctuaire","start_time":"09:00","duration_minutes":120,"address":"68 Fukakusa Yabunouchicho, Fushimi Ward, Kyoto","indoor_outdoor":"outdoor","weather_notes":null,"cost_eur":"0","sources":[{"url":"https://www.japan.travel","date":"2023-10-10","title":"Visite de Fushimi Inari-taisha"}]},{"name":"Visite du Sanjusangendo (Temple des 1001 bouddhas)","category":"temple","start_time":"11:30","duration_minutes":90,"address":"657 Sanjusangendo-mawari, Higashiyama Ward, Kyoto","indoor_outdoor":"indoor","weather_notes":null,"cost_eur":"5","sources":[{"url":"https://www.japan.travel","date":"2023-10-10","title":"Visite de Sanjusangendo"}]}],"afternoon":[{"name":"Visite du Tō-ji (Temple avec pagode à cinq étages)","category":"temple","start_time":"15:00","duration_minutes":90,"address":"1 Tōji Shimogyō-ku, Kyoto","indoor_outdoor":"indoor","weather_notes":null,"cost_eur":"5","sources":[{"url":"https://www.japan.travel","date":"2023-10-10","title":"Visite de Tō-ji"}]},{"name":"Exploration du quartier historique de Gion","category":"culture","start_time":"17:00","duration_minutes":90,"address":"Gion, Higashiyama Ward, Kyoto","indoor_outdoor":"outdoor","weather_notes":null,"cost_eur":"0","sources":[{"url":"https://www.japan.travel","date":"2023-10-10","title":"Visite de Gion"}]}],"evening":[]},"dining":{"breakfast":[{"restaurant":"Kyoto Ryokan Gion Sano","cuisine":"japonaise","price_eur":"15","reservation_needed":false,"address":"Gion district, Kyoto","sources":[{"url":"https://www.booking.com","date":"2023-10-10","title":"Petit déjeuner à Gion Sano"}]}],"lunch":[{"restaurant":"Nishiki Market Food Tour","cuisine":"japonaise","price_eur":"48","reservation_needed":true,"address":"Nishiki Market, Kyoto","sources":[{"url":"https://www.japan.travel","date":"2023-10-10","title":"Food Tour au Nishiki"}]}],"dinner":[{"restaurant":"Kikunoi Honten","cuisine":"kaiseki","price_eur":"80","reservation_needed":true,"address":"Gion, Kyoto","sources":[{"url":"https://www.japan.travel","date":"2023-10-10","title":"Dîner Kaiseki"}]}]},"daily_costs_eur":{"transport":"2.5","activities":"10","dining":"143","other":"0","total":"155.5"},"day_sources":[{"url":"https://www.japan.travel","date":"2023-10-10","title":"Sources d'activités à Kyoto"}]}]}]},"budget_overview":{"by_category":{},"total_eur":"299.4","difference_from_budget_eur":"0","status":"on_target"},"scenarios":[],"bibliography":[{"url":"https://www.japan.travel","date":"2023-10-10","title":"Guide de voyage pour Kyoto"},{"url":"https://www.booking.com","date":"2023-10-10","title":"Réservations d'hébergement"}],"generation_info":{"generated_at":"2023-10-10","timezone":"Asia/Tokyo"}}
+{
+    "version": "1.0",
+    "meta": {
+        "first_name": "Yann",
+        "departure_date": "2025-10-11",
+        "duration_days": 2,
+        "cities_to_include": [
+            "Kyoto"
+        ],
+        "pace": "equilibre",
+        "interests": [
+            "temples"
+        ],
+        "services": [
+            "restaurants",
+            "lodging",
+            "transport"
+        ],
+        "cities_to_exclude": [],
+        "comments": null,
+        "budget_eur": null
+    },
+    "itinerary": {
+        "cities": [
+            {
+                "city": "Kyoto",
+                "overview": {
+                    "lodging": {
+                        "name": "Kyoto Ryokan Gion Sano",
+                        "link": "https://www.booking.com",
+                        "address": "Gion district, Kyoto",
+                        "check_in": "2025-10-11",
+                        "check_out": "2025-10-12"
+                    },
+                    "transport_notes": "Utilisation du One-Day Bus & Subway Pass pour tous les trajets.",
+                    "passes": [
+                        {
+                            "name": "One-Day Bus & Subway Pass",
+                            "link": "https://www.japan.travel",
+                            "notes": "Accès illimité aux transports de la ville sur 24 heures."
+                        }
+                    ]
+                },
+                "days": [
+                    {
+                        "date": "2025-10-11",
+                        "weather": {
+                            "summary": "Environ 23°C durant la journée, minimales nocturnes autour de 15°C avec des nuages épars et 60% de chances de pluie.",
+                            "temp_avg_c": "23",
+                            "precip_prob_pct": 60,
+                            "special": "Prévoir un parapluie.",
+                            "sources": [
+                                {
+                                    "url": "https://www.meteo.fr",
+                                    "date": "2023-10-10",
+                                    "title": "Prévisions Météo"
+                                }
+                            ]
+                        },
+                        "transport": [
+                            {
+                                "from_": "Kyoto Station",
+                                "to": "Kinkaku-ji",
+                                "mode": "Bus",
+                                "line_or_service": "101",
+                                "duration_minutes": 40,
+                                "cost_eur": "2.5",
+                                "reservation_required": false,
+                                "notes": "Prendre le bus 101 pour Kinkaku-ji.",
+                                "sources": [
+                                    {
+                                        "url": "https://www.japan.travel",
+                                        "date": "2023-10-10",
+                                        "title": "Transports en commun à Kyoto"
+                                    }
+                                ]
+                            }
+                        ],
+                        "lodging": {
+                            "name": "Kyoto Ryokan Gion Sano",
+                            "link": "https://www.booking.com",
+                            "address": "Gion district, Kyoto",
+                            "check_in": null,
+                            "check_out": null
+                        },
+                        "activities": {
+                            "morning": [
+                                {
+                                    "name": "Visite du Kinkaku-ji (Temple d'or)",
+                                    "category": "temple",
+                                    "start_time": "09:00",
+                                    "duration_minutes": 120,
+                                    "address": "1 Kinkakujicho, Kita Ward, Kyoto",
+                                    "indoor_outdoor": "outdoor",
+                                    "weather_notes": "Prévoir un parapluie en cas de pluie.",
+                                    "cost_eur": "3.33",
+                                    "sources": [
+                                        {
+                                            "url": "https://www.japan.travel/en/uk/itineraries/kyoto-temples-and-sightseeing/",
+                                            "date": "2023-10-10",
+                                            "title": "Visite de Kinkaku-ji"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Visite du Ryoan-ji (Jardin de pierres)",
+                                    "category": "temple",
+                                    "start_time": "11:00",
+                                    "duration_minutes": 90,
+                                    "address": "Gardens of Ryoan-ji, 1 Ryoanji Sato, Ukyo Ward, Kyoto",
+                                    "indoor_outdoor": "outdoor",
+                                    "weather_notes": null,
+                                    "cost_eur": "4.17",
+                                    "sources": [
+                                        {
+                                            "url": "https://www.japan.travel/en/uk/itineraries/kyoto-temples-and-sightseeing/",
+                                            "date": "2023-10-10",
+                                            "title": "Visite de Ryoan-ji"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "afternoon": [
+                                {
+                                    "name": "Visite du Tenryu-ji (Temple classé UNESCO)",
+                                    "category": "temple",
+                                    "start_time": "14:00",
+                                    "duration_minutes": 120,
+                                    "address": "68 Saga Tenryuji Yamanouchi-cho, Ukyo Ward, Kyoto",
+                                    "indoor_outdoor": "indoor",
+                                    "weather_notes": "Visite sous abri en cas de pluie.",
+                                    "cost_eur": "4.17",
+                                    "sources": [
+                                        {
+                                            "url": "https://www.japan.travel/en/uk/itineraries/kyoto-temples-and-sightseeing/",
+                                            "date": "2023-10-10",
+                                            "title": "Visite de Tenryu-ji"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Balade dans la bambouseraie d'Arashiyama",
+                                    "category": "nature",
+                                    "start_time": "16:30",
+                                    "duration_minutes": 60,
+                                    "address": "Arashiyama, Ukyo Ward, Kyoto",
+                                    "indoor_outdoor": "outdoor",
+                                    "weather_notes": "Prévoir de bonnes chaussures.",
+                                    "cost_eur": "0",
+                                    "sources": [
+                                        {
+                                            "url": "https://www.japan.travel/en/uk/itineraries/kyoto-temples-and-sightseeing/",
+                                            "date": "2023-10-10",
+                                            "title": "Bambouseraie d'Arashiyama"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "evening": []
+                        },
+                        "dining": {
+                            "breakfast": [
+                                {
+                                    "restaurant": "Kyoto Ryokan Gion Sano",
+                                    "cuisine": "japonaise",
+                                    "price_eur": "15",
+                                    "reservation_needed": false,
+                                    "address": "Gion district, Kyoto",
+                                    "sources": [
+                                        {
+                                            "url": "https://www.booking.com",
+                                            "date": "2023-10-10",
+                                            "title": "Petit déjeuner à Gion Sano"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "lunch": [
+                                {
+                                    "restaurant": "Nanzenji Junsei",
+                                    "cuisine": "japonaise",
+                                    "price_eur": "20",
+                                    "reservation_needed": false,
+                                    "address": "Nanzenji, Kyoto",
+                                    "sources": [
+                                        {
+                                            "url": "https://www.japan.travel",
+                                            "date": "2023-10-10",
+                                            "title": "Yudofu chez Junsei"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "dinner": [
+                                {
+                                    "restaurant": "Kikunoi Honten",
+                                    "cuisine": "kaiseki",
+                                    "price_eur": "80",
+                                    "reservation_needed": true,
+                                    "address": "Gion, Kyoto",
+                                    "sources": [
+                                        {
+                                            "url": "https://www.japan.travel",
+                                            "date": "2023-10-10",
+                                            "title": "Dîner Kaiseki"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "daily_costs_eur": {
+                            "transport": "7.4",
+                            "activities": "21.5",
+                            "dining": "115",
+                            "other": "0",
+                            "total": "143.9"
+                        },
+                        "day_sources": [
+                            {
+                                "url": "https://www.japan.travel",
+                                "date": "2023-10-10",
+                                "title": "Sources d'activités à Kyoto"
+                            }
+                        ]
+                    },
+                    {
+                        "date": "2025-10-12",
+                        "weather": {
+                            "summary": "Approximativement 24°C durant la journée, minimales nocturnes autour de 16°C avec 40% de chances de pluie.",
+                            "temp_avg_c": "24",
+                            "precip_prob_pct": 40,
+                            "special": "Prévoir des vêtements de rechange.",
+                            "sources": [
+                                {
+                                    "url": "https://www.meteo.fr",
+                                    "date": "2023-10-10",
+                                    "title": "Prévisions Météo"
+                                }
+                            ]
+                        },
+                        "transport": [
+                            {
+                                "from_": "Kyoto Station",
+                                "to": "Fushimi Inari-taisha",
+                                "mode": "Metro",
+                                "line_or_service": "JR Nara Line",
+                                "duration_minutes": 15,
+                                "cost_eur": "2.5",
+                                "reservation_required": false,
+                                "notes": "Prendre le train de la station JR de Kyoto.",
+                                "sources": [
+                                    {
+                                        "url": "https://www.japan.travel",
+                                        "date": "2023-10-10",
+                                        "title": "Transports en commun à Kyoto"
+                                    }
+                                ]
+                            }
+                        ],
+                        "lodging": {
+                            "name": "Kyoto Ryokan Gion Sano",
+                            "link": "https://www.booking.com",
+                            "address": "Gion district, Kyoto",
+                            "check_in": null,
+                            "check_out": null
+                        },
+                        "activities": {
+                            "morning": [
+                                {
+                                    "name": "Visite du Fushimi Inari-taisha (sanctuaire aux milliers de torii)",
+                                    "category": "sanctuaire",
+                                    "start_time": "09:00",
+                                    "duration_minutes": 120,
+                                    "address": "68 Fukakusa Yabunouchicho, Fushimi Ward, Kyoto",
+                                    "indoor_outdoor": "outdoor",
+                                    "weather_notes": null,
+                                    "cost_eur": "0",
+                                    "sources": [
+                                        {
+                                            "url": "https://www.japan.travel",
+                                            "date": "2023-10-10",
+                                            "title": "Visite de Fushimi Inari-taisha"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Visite du Sanjusangendo (Temple des 1001 bouddhas)",
+                                    "category": "temple",
+                                    "start_time": "11:30",
+                                    "duration_minutes": 90,
+                                    "address": "657 Sanjusangendo-mawari, Higashiyama Ward, Kyoto",
+                                    "indoor_outdoor": "indoor",
+                                    "weather_notes": null,
+                                    "cost_eur": "5",
+                                    "sources": [
+                                        {
+                                            "url": "https://www.japan.travel",
+                                            "date": "2023-10-10",
+                                            "title": "Visite de Sanjusangendo"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "afternoon": [
+                                {
+                                    "name": "Visite du Tō-ji (Temple avec pagode à cinq étages)",
+                                    "category": "temple",
+                                    "start_time": "15:00",
+                                    "duration_minutes": 90,
+                                    "address": "1 Tōji Shimogyō-ku, Kyoto",
+                                    "indoor_outdoor": "indoor",
+                                    "weather_notes": null,
+                                    "cost_eur": "5",
+                                    "sources": [
+                                        {
+                                            "url": "https://www.japan.travel",
+                                            "date": "2023-10-10",
+                                            "title": "Visite de Tō-ji"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Exploration du quartier historique de Gion",
+                                    "category": "culture",
+                                    "start_time": "17:00",
+                                    "duration_minutes": 90,
+                                    "address": "Gion, Higashiyama Ward, Kyoto",
+                                    "indoor_outdoor": "outdoor",
+                                    "weather_notes": null,
+                                    "cost_eur": "0",
+                                    "sources": [
+                                        {
+                                            "url": "https://www.japan.travel",
+                                            "date": "2023-10-10",
+                                            "title": "Visite de Gion"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "evening": []
+                        },
+                        "dining": {
+                            "breakfast": [
+                                {
+                                    "restaurant": "Kyoto Ryokan Gion Sano",
+                                    "cuisine": "japonaise",
+                                    "price_eur": "15",
+                                    "reservation_needed": false,
+                                    "address": "Gion district, Kyoto",
+                                    "sources": [
+                                        {
+                                            "url": "https://www.booking.com",
+                                            "date": "2023-10-10",
+                                            "title": "Petit déjeuner à Gion Sano"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "lunch": [
+                                {
+                                    "restaurant": "Nishiki Market Food Tour",
+                                    "cuisine": "japonaise",
+                                    "price_eur": "48",
+                                    "reservation_needed": true,
+                                    "address": "Nishiki Market, Kyoto",
+                                    "sources": [
+                                        {
+                                            "url": "https://www.japan.travel",
+                                            "date": "2023-10-10",
+                                            "title": "Food Tour au Nishiki"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "dinner": [
+                                {
+                                    "restaurant": "Kikunoi Honten",
+                                    "cuisine": "kaiseki",
+                                    "price_eur": "80",
+                                    "reservation_needed": true,
+                                    "address": "Gion, Kyoto",
+                                    "sources": [
+                                        {
+                                            "url": "https://www.japan.travel",
+                                            "date": "2023-10-10",
+                                            "title": "Dîner Kaiseki"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "daily_costs_eur": {
+                            "transport": "2.5",
+                            "activities": "10",
+                            "dining": "143",
+                            "other": "0",
+                            "total": "155.5"
+                        },
+                        "day_sources": [
+                            {
+                                "url": "https://www.japan.travel",
+                                "date": "2023-10-10",
+                                "title": "Sources d'activités à Kyoto"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "budget_overview": {
+        "by_category": {},
+        "total_eur": "299.4",
+        "difference_from_budget_eur": "0",
+        "status": "on_target"
+    },
+    "scenarios": [],
+    "bibliography": [
+        {
+            "url": "https://www.japan.travel",
+            "date": "2023-10-10",
+            "title": "Guide de voyage pour Kyoto"
+        },
+        {
+            "url": "https://www.booking.com",
+            "date": "2023-10-10",
+            "title": "Réservations d'hébergement"
+        }
+    ],
+    "generation_info": {
+        "generated_at": "2023-10-10",
+        "timezone": "Asia/Tokyo"
+    }
+}

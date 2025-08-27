@@ -37,7 +37,7 @@ def kickoff_get(inputs: str):
         if not isinstance(data, dict):
             raise ValueError("`inputs` doit être un objet JSON (dict)")
         output = run(data)
-        return {"ok": True, "data": output["raw"]}
+        return {"status": "success", "data": output}
     except Exception as e:
         raise HTTPException(status_code=400, detail=f"Bad inputs: {e}")
 
