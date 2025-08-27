@@ -26,4 +26,4 @@ COPY . .
 EXPOSE 8000
 
 # Commande de démarrage
-CMD ["uvicorn", "src.api:gtjia", "--relead"]
+CMD ["uvicorn", "api:gtjia", "--reload"]
