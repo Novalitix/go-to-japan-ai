@@ -106,7 +106,6 @@ class GoToJapan():
         return Agent(
             config=self.agents_config['live_news_agent'],
             verbose=True,
-            tools=[SerperDevTool()],
             allow_delegation=True,
             memory=True,
             llm=llm,
@@ -117,7 +116,6 @@ class GoToJapan():
         return Agent(
             config=self.agents_config['weather_analyst_agent'],
             verbose=True,
-            tools=[SerperDevTool()],
             allow_delegation=True,
             memory=True,
             llm=llm,
@@ -128,7 +126,6 @@ class GoToJapan():
         return Agent(
             config=self.agents_config['transport_planner_agent'],
             verbose=True,
-            tools=[ScrapeWebsiteTool(), WebsiteSearchTool()],
             allow_delegation=True,
             memory=True,
             llm=llm,
@@ -139,7 +136,6 @@ class GoToJapan():
         return Agent(
             config=self.agents_config['lodging_specialist_agent'],
             verbose=True,
-            tools=[ScrapeWebsiteTool(), WebsiteSearchTool()],
             allow_delegation=True,
             memory=True,
             llm=llm,
@@ -150,7 +146,6 @@ class GoToJapan():
         return Agent(
             config=self.agents_config['daily_activities_sequencing_designer_agent'],
             verbose=True,
-            tools=[ScrapeWebsiteTool(), WebsiteSearchTool()],
             allow_delegation=True,
             memory=True,
             llm=llm,
@@ -161,7 +156,6 @@ class GoToJapan():
         return Agent(
             config=self.agents_config['dining_recommender_agent'],
             verbose=True,
-            tools=[ScrapeWebsiteTool(), WebsiteSearchTool()],
             allow_delegation=True,
             memory=True,
             llm=llm,
@@ -172,7 +166,6 @@ class GoToJapan():
         return Agent(
             config=self.agents_config['budget_feasibility_controller_agent'],
             verbose=True,
-            tools=[ScrapeWebsiteTool(), WebsiteSearchTool()],
             allow_delegation=True,
             memory=True,
             llm=llm,
@@ -238,7 +231,8 @@ class GoToJapan():
             agent=self.live_news_agent(),
             contexts=['profiler_task'],
             output_json=LiveNewsOutput,
-            output_file="result/live_news.json", 
+            output_file="result/live_news.json",
+            tools=[SerperDevTool()],
         )
 
     @task
@@ -248,7 +242,8 @@ class GoToJapan():
             agent=self.weather_analyst_agent(),
             contexts=['profiler_task', 'live_news_task'],
             output_json=CityMeteoInfo,
-            output_file="result/weather_analyst.json", 
+            output_file="result/weather_analyst.json",
+            tools=[SerperDevTool()],
         )
     
     @task
@@ -260,6 +255,7 @@ class GoToJapan():
             contexts=['profiler_task', 'live_news_task', 'weather_analyst_task'],
             output_json=TransportCityPlan,
             output_file="result/transport_planner.json",
+            tools=[ScrapeWebsiteTool(), WebsiteSearchTool()],
         )
 
 
@@ -271,7 +267,8 @@ class GoToJapan():
             condition=has_lodging or has_accommodation,
             contexts=['profiler_task', 'live_news_task', 'weather_analyst_task'],
             output_json=LodgingOptionsByCity,
-            output_file="result/lodging_specialist.json", 
+            output_file="result/lodging_specialist.json",
+            tools=[ScrapeWebsiteTool(), WebsiteSearchTool()], 
         )
     
     @task
@@ -281,6 +278,7 @@ class GoToJapan():
             agent=self.daily_activities_sequencing_designer_agent(),
             contexts=['profiler_task', 'live_news_task', 'weather_analyst_task', 'transport_planner_task', 'lodging_specialist_task'],
             output_json=DailyActivitiesPlan,
+            tools=[ScrapeWebsiteTool(), WebsiteSearchTool()],
             output_file="result/daily_activities.json", 
         )
     
@@ -292,7 +290,8 @@ class GoToJapan():
             condition=has_restaurants,
             contexts=['profiler_task', 'live_news_task', 'weather_analyst_task', 'transport_planner_task', 'lodging_specialist_task'],
             output_json=DiningPlan,
-            output_file="result/dining_recommender.json", 
+            output_file="result/dining_recommender.json",
+            tools=[ScrapeWebsiteTool(), WebsiteSearchTool()], 
         )
     
     @task
@@ -302,7 +301,8 @@ class GoToJapan():
             agent=self.budget_feasibility_controller_agent(),
             contexts=['profiler_task', 'live_news_task', 'weather_analyst_task', 'transport_planner_task', 'lodging_specialist_task', 'daily_activities_sequencing_task', 'dining_recommender_task'],
             output_json=BudgetAggregationOutput,
-            output_file="result/budget_aggregation.json", 
+            output_file="result/budget_aggregation.json",
+            tools=[ScrapeWebsiteTool(), WebsiteSearchTool()], 
         )
     
     @task
