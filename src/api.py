@@ -23,11 +23,16 @@ def health():
 
 # POST — envoie un dictionnaire JSON
 @gtjia.post("/kickoff")
-def kickoff_post(payload: InputsPayload):
+def kickoff_get(inputs: str):
     try:
-        return {"ok": True, "data": run(payload.inputs)}
+        data = json.loads(inputs)  # parse le dict JSON depuis l’URL
+        if not isinstance(data, dict):
+            raise ValueError("`inputs` doit être un objet JSON (dict)")
+        output = run(data)
+        return {"status": "success", "data": output}
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        raise HTTPException(status_code=400, detail=f"Bad inputs: {e}")
+
 
 # GET — passe le dictionnaire en JSON dans le query param `inputs`
 @gtjia.get("/kickoff")
