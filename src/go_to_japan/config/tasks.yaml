@@ -1,0 +1,290 @@
+profiler_task:
+  description: >
+    Analyse et résume le profil de voyage à partir des données fournies, en tenant compte des paramètres suivants :
+    
+    - Type de planification : {planningType}
+    - Mode de voyage (compagnons) : {travelWith}
+    - Rythme du voyage : {pace}
+    - Prénom du voyageur : {firstName}
+    - Date de départ : {departureDate}
+    - Date de retour : {returnDate}
+    - Durée du voyage (en jours) : {duration}
+    - Période de départ : {departurePeriod}
+    - Villes à inclure : {citiesToInclude}
+    - Villes à exclure : {citiesToExclude}
+    - Budget estimé : {budget}
+    - Commentaires spécifiques : {comments}
+    - Centres d’intérêt : {interests}
+    - Services souhaités : {services}
+    
+    Ce résumé doit présenter une vision claire du voyage prévu et mettre en avant les points essentiels.
+    
+  expected_output: >
+    Un résumé JSON complet du voyage, rédigé comme une description claire et synthétique, 
+    intégrant toutes les informations importantes (voyageur, destination, dates, durée, budget, type de voyage, rythme, centres d’intérêt et services demandés). 
+    Le texte doit être affirmatif et narratif, sans poser de questions. 
+  
+
+live_news_task:
+  description: >
+    Effectuer des recherches en ligne pour chaque ville listée dans {citiesToInclude}, 
+    afin d’identifier les événements à venir, festivals, actualités locales et informations 
+    pertinentes sur la période de {duration} jours à partir du {departureDate}. 
+    Toutes les informations doivent provenir de sources fiables, datées et vérifiables.
+  expected_output: >
+    Un objet JSON où chaque ville de {citiesToInclude} est associée à une liste d’éléments comprenant :  
+      - title : titre de l’événement ou actualité  
+      - description : résumé clair et concis  
+      - category : type d’information (événement, actualité locale, transport, etc.)  
+      - date/période : date ou période de l’événement  
+      - source : URL de la source officielle et date de publication (obligatoire)
+
+
+weather_analyst_task:
+  description: >
+    Générer un bulletin météorologique détaillé et structuré pour chaque ville listée dans {citiesToInclude}, 
+    couvrant une période de {duration} jours à partir du {departureDate}.  
+    L’analyse doit se limiter aux conditions climatiques (températures moyennes, précipitations probables, phénomènes particuliers) 
+    et fournir uniquement des recommandations d’adaptation strictement liées à la météo 
+    (vêtements appropriés, accessoires utiles, alternatives en cas d’intempéries).  
+    Chaque prévision doit s’appuyer sur des sources météorologiques fiables, mentionnées explicitement avec date de consultation.  
+
+  expected_output: >
+    Un objet JSON par ville contenant :  
+      - daily_forecast : liste des prévisions par jour, chaque entrée incluant :
+          - date : jour concerné
+          - weather_summary : températures moyennes, précipitations probables, phénomènes particuliers
+          - recommendations : conseils pratiques strictement météorologiques pour ce jour
+      - sources : liste des sources utilisées avec URL et date de consultation
+
+
+
+
+transport_planner_task:
+  description: >
+    Déterminer les segments de transport significatifs à l'intérieur de la ville sélectionnée pour la période
+    de {duration} jours à partir du {departureDate}. Inclure notamment :
+      - Transferts clés (ex. aéroport/gares ↔ hôtel) et liaisons majeures hôtel ↔ quartiers/points d’intérêt.
+      - Modes recommandés (métro, train urbain, bus, tram, taxi/VTC, marche, ferry local) avec lignes/opérateurs utiles.
+      - Durées estimées, fréquence si service cadencé, nombre de correspondances.
+      - Coûts estimés (JPY) et indication si réservation nécessaire/utile.
+      - Pass/titres urbains pertinents (nom, zones, coût, validité, conditions, rentabilité).
+    Toutes les informations doivent être confirmées par des sources fiables avec URL et date (publication ou consultation).
+    Se limiter strictement au transport urbain (pas de contenu touristique).
+  expected_output: >
+    Un objet JSON avec :
+      city: string
+      segments:                 # liste ordonnée des trajets intra-ville
+        - from_point: string    # ex. "HND T3", "Hotel", "Tokyo Station Yaesu Exit"
+          to_point: string
+          mode: string          # "Metro" | "JR Urban" | "Bus" | "Tram" | "Taxi" | "Walk" | "Ferry"
+          operator: string      # ex. "Tokyo Metro", "Toei", "JR East" (optionnel)
+          line_or_service: string   # ex. "Ginza Line", "Yamanote" (optionnel)
+          transfers: integer         # défaut 0
+          frequency: string          # ex. "every 3–5 min" (optionnel)
+          departure_time: string     # "HH:MM" local (optionnel)
+          arrival_time: string       # "HH:MM" local (optionnel)
+          duration_minutes: integer
+          cost_estimate_yen: integer
+          reservation_required: boolean
+          notes: string              # ex. "ascenseurs dispo", "heure de pointe" (optionnel)
+          sources:
+            - url: string
+              date: string           # "YYYY-MM-DD"
+      passes:                   # recommandations de titres/passes urbains
+        - pass_name: string
+          coverage: string          # zones/lignes incluses
+          validity_days: integer
+          cost_yen: integer
+          conditions: string        # ex. "non-transférable"
+          break_even_explanation: string  # comparaison vs tickets à l’unité
+          purchase_options: string  # ex. "bornes, guichets, en ligne"
+          sources:
+            - url: string
+              date: string
+      assumptions: [string]     # ex. "voyage léger", "hors heures de pointe"
+      generation_info:
+        generated_at: string    # "YYYY-MM-DD"
+        timezone: string        # ex. "Asia/Tokyo"
+
+
+lodging_specialist_task:
+  description: >
+    Effectuer des recherches en ligne pour chaque ville listée dans {citiesToInclude}, 
+    en tenant compte du budget, du style de voyage et des contraintes éventuelles 
+    (ex. proximité des quartiers cibles du contexte city_sequencing_and_districts). 
+    Sélectionner au minimum deux hébergements par ville. 
+    Indiquer les caractéristiques principales et les prix en JPY et en EUR (taxes incluses), 
+    en citant des sources fiables avec date (publication ou consultation).
+  expected_output: >
+    Un objet JSON listant les villes et, pour chacune, un tableau "accommodations" 
+    contenant au minimum deux options. Chaque option inclut :
+      - name : nom de l’hébergement
+      - type : catégorie (ex. "hotel", "ryokan", "guesthouse", "hostel", "aparthotel")
+      - price_per_night : 
+          jpy : entier (taxes incluses)
+          eur : nombre décimal (taxes incluses)
+      - total_estimate :
+          jpy : entier (pour {duration} nuits, taxes incluses)
+          eur : nombre décimal (pour {duration} nuits, taxes incluses)
+      - pros : liste de points forts
+      - cons : liste de limites
+      - link : URL de la page source
+      - source_date : date de publication/consultation de la source (YYYY-MM-DD)
+
+
+
+daily_activities_sequencing_task:
+  description: >
+    Concevoir un programme quotidien pour {duration} jours à partir du {departureDate} sur {citiesToInclude},
+    en excluant strictement {citiesToExclude}. Organiser les activités par créneaux (matin, après-midi, soir),
+    en alignant la sélection sur {interests}, le rythme {pace} (nombre d’activités, durées, transitions)
+    et les éventuels services/format souhaités {services} lorsqu’ils s’appliquent à des activités (p. ex. visite guidée,
+    atelier réservé). Respecter des fenêtres de repas (ex. 12:00–14:00 et 19:00–21:00) sans y placer d’activités.
+    Prévoir au moins une alternative par créneau et citer au moins une source fiable et datée par activité/alternative.
+  expected_output: >
+    Un objet JSON avec :
+      - planning_context : récapitulatif {interests}, {pace}, {citiesToExclude}, {comments}, {services}
+      - days : liste des jours, chacun avec :
+          - city, date, meal_windows
+          - activities : (timeslot, name, category, start_time, duration_minutes, location_name, address,
+                         indoor_outdoor, weather_notes?, cost_eur, travel_to_next_minutes?, sources[ {url, date} ])
+          - alt_options : alternatives par créneau (timeslot, name, category, duration_minutes, indoor_outdoor, reason, sources)
+          - assumptions : hypothèses appliquées (ex. traduction du rythme {pace} en densité)
+      - compliance : { exclusions_respected: bool, notes: string }
+      - generation_info : { generated_at: YYYY-MM-DD, timezone: "Asia/Tokyo" }
+
+
+
+dining_recommender_task:
+  description: >
+    Élaborer un plan de restauration pour chaque jour du voyage (petit déjeuner, déjeuner, dîner),
+    aligné sur le budget, les restrictions alimentaires et la localisation des activités prévues.
+    Mettre en avant, quand pertinent, les spécialités locales ou plats emblématiques.
+    Toutes les recommandations doivent être issues de sources fiables avec URL et date (publication ou consultation).
+  expected_output: >
+    Un objet JSON avec une liste "meals". Chaque entrée contient obligatoirement :
+      - day : date au format YYYY-MM-DD
+      - meal_type : "petit_dejeuner" | "dejeuner" | "diner"
+      - restaurant : nom de l’établissement
+      - cuisine : type de cuisine / style (ex. izakaya, ramen, kaiseki)
+      - price_range : fourchette de prix en EUR (taxes incluses)
+      - dish_recommendation : plat phare à essayer
+      - address : adresse complète
+      - reservation_needed : booléen indiquant si une réservation est nécessaire
+      - source : { url, date }  # URL de la source fiable et date (YYYY-MM-DD)
+    Au moins une option par repas est requise.
+
+
+
+budget_aggregation_and_variants_task:
+  description: >
+    Agréger tous les coûts estimés issus des modules: transport (segments & pass), hébergement, restauration
+    (petit déjeuner, déjeuner, dîner) et activités (payantes). Normaliser en EUR (taxes incluses), documenter
+    les conversions JPY→EUR (taux, date, source), calculer le total et l’écart au budget utilisateur.
+    Proposer des scénarios alternatifs avec description, liste d’ajustements et impact financier.
+    Chaque coût et chaque scénario doivent référencer au moins une source (URL + date).
+  expected_output: >
+    Un objet JSON avec :
+      - breakdown : liste par catégorie ("transport","lodging","dining","activities"), chacune avec items, subtotal
+      - total : total général en EUR
+      - difference_from_budget : delta vs budget utilisateur + statut ("under"|"over"|"on_target")
+      - scenarios : variantes (name, description, adjustments[], delta_eur, new_total_eur, pros[], cons[], sources[])
+      - fx : métadonnées de conversion (base="EUR", quote="JPY", rate, as_of, source_url?)
+      - assumptions : hypothèses de calcul (p.ex. nb de nuits, voyageurs)
+    Tous les items doivent inclure : label, qty, unit_cost_eur, total_cost_eur, source {url,date}.
+
+
+
+quality_and_consistency_audit_task:
+  description: >
+    Auditer l’ensemble des livrables : météo (journalier), transport (intra/inter selon périmètre),
+    hébergement, activités (matin/après-midi/soir, fenêtres repas respectées), restauration (3 repas/jour),
+    budget (agrégation & scénarios), et sources. Vérifier :
+      - Couverture complète des jours/villes (en excluant {citiesToExclude}).
+      - Cohérence temporelle (pas de chevauchements ; durées + transitions ; fuseau & formats horaires).
+      - Alignement météo (outdoor/mixed vs conditions du jour ; alternatives indoor présentes).
+      - Alignement transport ↔ activités/hébergement (points de départ/arrivée plausibles).
+      - Conformité préférences {interests}, rythme {pace}, et budget {budget}.
+      - Intégrité budgétaire (somme des sous-totaux = total ; pas de double comptage pass/billets ; FX tracé).
+      - Sources (URL + date) pour chaque élément requis.
+      - Formats/units (EUR TTC, minutes, dates YYYY-MM-DD, JSON conforme aux modèles).
+    Prioriser les écarts et proposer des recommandations actionnables (correctifs & impacts).
+  expected_output: >
+    Un objet JSON contenant :
+      - audit_summary : { status, score_percent, totals_by_severity }
+      - inconsistencies : liste d’anomalies (id, severity, component, json_path, message, suggestion)
+      - missing_elements : éléments manquants (component, json_path, description, suggestion)
+      - recommendations : actions proposées (priority, action, rationale, expected_impact_eur?, fixes_issue_ids[])
+      - compliance : drapeaux de conformité (budget, pace, exclusions, sources, unités, fuseau)
+      - metrics : statistiques de couverture (comptages & ratios)
+      - generation_info : { generated_at, timezone }
+
+
+
+
+itinerary_synthesizer_task:
+  description: >
+    Produire un fichier JSON final en français, organisé par ville puis par jour. Pour chaque ville,
+    inclure une vue d’ensemble (hébergement principal + notes/passes éventuels). Pour chaque jour :
+    météo (synthèse), segments de transport du jour, hébergement (où dormir), activités
+    (matin / après-midi / soir), restauration (petit déjeuner / déjeuner / dîner), coûts du jour et
+    sources datées. Harmoniser les formats (YYYY-MM-DD, HH:MM local, EUR TTC, minutes). N’inclure
+    que les sections réellement disponibles selon {services} (pas de sections vides).
+  expected_output: >
+    Un objet JSON avec les clés minimales :
+      - version
+      - meta { first_name, departure_date, duration_days, cities_to_include, pace, interests, services, cities_to_exclude, comments, budget_eur? }
+      - itinerary.cities[] :
+          - city
+          - overview { lodging{name,link,address,check_in,check_out}, transport_notes?, passes[] }
+          - days[] :
+              - date
+              - weather { summary, temp_avg_c?, precip_prob_pct?, special?, sources[] }
+              - transport[] { from,to,mode,line_or_service?,duration_minutes,cost_eur,reservation_required,notes?,sources[] }
+              - lodging { name,link,address }
+              - activities { morning[], afternoon[], evening[] }  # items avec horaires, durée, adresse, indoor/outdoor, coût, sources
+              - dining { breakfast[], lunch[], dinner[] }         # items avec cuisine, prix, réservation?, adresse, sources
+              - daily_costs_eur { transport, activities, dining, other, total }
+              - day_sources[]
+      - budget_overview { by_category, total_eur, difference_from_budget_eur, status }
+      - scenarios[] { name, description, adjustments?, delta_eur, new_total_eur, pros[], cons[], sources[] }
+      - bibliography[] { title?, url, date }
+      - generation_info { generated_at, timezone }
+
+
+translation_task:
+  description: >
+    Entrée: un objet validé ItinerarySynthesisJSON (FR). Générer trois rendus JSON avec contenus traduits
+    pour 'fr', 'en' et 'ja'. Préserver:
+      - les NOMS DE CLÉS et la structure (identiques a l’entrée),
+      - les formats de dates (YYYY-MM-DD) et heures (HH:MM),
+      - les montants (EUR TTC) et nombres,
+      - les URLs,
+      - les valeurs d’énumération utilisées par la logique (ex. "morning","afternoon","evening",
+        "indoor","outdoor","mixed") — ne pas les traduire.
+    Ne pas traduire les noms propres, sauf usages internationaux établis. Générer aussi une carte de libellés UI (i18n).
+  expected_output: >
+    Un objet JSON avec:
+      - languages: ["fr","en","ja"]
+      - translation_policy: rappels des règles de préservation
+      - translations:
+          fr: { i18n_labels: {...}, translated: <ItinerarySynthesisJSON en FR>, stats: {...}, warnings: [...] }
+          en: { i18n_labels: {...}, translated: <ItinerarySynthesisJSON en EN>, stats: {...}, warnings: [...] }
+          ja: { i18n_labels: {...}, translated: <ItinerarySynthesisJSON en JA>, stats: {...}, warnings: [...] }
+
+
+# orchestration_task:
+#   description: >
+#     Initialiser la collaboration multi-agents en fixant les conventions globales (formats de dates/heures,
+#     unités, devise, fuseau), en clarifiant les responsabilités de chaque agent, les artefacts produits et
+#     consommés, et les contrats de données attendus. Aucune séquence imposée, pas de conditions de passage :
+#     les agents peuvent travailler en parallèle et publier leurs artefacts au fur et à mesure.
+#   expected_output: >
+#     Un rapport JSON concis contenant :
+#       - conventions : fuseau, devise, unités, politique FX
+#       - agents_overview : pour chaque agent, responsabilités, artefacts produits/consommés, critères de succès
+#       - data_contracts : liste des artefacts avec référence de schéma et champs requis
+#       - artifacts_registry : registre des artefacts (nom, propriétaire, description)
+#       - execution_mode : "parallel"
+#       - notes : remarques utiles (hypothèses, contraintes connues)

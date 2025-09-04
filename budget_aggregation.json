@@ -1,0 +1,290 @@
+{
+  "breakdown": [
+    {
+      "category": "transport",
+      "items": [
+        {
+          "label": "Bus from Kansai to Kyoto",
+          "category": "transport",
+          "qty": "1",
+          "unit_cost_eur": "21.07",
+          "total_cost_eur": "21.07",
+          "notes": null,
+          "sources": [
+            {
+              "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/",
+              "date": "2023-10-01"
+            }
+          ]
+        },
+        {
+          "label": "Kyoto City Bus pass",
+          "category": "transport",
+          "qty": "1",
+          "unit_cost_eur": "4.08",
+          "total_cost_eur": "4.08",
+          "notes": null,
+          "sources": [
+            {
+              "url": "https://www.kyotocity.jp/english/transportation/",
+              "date": "2023-10-01"
+            }
+          ]
+        },
+        {
+          "label": "ICOCA Card",
+          "category": "transport",
+          "qty": "1",
+          "unit_cost_eur": "13.55",
+          "total_cost_eur": "13.55",
+          "notes": null,
+          "sources": [
+            {
+              "url": "https://www.jr-west.co.jp/global/en/icoa/",
+              "date": "2023-10-01"
+            }
+          ]
+        },
+        {
+          "label": "Bus from Hotel to Kinkaku-ji",
+          "category": "transport",
+          "qty": "1",
+          "unit_cost_eur": "1.55",
+          "total_cost_eur": "1.55",
+          "notes": null,
+          "sources": [
+            {
+              "url": "https://www.kyotocity.jp/english/transportation/",
+              "date": "2023-10-01"
+            }
+          ]
+        },
+        {
+          "label": "Bus from Kinkaku-ji to Arashiyama",
+          "category": "transport",
+          "qty": "1",
+          "unit_cost_eur": "3.39",
+          "total_cost_eur": "3.39",
+          "notes": null,
+          "sources": [
+            {
+              "url": "https://www.japan-guide.com/e/e3912.html",
+              "date": "2023-10-01"
+            }
+          ]
+        },
+        {
+          "label": "Train from Arashiyama to Hotel",
+          "category": "transport",
+          "qty": "1",
+          "unit_cost_eur": "1.63",
+          "total_cost_eur": "1.63",
+          "notes": null,
+          "sources": [
+            {
+              "url": "https://www.japan-guide.com/e/e3912.html",
+              "date": "2023-10-01"
+            }
+          ]
+        }
+      ],
+      "subtotal_eur": "55.27"
+    },
+    {
+      "category": "lodging",
+      "items": [
+        {
+          "label": "Sakura Terrace The Gallery (5 Nights)",
+          "category": "lodging",
+          "qty": "5",
+          "unit_cost_eur": "81.63",
+          "total_cost_eur": "408.13",
+          "notes": null,
+          "sources": [
+            {
+              "url": "https://www.booking.com/hotel/jp/sakura-terrace-the-gallery.fr.html",
+              "date": "2023-10-02"
+            }
+          ]
+        }
+      ],
+      "subtotal_eur": "408.13"
+    },
+    {
+      "category": "dining",
+      "items": [
+        {
+          "label": "Lunch (15 Meals)",
+          "category": "dining",
+          "qty": "15",
+          "unit_cost_eur": "6.76",
+          "total_cost_eur": "101.42",
+          "notes": null,
+          "sources": [
+            {
+              "url": "https://www.example.com/",
+              "date": "2023-10-01"
+            }
+          ]
+        },
+        {
+          "label": "Dinner (15 Meals)",
+          "category": "dining",
+          "qty": "15",
+          "unit_cost_eur": "13.52",
+          "total_cost_eur": "202.83",
+          "notes": null,
+          "sources": [
+            {
+              "url": "https://www.example.com/",
+              "date": "2023-10-01"
+            }
+          ]
+        }
+      ],
+      "subtotal_eur": "304.25"
+    },
+    {
+      "category": "activities",
+      "items": [
+        {
+          "label": "Kinkaku-ji Entrance",
+          "category": "activities",
+          "qty": "1",
+          "unit_cost_eur": "4.5",
+          "total_cost_eur": "4.5",
+          "notes": null,
+          "sources": [
+            {
+              "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/kinkaku-ji-golden-pavilion/",
+              "date": "2023-10-01"
+            }
+          ]
+        },
+        {
+          "label": "Ryoan-ji Entrance",
+          "category": "activities",
+          "qty": "1",
+          "unit_cost_eur": "5",
+          "total_cost_eur": "5",
+          "notes": null,
+          "sources": [
+            {
+              "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/ryoan-ji/",
+              "date": "2023-10-01"
+            }
+          ]
+        }
+      ],
+      "subtotal_eur": "13.5"
+    }
+  ],
+  "total_eur": "780.65",
+  "difference_from_budget": {
+    "budget_input_eur": "5000",
+    "difference_from_budget_eur": "4219.35",
+    "status": "under"
+  },
+  "scenarios": [
+    {
+      "name": "Opt for Hostel Stay",
+      "description": "Choose K's House Kyoto Hostel instead of the hotel.",
+      "adjustments": [
+        {
+          "operation": "replace",
+          "target_category": "lodging",
+          "target_label": "Sakura Terrace The Gallery",
+          "description": "Replace hotel accommodation with hostel.",
+          "delta_eur": "-272.82",
+          "sources": [
+            {
+              "url": "https://www.hostelworld.com/hosteldetails.php/Ks-House-Kyoto/Kyoto/45746",
+              "date": "2023-10-02"
+            }
+          ]
+        }
+      ],
+      "delta_eur": "-272.82",
+      "new_total_eur": "507.83",
+      "pros": [
+        "Significant savings on accommodation"
+      ],
+      "cons": [
+        "Shared accommodation may not be preferred"
+      ],
+      "sources": [
+        {
+          "url": "https://www.hostelworld.com/hosteldetails.php/Ks-House-Kyoto/Kyoto/45746",
+          "date": "2023-10-02"
+        }
+      ]
+    },
+    {
+      "name": "Simplify Dining",
+      "description": "Limit dining out to one meal per day at local restaurants.",
+      "adjustments": [
+        {
+          "operation": "remove",
+          "target_category": "dining",
+          "target_label": "Lunch and Dinner",
+          "description": "Reduce dining cost through limited dining options.",
+          "delta_eur": "-104.25",
+          "sources": [
+            {
+              "url": "https://www.example.com/",
+              "date": "2023-10-01"
+            }
+          ]
+        }
+      ],
+      "delta_eur": "-104.25",
+      "new_total_eur": "676.4",
+      "pros": [
+        "More budget flexibility for activities"
+      ],
+      "cons": [
+        "Limited meal options"
+      ],
+      "sources": []
+    },
+    {
+      "name": "Use Urban Passes",
+      "description": "Purchase an urban transport pass instead of individual tickets.",
+      "adjustments": [
+        {
+          "operation": "replace",
+          "target_category": "transport",
+          "target_label": "Individual Tickets",
+          "description": "Opt for an unlimited transport pass.",
+          "delta_eur": "-5.61",
+          "sources": [
+            {
+              "url": "https://www.kyotocity.jp/english/transportation/",
+              "date": "2023-10-01"
+            }
+          ]
+        }
+      ],
+      "delta_eur": "-5.61",
+      "new_total_eur": "775.04",
+      "pros": [
+        "Easier access to multiple transport methods"
+      ],
+      "cons": [
+        "Requires careful planning of routes"
+      ],
+      "sources": []
+    }
+  ],
+  "fx": {
+    "base": "EUR",
+    "quote": "JPY",
+    "rate": "0.0068",
+    "as_of": "2023-10-02",
+    "source_url": "https://www.xe.com/"
+  },
+  "assumptions": [
+    "5 days of travel with 3 meals a day.",
+    "Activities are focused around prominent cultural experiences."
+  ]
+}

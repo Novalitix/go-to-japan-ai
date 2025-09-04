@@ -1,0 +1,129 @@
+{
+  "city": "Kyoto",
+  "segments": [
+    {
+      "from_point": "Kansai International Airport (KIX)",
+      "to_point": "Hotel near Kyoto Station",
+      "mode": "Bus",
+      "operator": "Airport Limousine Bus",
+      "line_or_service": "Kansai Airport Limousine",
+      "transfers": 0,
+      "frequency": "every 30-60 min",
+      "departure_time": null,
+      "arrival_time": null,
+      "duration_minutes": 90,
+      "cost_estimate_yen": 3100,
+      "reservation_required": true,
+      "notes": "Direct service to central Kyoto; check for time tables.",
+      "sources": [
+        {
+          "url": "https://www.japan.travel/en/uk/destinations/kansai/kyoto/",
+          "date": "2023-10-01"
+        }
+      ]
+    },
+    {
+      "from_point": "Hotel near Kyoto Station",
+      "to_point": "Kinkaku-ji (Golden Pavilion)",
+      "mode": "Bus",
+      "operator": "Kyoto City Bus",
+      "line_or_service": "Bus #101 or #205",
+      "transfers": 0,
+      "frequency": "every 15 min",
+      "departure_time": null,
+      "arrival_time": null,
+      "duration_minutes": 45,
+      "cost_estimate_yen": 230,
+      "reservation_required": false,
+      "notes": "Stops are near hotel location.",
+      "sources": [
+        {
+          "url": "https://www.kyotocity.jp/english/transportation/",
+          "date": "2023-10-01"
+        }
+      ]
+    },
+    {
+      "from_point": "Kinkaku-ji",
+      "to_point": "Arashiyama Bamboo Grove",
+      "mode": "Bus",
+      "operator": "Keifuku Railway",
+      "line_or_service": "Randen Line",
+      "transfers": 1,
+      "frequency": "every 20 min",
+      "departure_time": null,
+      "arrival_time": null,
+      "duration_minutes": 60,
+      "cost_estimate_yen": 500,
+      "reservation_required": false,
+      "notes": "Transfer at Ryoan-ji Station.",
+      "sources": [
+        {
+          "url": "https://www.japan-guide.com/e/e3912.html",
+          "date": "2023-10-01"
+        }
+      ]
+    },
+    {
+      "from_point": "Arashiyama Bamboo Grove",
+      "to_point": "Hotel near Kyoto Station",
+      "mode": "JR Urban",
+      "operator": "JR West",
+      "line_or_service": "San-In Line",
+      "transfers": 0,
+      "frequency": "every 30 min",
+      "departure_time": null,
+      "arrival_time": null,
+      "duration_minutes": 30,
+      "cost_estimate_yen": 240,
+      "reservation_required": false,
+      "notes": "Direct train to Kyoto Station.",
+      "sources": [
+        {
+          "url": "https://www.japan-guide.com/e/e3912.html",
+          "date": "2023-10-01"
+        }
+      ]
+    }
+  ],
+  "passes": [
+    {
+      "pass_name": "Kyoto City Bus & Kyoto Bus One-Day Card",
+      "coverage": "Unlimited rides on city buses within Kyoto",
+      "validity_days": 1,
+      "cost_yen": 600,
+      "conditions": "Non-transferable, valid for one day.",
+      "break_even_explanation": "Covers up to 3 bus rides, cost-effective for multiple trips.",
+      "purchase_options": "Available at kiosks, tourist information centers.",
+      "sources": [
+        {
+          "url": "https://www.kyotocity.jp/english/transportation/",
+          "date": "2023-10-01"
+        }
+      ]
+    },
+    {
+      "pass_name": "ICOCA Card",
+      "coverage": "Use for train, bus, and convenience store purchases.",
+      "validity_days": 1,
+      "cost_yen": 2000,
+      "conditions": "Reloadable for further trips.",
+      "break_even_explanation": "Convenient for multiple rides; reduces hassle.",
+      "purchase_options": "Available at JR stations.",
+      "sources": [
+        {
+          "url": "https://www.jr-west.co.jp/global/en/icoa/",
+          "date": "2023-10-01"
+        }
+      ]
+    }
+  ],
+  "assumptions": [
+    "Traveling lightly with no large luggage.",
+    "Using public transport outside of peak hours."
+  ],
+  "generation_info": {
+    "generated_at": "2023-10-01",
+    "timezone": "Asia/Tokyo"
+  }
+}

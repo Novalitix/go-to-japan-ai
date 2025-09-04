@@ -1,0 +1,49 @@
+{
+  "cities": [
+    {
+      "city": "Kyoto",
+      "events": [
+        {
+          "title": "Kyoto Music Expo 2025",
+          "description": "A two-day music festival featuring a variety of performances at Umekoji Park.",
+          "category": "event",
+          "date": "October 11-12, 2025",
+          "source_url": "https://niewmedia.com/en/news/070540/",
+          "source_date": "2023-10-10"
+        },
+        {
+          "title": "Umekoji Handicrafts Market",
+          "description": "A market showcasing local artisans and craftsmen with handmade goods.",
+          "category": "market",
+          "date": "October 11, 2025",
+          "source_url": "https://japancheapo.com/events/october/",
+          "source_date": "2023-10-10"
+        },
+        {
+          "title": "Jidai Matsuri",
+          "description": "Festival of the Ages featuring a parade of citizens wearing period costumes reflecting Kyoto's history.",
+          "category": "festival",
+          "date": "October 22, 2025",
+          "source_url": "https://www.insidejapantours.com/us/experience-japan/i-jidai01-13/festival-of-the-ages/",
+          "source_date": "2023-10-10"
+        },
+        {
+          "title": "Autumn Events around Kyoto",
+          "description": "The Jidai Matsuri is one of the most significant events in Kyoto, celebrated every year in October.",
+          "category": "festival",
+          "date": "October 2025",
+          "source_url": "https://www.magical-trip.com/media/kyoto-list-of-events-festivals-for-2025/",
+          "source_date": "2023-10-10"
+        },
+        {
+          "title": "Kurama Fire Festival",
+          "description": "One of the most spectacular events, the Kurama Fire Festival occurs on October 22, only after the travel period but is a notable mention.",
+          "category": "festival",
+          "date": "October 22, 2025",
+          "source_url": "https://en.japantravel.com/kyoto/fire-festival-kurama-temple/24248",
+          "source_date": "2023-10-10"
+        }
+      ]
+    }
+  ]
+}
