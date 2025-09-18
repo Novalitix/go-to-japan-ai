@@ -1,0 +1,217 @@
+{
+  "breakdown": [
+    {
+      "category": "lodging",
+      "items": [
+        {
+          "label": "Hotel Granvia Kyoto",
+          "category": "lodging",
+          "qty": "2",
+          "unit_cost_eur": "197",
+          "total_cost_eur": "394",
+          "notes": null,
+          "sources": [
+            {
+              "url": "https://www.granviakyoto.com/",
+              "date": "2023-10-01"
+            }
+          ]
+        },
+        {
+          "label": "Ryokan Yachiyo",
+          "category": "lodging",
+          "qty": "2",
+          "unit_cost_eur": "164",
+          "total_cost_eur": "328",
+          "notes": null,
+          "sources": [
+            {
+              "url": "http://www.yachiyo.com/",
+              "date": "2023-10-01"
+            }
+          ]
+        },
+        {
+          "label": "K's House Kyoto",
+          "category": "lodging",
+          "qty": "2",
+          "unit_cost_eur": "23",
+          "total_cost_eur": "46",
+          "notes": null,
+          "sources": [
+            {
+              "url": "http://www.kshouse.jp/kyoto-e/index.html",
+              "date": "2023-10-01"
+            }
+          ]
+        }
+      ],
+      "subtotal_eur": "768"
+    },
+    {
+      "category": "dining",
+      "items": [
+        {
+          "label": "Breakfast",
+          "category": "dining",
+          "qty": "2",
+          "unit_cost_eur": "6.5",
+          "total_cost_eur": "13",
+          "notes": null,
+          "sources": [
+            {
+              "url": "https://www.example.com/",
+              "date": "N/A"
+            }
+          ]
+        },
+        {
+          "label": "Lunch",
+          "category": "dining",
+          "qty": "2",
+          "unit_cost_eur": "8",
+          "total_cost_eur": "16",
+          "notes": null,
+          "sources": [
+            {
+              "url": "https://www.example.com/",
+              "date": "N/A"
+            }
+          ]
+        },
+        {
+          "label": "Dinner",
+          "category": "dining",
+          "qty": "2",
+          "unit_cost_eur": "20",
+          "total_cost_eur": "40",
+          "notes": null,
+          "sources": [
+            {
+              "url": "https://www.example.com/",
+              "date": "N/A"
+            }
+          ]
+        }
+      ],
+      "subtotal_eur": "69"
+    },
+    {
+      "category": "activities",
+      "items": [
+        {
+          "label": "Kinkaku-ji Entry",
+          "category": "activities",
+          "qty": "1",
+          "unit_cost_eur": "4",
+          "total_cost_eur": "4",
+          "notes": null,
+          "sources": [
+            {
+              "url": "https://www.kyoto.travel/en/activities/",
+              "date": "2023-10-15"
+            }
+          ]
+        },
+        {
+          "label": "Ryoan-ji Entry",
+          "category": "activities",
+          "qty": "1",
+          "unit_cost_eur": "3",
+          "total_cost_eur": "3",
+          "notes": null,
+          "sources": [
+            {
+              "url": "https://www.kyoto.travel/en/activities/",
+              "date": "2023-10-15"
+            }
+          ]
+        },
+        {
+          "label": "Kiyomizu-dera Entry",
+          "category": "activities",
+          "qty": "1",
+          "unit_cost_eur": "4",
+          "total_cost_eur": "4",
+          "notes": null,
+          "sources": [
+            {
+              "url": "https://www.kyoto.travel/en/activities/",
+              "date": "2023-10-15"
+            }
+          ]
+        }
+      ],
+      "subtotal_eur": "11"
+    }
+  ],
+  "total_eur": "474",
+  "difference_from_budget": {
+    "budget_input_eur": "5000",
+    "difference_from_budget_eur": "-4526",
+    "status": "under"
+  },
+  "scenarios": [
+    {
+      "name": "Alternative Accommodation (K's House)",
+      "description": "Stay at K's House instead of Granvia Hotel for cost savings.",
+      "adjustments": [
+        {
+          "operation": "remove",
+          "target_category": "lodging",
+          "target_label": "Hotel Granvia Kyoto",
+          "description": "Swap from Granvia to K's House for cost reduction.",
+          "delta_eur": "-348",
+          "sources": [
+            {
+              "url": "http://www.kshouse.jp/kyoto-e/index.html",
+              "date": "2023-10-01"
+            }
+          ]
+        }
+      ],
+      "delta_eur": "-348",
+      "new_total_eur": "126",
+      "pros": [
+        "Significant cost savings",
+        "Social atmosphere"
+      ],
+      "cons": [
+        "Less privacy",
+        "Possible less comfort"
+      ],
+      "sources": []
+    },
+    {
+      "name": "Reduce Dinner Spending",
+      "description": "Opt for more casual dining options to save.",
+      "adjustments": [
+        {
+          "operation": "replace",
+          "target_category": "dining",
+          "target_label": "Dinner",
+          "description": "Opt for cheaper dining options.",
+          "delta_eur": "-20",
+          "sources": []
+        }
+      ],
+      "delta_eur": "-20",
+      "new_total_eur": "454",
+      "pros": [
+        "Maintain quality dining experience"
+      ],
+      "cons": [
+        "Minor savings"
+      ],
+      "sources": []
+    }
+  ],
+  "fx": {
+    "base": "EUR",
+    "quote": "JPY",
+    "rate": "0.0066",
+    "as_of": "2023-10-01",
+    "source_url": "https://www.example.com/"
+  },
+  "assumptions": []
+}
