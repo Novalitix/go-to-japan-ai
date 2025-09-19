@@ -1,9 +1,11 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, BackgroundTasks
 from pydantic import BaseModel, Field, field_validator
 from typing import List, Optional, Dict, Any
 from dotenv import load_dotenv
 import os
 import json
+import asyncio
+import uuid
 
 from go_to_japan.main import run
 
@@ -70,35 +72,104 @@ class InputsPayload(BaseModel):
     Inputs: Dict[str, Any] = Field(..., descrition="inputs for the GTJAI crew")
 
 
+# @gtjia.get("/health")
+# def health():
+#     return {"status": "ok"}
+
+# # POST — envoie un dictionnaire JSON
+# @gtjia.post("/kickoff_post")
+# def kickoff_post(inputs: str):
+#     try:
+#         data = json.loads(inputs)  # parse le dict JSON depuis l’URL
+#         if not isinstance(data, dict):
+#             raise ValueError("`inputs` doit être un objet JSON (dict)")
+#         output = run(data)
+#         write_root_cause("final_output.json", "./final_outputs", output.raw)
+#         return {"status": "success", "data": output.raw}
+#     except Exception as e:
+#         raise HTTPException(status_code=400, detail=f"Bad inputs: {e}")
+    
+# # POST — envoie un dictionnaire JSON
+# @gtjia.post("/kickoff_post")
+# async def kickoff_post(inputs: str):
+#     try:
+#         data = json.loads(inputs)  # parse le dict JSON
+#         if not isinstance(data, dict):
+#             raise ValueError("`inputs` doit être un objet JSON (dict)")
+
+#         # Exécuter les fonctions bloquantes dans un thread
+#         output = await asyncio.to_thread(run, data)
+#         await asyncio.to_thread(write_root_cause, "final_output.json", "./final_outputs", output.raw)
+
+#         return {"status": "success", "data": output.raw}
+
+#     except Exception as e:
+#         raise HTTPException(status_code=400, detail=f"Bad inputs: {e}")
+
+
+
+
+# # GET — passe le dictionnaire en JSON dans le query param `inputs`
+# @gtjia.get("/kickoff_get")
+# async def kickoff_get(inputs: str):
+#     try:
+#         data = json.loads(inputs)  # parse le dict JSON
+#         if not isinstance(data, dict):
+#             raise ValueError("`inputs` doit être un objet JSON (dict)")
+
+#         output = await asyncio.to_thread(run, data)
+#         await asyncio.to_thread(write_root_cause, "final_output.json", "./final_outputs", output.raw)
+
+#         return {"status": "success", "data": output.raw}
+
+#     except Exception as e:
+#         raise HTTPException(status_code=400, detail=f"Bad inputs: {e}")
+
+
+
+
+results = {}
+
 @gtjia.get("/health")
-def health():
+async def health():
     return {"status": "ok"}
 
-# POST — envoie un dictionnaire JSON
-@gtjia.post("/kickoff")
-def kickoff_get(inputs: str):
+
+def run_job(job_id: str, inputs: str):
+    """Exécution bloquante dans un thread."""
     try:
         data = json.loads(inputs)  # parse le dict JSON depuis l’URL
         if not isinstance(data, dict):
-            raise ValueError("`inputs` doit être un objet JSON (dict)")
+            raise ValueError("inputs doit être un objet JSON (dict)")
         output = run(data)
         write_root_cause("final_output.json", "./final_outputs", output.raw)
-        return {"status": "success", "data": output.raw}
+        results[job_id] = {"status": "done", "data": output.raw}
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=f"Bad inputs: {e}")
+    
+
+
+@gtjia.post("/kickoff_post")
+async def kickoff_post(inputs: str, background_tasks: BackgroundTasks):
+    try:
+        data = json.loads(inputs)
+        if not isinstance(data, dict):
+            raise ValueError("`inputs` doit être un objet JSON (dict)")
+
+        job_id = str(uuid.uuid4())
+        results[job_id] = {"status": "running"}  # marquer comme en cours
+
+        # lancer en arrière-plan
+        background_tasks.add_task(run_job, job_id, data)
+
+        return {"status": "accepted", "job_id": job_id}
+
     except Exception as e:
         raise HTTPException(status_code=400, detail=f"Bad inputs: {e}")
 
 
-# GET — passe le dictionnaire en JSON dans le query param `inputs`
-@gtjia.get("/kickoff")
-def kickoff_get(inputs: str):
-    try:
-        data = json.loads(inputs)  # parse le dict JSON depuis l’URL
-        if not isinstance(data, dict):
-            raise ValueError("`inputs` doit être un objet JSON (dict)")
-        output = run(data)
-        write_root_cause("final_output.json", "./final_outputs", output.raw)
-        return {"status": "success", "data": output.raw}
-    except Exception as e:
-        raise HTTPException(status_code=400, detail=f"Bad inputs: {e}")
-
-
+@gtjia.get("/results/{job_id}")
+async def get_results(job_id: str):
+    if job_id not in results:
+        raise HTTPException(status_code=404, detail="Job not found")
+    return results[job_id]
