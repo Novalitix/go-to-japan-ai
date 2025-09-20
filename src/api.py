@@ -150,9 +150,10 @@ def run_job(job_id: str, inputs: str):
 
 
 @gtjia.post("/kickoff_post")
-async def kickoff_post(inputs: str, background_tasks: BackgroundTasks):
+async def kickoff_post(inputs: dict, background_tasks: BackgroundTasks):
     try:
-        data = json.loads(inputs)
+        # data = json.loads(inputs)
+        data = inputs
         if not isinstance(data, dict):
             raise ValueError("`inputs` doit être un objet JSON (dict)")
 
