@@ -99,6 +99,7 @@ class GoToJapan():
             verbose=True,
             memory=True,
             llm=llm,
+            
         )
     
     @agent
@@ -119,6 +120,8 @@ class GoToJapan():
             allow_delegation=True,
             memory=True,
             llm=llm,
+            reasoning=True,
+            max_reasoning_attempts=3
         )
     
     @agent
@@ -129,6 +132,8 @@ class GoToJapan():
             allow_delegation=True,
             memory=True,
             llm=llm,
+            reasoning=True,
+            max_reasoning_attempts=3
         )
     
     @agent
@@ -139,6 +144,8 @@ class GoToJapan():
             allow_delegation=True,
             memory=True,
             llm=llm,
+            reasoning=True,
+            max_reasoning_attempts=3
         )
     
     @agent
@@ -149,6 +156,8 @@ class GoToJapan():
             allow_delegation=True,
             memory=True,
             llm=llm,
+            reasoning=True,
+            max_reasoning_attempts=3
         )
     
     @agent
@@ -159,6 +168,8 @@ class GoToJapan():
             allow_delegation=True,
             memory=True,
             llm=llm,
+            reasoning=True,
+            max_reasoning_attempts=3
         )
     
     @agent
@@ -169,6 +180,8 @@ class GoToJapan():
             allow_delegation=True,
             memory=True,
             llm=llm,
+            reasoning=True,
+            max_reasoning_attempts=4
         )
     
     @agent
@@ -179,6 +192,8 @@ class GoToJapan():
             allow_delegation=True,
             memory=True,
             llm=llm,
+            reasoning=True,
+            max_reasoning_attempts=3
         )
     
     @agent
@@ -189,6 +204,8 @@ class GoToJapan():
             allow_delegation=True,
             memory=True,
             llm=llm,
+            reasoning=True,
+            max_reasoning_attempts=3
         )
     
     # @agent
@@ -210,7 +227,7 @@ class GoToJapan():
     #         config=self.tasks_config['orchestration_task'],
     #         agent=self.orchestration_agent(),
     #         output_json=OrchestrationBootReport,
-    #         output_file="result/orchestration_plan.json",
+    #         output_file="tasks_outputs/orchestration_plan.json",
         
     #     )
 
@@ -221,7 +238,7 @@ class GoToJapan():
             config=self.tasks_config['profiler_task'],
             agent=self.profiler_agent(),
             output_json= ResumeVoyage,
-            output_file="result/profile.json", 
+            output_file="tasks_outputs/profile.json", 
         )
     
     @task
@@ -231,8 +248,8 @@ class GoToJapan():
             agent=self.live_news_agent(),
             contexts=['profiler_task'],
             output_json=LiveNewsOutput,
-            output_file="result/live_news.json",
-            tools=[SerperDevTool()],
+            output_file="tasks_outputs/live_news.json",
+            tools=[SerperDevTool(n_results=5)],
         )
 
     @task
@@ -242,8 +259,8 @@ class GoToJapan():
             agent=self.weather_analyst_agent(),
             contexts=['profiler_task', 'live_news_task'],
             output_json=CityMeteoInfo,
-            output_file="result/weather_analyst.json",
-            tools=[SerperDevTool()],
+            output_file="tasks_outputs/weather_analyst.json",
+            tools=[SerperDevTool(n_results=5)],
         )
     
     @task
@@ -254,7 +271,7 @@ class GoToJapan():
             condition=has_restaurants,
             contexts=['profiler_task', 'live_news_task', 'weather_analyst_task'],
             output_json=TransportCityPlan,
-            output_file="result/transport_planner.json",
+            output_file="tasks_outputs/transport_planner.json",
             tools=[ScrapeWebsiteTool(), WebsiteSearchTool()],
         )
 
@@ -267,7 +284,7 @@ class GoToJapan():
             condition=has_lodging or has_accommodation,
             contexts=['profiler_task', 'live_news_task', 'weather_analyst_task'],
             output_json=LodgingOptionsByCity,
-            output_file="result/lodging_specialist.json",
+            output_file="tasks_outputs/lodging_specialist.json",
             tools=[ScrapeWebsiteTool(), WebsiteSearchTool()], 
         )
     
@@ -279,7 +296,7 @@ class GoToJapan():
             contexts=['profiler_task', 'live_news_task', 'weather_analyst_task', 'transport_planner_task', 'lodging_specialist_task'],
             output_json=DailyActivitiesPlan,
             tools=[ScrapeWebsiteTool(), WebsiteSearchTool()],
-            output_file="result/daily_activities.json", 
+            output_file="tasks_outputs/daily_activities.json", 
         )
     
     @task
@@ -290,7 +307,7 @@ class GoToJapan():
             condition=has_restaurants,
             contexts=['profiler_task', 'live_news_task', 'weather_analyst_task', 'transport_planner_task', 'lodging_specialist_task'],
             output_json=DiningPlan,
-            output_file="result/dining_recommender.json",
+            output_file="tasks_outputs/dining_recommender.json",
             tools=[ScrapeWebsiteTool(), WebsiteSearchTool()], 
         )
     
@@ -301,7 +318,7 @@ class GoToJapan():
             agent=self.budget_feasibility_controller_agent(),
             contexts=['profiler_task', 'live_news_task', 'weather_analyst_task', 'transport_planner_task', 'lodging_specialist_task', 'daily_activities_sequencing_task', 'dining_recommender_task'],
             output_json=BudgetAggregationOutput,
-            output_file="result/budget_aggregation.json",
+            output_file="tasks_outputs/budget_aggregation.json",
             tools=[ScrapeWebsiteTool(), WebsiteSearchTool()], 
         )
     
@@ -312,7 +329,7 @@ class GoToJapan():
             agent=self.quality_consistency_auditor_agent(),
             contexts=['profiler_task', 'live_news_task', 'weather_analyst_task', 'transport_planner_task', 'lodging_specialist_task', 'daily_activities_sequencing_task', 'dining_recommender_task', 'budget_aggregation_and_variants_task'],
             output_json=QualityAuditOutput,
-            output_file="result/quality_consistency_audit.json", 
+            output_file="tasks_outputs/quality_consistency_audit.json", 
         )
     
     @task
@@ -322,7 +339,7 @@ class GoToJapan():
             agent=self.itinerary_synthesizer_agent(),
             contexts=['profiler_task', 'live_news_task', 'weather_analyst_task', 'transport_planner_task', 'lodging_specialist_task', 'daily_activities_sequencing_task', 'dining_recommender_task', 'budget_aggregation_and_variants_task', 'quality_and_consistency_audit_task'],
             #output_json=ItinerarySynthesisJSON,
-            output_file="result/itinerary_synthesis.json",
+            output_file="tasks_outputs/itinerary_synthesis.json",
             output_pydantic=ItinerarySynthesisJSON
         )
     
@@ -333,7 +350,7 @@ class GoToJapan():
     #         agent=self.translation_agent(),
     #         contexts=['itinerary_synthesizer_task'],
     #         output_json=MultilingualItineraryTranslations,
-    #         output_file="result/itinerary_translation.json", 
+    #         output_file="tasks_outputs/itinerary_translation.json", 
     #     )
     
     #################################################
@@ -364,21 +381,7 @@ class GoToJapan():
             process=Process.sequential,
             verbose=True,
             # memory=True,
-            # long_term_memory=LongTermMemory(
-            #     storage=LTMSQLiteStorage(
-            #         db_path=f"{storage_dir}/long_memory.db"
-            #     )
-            # ),
-
-            # short_term_memory=ShortTermMemory(
-            #     storage=RAGStorage(
-            #         type="short_term",
-            #     )
-            # ),
-            # entity_memory=EntityMemory(
-            #     storage=RAGStorage(
-            #         type="entity_memory",
-            #     )
-            # ),
-            output_log_file="result/crew.json"
+            output_log_file="crew_outputs/crew.json",
+            planning=True,
+            planning_llm=llm
         )

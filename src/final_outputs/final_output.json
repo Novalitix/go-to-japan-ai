@@ -1,0 +1,303 @@
+[
+  {
+    "version": "1.0",
+    "meta": {
+      "first_name": "John",
+      "departure_date": "2025-10-11",
+      "duration_days": 2,
+      "cities_to_include": [
+        "Kyoto"
+      ],
+      "pace": "équilibré",
+      "interests": [
+        "temples"
+      ],
+      "services": [
+        "restaurants",
+        "lodging"
+      ],
+      "cities_to_exclude": [],
+      "comments": "",
+      "budget_eur": 5000
+    },
+    "itinerary": {
+      "cities": [
+        {
+          "city": "Kyoto",
+          "overview": {
+            "lodging": {
+              "name": "Hotel Granvia Kyoto",
+              "link": "https://www.granviakyoto.com/",
+              "address": "901 Higashishiokojicho, Shimogyo Ward, Kyoto",
+              "check_in": "2025-10-11",
+              "check_out": "2025-10-13"
+            },
+            "transport_notes": "Le Kyoto Bus One-Day Card permet des déplacements illimités dans la ville.",
+            "passes": []
+          },
+          "days": [
+            {
+              "date": "2025-10-11",
+              "weather": {
+                "summary": "Ciel partiellement nuageux, frais",
+                "temp_avg_c": 18,
+                "precip_prob_pct": 8,
+                "special": "Possibilité de pluie légère",
+                "sources": [
+                  {
+                    "url": "https://www.accuweather.com/en/jp/make/2342830/october-weather/2342830",
+                    "date": "2025-10-01",
+                    "title": "AccuWeather"
+                  }
+                ]
+              },
+              "transport": [
+                {
+                  "from_": "Gare de Kyoto",
+                  "to": "Kinkaku-ji",
+                  "mode": "bus",
+                  "line_or_service": "Bus 101",
+                  "duration_minutes": 30,
+                  "cost_eur": 1.55,
+                  "reservation_required": false,
+                  "notes": "",
+                  "sources": []
+                }
+              ],
+              "lodging": {
+                "name": "Hotel Granvia Kyoto",
+                "link": "https://www.granviakyoto.com/",
+                "address": "901 Higashishiokojicho, Shimogyo Ward, Kyoto"
+              },
+              "activities": {
+                "morning": [
+                  {
+                    "name": "Visite de Kinkaku-ji",
+                    "category": "temple",
+                    "start_time": "09:00",
+                    "duration_minutes": 120,
+                    "address": "1 Kinkakujicho, Kita Ward, Kyoto, 603-8361, Japan",
+                    "indoor_outdoor": "outdoor",
+                    "weather_notes": "Ciel partiellement nuageux, frais",
+                    "cost_eur": 6,
+                    "sources": [
+                      {
+                        "url": "https://www.insidekyoto.com/kinkaku-ji",
+                        "date": "Published date not specified",
+                        "title": ""
+                      }
+                    ]
+                  }
+                ],
+                "afternoon": [
+                  {
+                    "name": "Visite de Nanzen-ji",
+                    "category": "temple",
+                    "start_time": "13:30",
+                    "duration_minutes": 120,
+                    "address": "Zounin-cho, Sakyo Ward, Kyoto, 606-8435, Japan",
+                    "indoor_outdoor": "outdoor",
+                    "weather_notes": "Conditions idéales pour une visite",
+                    "cost_eur": 0,
+                    "sources": [
+                      {
+                        "url": "https://www.insidekyoto.com/nanzen-ji",
+                        "date": "Published date not specified",
+                        "title": ""
+                      }
+                    ]
+                  }
+                ],
+                "evening": [
+                  {
+                    "name": "Dîner à Gion Karyo",
+                    "category": "restaurant",
+                    "start_time": "18:00",
+                    "duration_minutes": 90,
+                    "address": "4-1 Gionmachi Minamigawa, Higashiyama Ward, Kyoto, 605-0074, Japan",
+                    "indoor_outdoor": "indoor",
+                    "weather_notes": "",
+                    "cost_eur": 70,
+                    "sources": [
+                      {
+                        "url": "https://www.tripadvisor.com/Restaurant_Review-g298564-d6320938-Reviews-Gion_Karyo-Kyoto_Kyoto_Prefecture_Kinki.html",
+                        "date": "Published date not specified",
+                        "title": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              "dining": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": [
+                  {
+                    "restaurant": "Gion Karyo",
+                    "cuisine": "japonaise",
+                    "price_eur": 70,
+                    "reservation_needed": true,
+                    "address": "4-1 Gionmachi Minamigawa, Higashiyama Ward, Kyoto, 605-0074, Japan",
+                    "sources": [
+                      {
+                        "url": "https://www.tripadvisor.com/Restaurant_Review-g298564-d6320938-Reviews-Gion_Karyo-Kyoto_Kyoto_Prefecture_Kinki.html",
+                        "date": "Published date not specified",
+                        "title": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              "daily_costs_eur": {
+                "transport": 1.55,
+                "activities": 6,
+                "dining": 70,
+                "other": 0,
+                "total": 77.55
+              },
+              "day_sources": []
+            },
+            {
+              "date": "2025-10-12",
+              "weather": {
+                "summary": "Ciel généralement dégagé, peu ou pas de pluie",
+                "temp_avg_c": 19,
+                "precip_prob_pct": 5,
+                "special": "Conditions idéales",
+                "sources": [
+                  {
+                    "url": "https://www.accuweather.com/en/jp/make/2342830/october-weather/2342830",
+                    "date": "2025-10-01",
+                    "title": "AccuWeather"
+                  }
+                ]
+              },
+              "transport": [
+                {
+                  "from_": "Gare de Kyoto",
+                  "to": "Kiyomizu-dera",
+                  "mode": "bus",
+                  "line_or_service": "Bus 100",
+                  "duration_minutes": 40,
+                  "cost_eur": 1.55,
+                  "reservation_required": false,
+                  "notes": "",
+                  "sources": []
+                }
+              ],
+              "lodging": {
+                "name": "Hotel Granvia Kyoto",
+                "link": "https://www.granviakyoto.com/",
+                "address": "901 Higashishiokojicho, Shimogyo Ward, Kyoto"
+              },
+              "activities": {
+                "morning": [
+                  {
+                    "name": "Visite de Kiyomizu-dera",
+                    "category": "temple",
+                    "start_time": "08:30",
+                    "duration_minutes": 120,
+                    "address": "1 Kiyomizu, Higashiyama Ward, Kyoto, 605-0862, Japan",
+                    "indoor_outdoor": "outdoor",
+                    "weather_notes": "Conditions idéales pour la visite",
+                    "cost_eur": 5,
+                    "sources": [
+                      {
+                        "url": "https://www.insidekyoto.com/kiyomizu-dera",
+                        "date": "Published date not specified",
+                        "title": ""
+                      }
+                    ]
+                  }
+                ],
+                "afternoon": [
+                  {
+                    "name": "Visite de Tofuku-ji",
+                    "category": "temple",
+                    "start_time": "13:00",
+                    "duration_minutes": 90,
+                    "address": "15-778 Hanazonocho, Higashiyama Ward, Kyoto, 605-0981, Japan",
+                    "indoor_outdoor": "outdoor",
+                    "weather_notes": "",
+                    "cost_eur": 5,
+                    "sources": [
+                      {
+                        "url": "https://www.insidekyoto.com/tofuku-ji",
+                        "date": "Published date not specified",
+                        "title": ""
+                      }
+                    ]
+                  }
+                ],
+                "evening": [
+                  {
+                    "name": "Dîner au Marché de Nishiki",
+                    "category": "restaurant",
+                    "start_time": "17:30",
+                    "duration_minutes": 90,
+                    "address": "Nishikikoji-dori, Nakagyō-ku, Kyoto, 604-8054, Japan",
+                    "indoor_outdoor": "indoor",
+                    "weather_notes": "",
+                    "cost_eur": 30,
+                    "sources": [
+                      {
+                        "url": "https://www.insidekyoto.com/nishiki-market",
+                        "date": "Published date not specified",
+                        "title": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              "dining": {
+                "breakfast": [],
+                "lunch": [],
+                "dinner": [
+                  {
+                    "restaurant": "Marché de Nishiki",
+                    "cuisine": "japonaise",
+                    "price_eur": 30,
+                    "reservation_needed": false,
+                    "address": "Nishikikoji-dori, Nakagyō-ku, Kyoto, 604-8054, Japan",
+                    "sources": [
+                      {
+                        "url": "https://www.insidekyoto.com/nishiki-market",
+                        "date": "Published date not specified",
+                        "title": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              "daily_costs_eur": {
+                "transport": 1.55,
+                "activities": 10,
+                "dining": 30,
+                "other": 0,
+                "total": 41.55
+              },
+              "day_sources": []
+            }
+          ]
+        }
+      ]
+    },
+    "budget_overview": {
+      "by_category": {
+        "transport": 3.1,
+        "activities": 16,
+        "dining": 100,
+        "lodging": 74
+      },
+      "total_eur": 193.1,
+      "difference_from_budget_eur": 4806.9,
+      "status": "under"
+    },
+    "scenarios": [],
+    "bibliography": [],
+    "generation_info": {
+      "generated_at": "2025-09-30",
+      "timezone": "Asia/Tokyo"
+    }
+  }
+]

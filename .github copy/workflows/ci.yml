@@ -1,0 +1,31 @@
+name: Deploy backend with Docker
+
+on:
+  push:
+    branches:
+      - main  # ou la branche de ton choix, par exemple 'develop'
+  pull_request:
+    branches:
+      - main # Déclenchement sur un push vers main (modifie si nécessaire)
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout du code
+        uses: actions/checkout@v4
+
+      - name: Connexion au registre Docker
+        run: |
+          echo "${{ secrets.REGISTRY_PASSWORD }}" | docker login -u ${{ secrets.REGISTRY_USERNAME }} --password-stdin
+
+      - name: Build de l’image Docker
+        run: |
+          docker build -t ${{ secrets.DOCKER_IMAGE_NAME }} .
+
+      - name: Push de l’image Docker
+        run: |
+          docker push ${{ secrets.DOCKER_IMAGE_NAME }}
+
+    

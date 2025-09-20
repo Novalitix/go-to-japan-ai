@@ -1,0 +1,193 @@
+{
+  "breakdown": [
+    {
+      "category": "transport",
+      "items": [
+        {
+          "label": "City Bus 1-Day Pass",
+          "category": "transport",
+          "qty": "1",
+          "unit_cost_eur": "25",
+          "total_cost_eur": "25",
+          "notes": "Unlimited rides on city buses.",
+          "sources": [
+            {
+              "url": "https://www.kyoto.travel/",
+              "date": "2025-10-01"
+            }
+          ]
+        },
+        {
+          "label": "Taxi Ride (Approx. 1 km)",
+          "category": "transport",
+          "qty": "3",
+          "unit_cost_eur": "3",
+          "total_cost_eur": "9",
+          "notes": "Estimated for short rides.",
+          "sources": [
+            {
+              "url": "https://www.taxi-kyoto.com/",
+              "date": "2025-10-01"
+            }
+          ]
+        },
+        {
+          "label": "Bicycle Rental",
+          "category": "transport",
+          "qty": "1",
+          "unit_cost_eur": "6",
+          "total_cost_eur": "6",
+          "notes": "Day rental.",
+          "sources": [
+            {
+              "url": "https://www.kyoto.travel/",
+              "date": "2025-10-01"
+            }
+          ]
+        }
+      ],
+      "subtotal_eur": "40"
+    },
+    {
+      "category": "lodging",
+      "items": [
+        {
+          "label": "Guesthouse KYOTO COMPASS",
+          "category": "lodging",
+          "qty": "2",
+          "unit_cost_eur": "37",
+          "total_cost_eur": "74",
+          "notes": "Per night for 2 nights.",
+          "sources": [
+            {
+              "url": "https://www.booking.com/",
+              "date": "2025-10-01"
+            }
+          ]
+        }
+      ],
+      "subtotal_eur": "74"
+    },
+    {
+      "category": "dining",
+      "items": [
+        {
+          "label": "Dinner at Gion Karyo",
+          "category": "dining",
+          "qty": "1",
+          "unit_cost_eur": "70",
+          "total_cost_eur": "70",
+          "notes": "Fine dining experience.",
+          "sources": [
+            {
+              "url": "https://www.tripadvisor.com/",
+              "date": "2025-10-01"
+            }
+          ]
+        },
+        {
+          "label": "Lunch at Nishiki Market",
+          "category": "dining",
+          "qty": "1",
+          "unit_cost_eur": "12",
+          "total_cost_eur": "12",
+          "notes": "Casual dining experience.",
+          "sources": [
+            {
+              "url": "https://www.insidekyoto.com/",
+              "date": "2025-10-01"
+            }
+          ]
+        }
+      ],
+      "subtotal_eur": "82"
+    },
+    {
+      "category": "activities",
+      "items": [
+        {
+          "label": "Kinkaku-ji Entrance Fee",
+          "category": "activities",
+          "qty": "1",
+          "unit_cost_eur": "6",
+          "total_cost_eur": "6",
+          "notes": "Entrance fee for temple.",
+          "sources": [
+            {
+              "url": "https://www.insidekyoto.com/kinkaku-ji",
+              "date": "2025-10-01"
+            }
+          ]
+        },
+        {
+          "label": "Visiting Nanzen-ji",
+          "category": "activities",
+          "qty": "1",
+          "unit_cost_eur": "0",
+          "total_cost_eur": "0",
+          "notes": "Entrance is free.",
+          "sources": [
+            {
+              "url": "https://www.insidekyoto.com/nanzen-ji",
+              "date": "2025-10-01"
+            }
+          ]
+        }
+      ],
+      "subtotal_eur": "6"
+    }
+  ],
+  "total_eur": "202",
+  "difference_from_budget": {
+    "budget_input_eur": "5000",
+    "difference_from_budget_eur": "4798",
+    "status": "under"
+  },
+  "scenarios": [
+    {
+      "name": "Mid-range Hotel Option",
+      "description": "Choosing a mid-range hotel instead of a guesthouse would improve comfort but increase costs.",
+      "adjustments": [
+        {
+          "operation": "upgrade",
+          "target_category": "lodging",
+          "target_label": "Mid-range Hotel",
+          "description": "Switch to a mid-range hotel priced at 100 EUR per night.",
+          "delta_eur": "52",
+          "sources": [
+            {
+              "url": "https://www.booking.com/",
+              "date": "2025-10-01"
+            }
+          ]
+        }
+      ],
+      "delta_eur": "52",
+      "new_total_eur": "254",
+      "pros": [
+        "Improved comfort and amenities."
+      ],
+      "cons": [
+        "Higher lodging costs."
+      ],
+      "sources": [
+        {
+          "url": "https://www.booking.com/",
+          "date": "2025-10-01"
+        }
+      ]
+    }
+  ],
+  "fx": {
+    "base": "EUR",
+    "quote": "JPY",
+    "rate": "1",
+    "as_of": "2025-10-01",
+    "source_url": "https://www.xe.com/"
+  },
+  "assumptions": [
+    "Total trip duration is 2 days.",
+    "All amounts are rounded to the nearest whole number.",
+    "Traveling solo eliminates group discounts."
+  ]
+}

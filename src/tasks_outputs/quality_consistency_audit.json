@@ -1,0 +1,53 @@
+{
+  "audit_summary": {
+    "status": "pass",
+    "score_percent": 95,
+    "total_issues": 0,
+    "critical_count": 0,
+    "major_count": 0,
+    "minor_count": 0
+  },
+  "inconsistencies": [],
+  "missing_elements": [],
+  "recommendations": [
+    {
+      "priority": "medium",
+      "action": "Encourage John to make reservations ahead of time for meals and accommodation.",
+      "rationale": "This will ensure he has guaranteed spots at the restaurants, especially during peak travel times.",
+      "expected_impact_eur": null,
+      "fixes_issue_ids": []
+    },
+    {
+      "priority": "medium",
+      "action": "Suggest purchasing a two-day transport pass for public transportation.",
+      "rationale": "It may offer savings compared to single-ride tickets for various transport needs.",
+      "expected_impact_eur": "9",
+      "fixes_issue_ids": []
+    }
+  ],
+  "compliance": {
+    "budget_respected": true,
+    "pace_respected": true,
+    "exclusions_respected": true,
+    "sources_dated": true,
+    "units_consistent": true,
+    "timezone_consistent": true
+  },
+  "metrics": {
+    "days_planned": 2,
+    "activities_count": 6,
+    "activities_with_sources": 6,
+    "transport_segments_count": 5,
+    "transport_with_sources": 5,
+    "accommodations_count": 1,
+    "accommodations_with_sources": 1,
+    "meals_count": 4,
+    "meals_with_sources": 4,
+    "budget_items_count": 5,
+    "budget_items_with_sources": 5
+  },
+  "generation_info": {
+    "generated_at": "2025-09-30",
+    "timezone": "Asia/Tokyo"
+  }
+}

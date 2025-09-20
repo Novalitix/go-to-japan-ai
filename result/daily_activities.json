@@ -1,0 +1,254 @@
+{
+  "planning_context": {
+    "interests": [
+      "temples"
+    ],
+    "pace": "equilibre",
+    "cities_to_exclude": [],
+    "comments": null,
+    "services": [
+      "restaurants",
+      "lodging"
+    ]
+  },
+  "days": [
+    {
+      "city": "Kyoto",
+      "date": "2025-10-11",
+      "meal_windows": [
+        "12:00–14:00",
+        "19:00–21:00"
+      ],
+      "activities": [
+        {
+          "timeslot": "morning",
+          "name": "Visite du temple Kinkaku-ji",
+          "category": "temple",
+          "start_time": "09:00",
+          "duration_minutes": 90,
+          "location_name": "Kinkaku-ji",
+          "address": "1 Kinkakujicho, Kita Ward, Kyoto",
+          "indoor_outdoor": "mixed",
+          "weather_notes": "Prévoir des vêtements légers, possibilité de pluie.",
+          "cost_eur": "4",
+          "travel_to_next_minutes": 30,
+          "sources": [
+            {
+              "url": "https://www.kyoto.travel/en/activities/",
+              "date": "2023-10-15"
+            }
+          ]
+        },
+        {
+          "timeslot": "afternoon",
+          "name": "Balade au temple Ryoan-ji",
+          "category": "temple",
+          "start_time": "14:30",
+          "duration_minutes": 60,
+          "location_name": "Ryoan-ji",
+          "address": "13 Ryoanji Goryonoshitacho, Ukyo Ward, Kyoto",
+          "indoor_outdoor": "mixed",
+          "weather_notes": null,
+          "cost_eur": "3",
+          "travel_to_next_minutes": 20,
+          "sources": [
+            {
+              "url": "https://www.kyoto.travel/en/activities/",
+              "date": "2023-10-15"
+            }
+          ]
+        },
+        {
+          "timeslot": "evening",
+          "name": "Visite au temple Kiyomizu-dera",
+          "category": "temple",
+          "start_time": "18:00",
+          "duration_minutes": 90,
+          "location_name": "Kiyomizu-dera",
+          "address": "1 Kiyomizu, Higashiyama Ward, Kyoto",
+          "indoor_outdoor": "mixed",
+          "weather_notes": "Prévoir un temps frais.",
+          "cost_eur": "4",
+          "travel_to_next_minutes": 15,
+          "sources": [
+            {
+              "url": "https://www.kyoto.travel/en/activities/",
+              "date": "2023-10-15"
+            }
+          ]
+        }
+      ],
+      "alt_options": [
+        {
+          "timeslot": "morning",
+          "name": "Visite du temple Ginkaku-ji",
+          "category": "temple",
+          "duration_minutes": 90,
+          "indoor_outdoor": "mixed",
+          "reason": "Alternative au Kinkaku-ji.",
+          "sources": [
+            {
+              "url": "https://www.kyoto.travel/en/activities/",
+              "date": "2023-10-15"
+            }
+          ]
+        },
+        {
+          "timeslot": "afternoon",
+          "name": "Atelier d'art traditionnel",
+          "category": "culture",
+          "duration_minutes": 60,
+          "indoor_outdoor": "indoor",
+          "reason": "Activité culturelle alternative.",
+          "sources": [
+            {
+              "url": "https://www.kyoto.travel/en/activities/",
+              "date": "2023-10-15"
+            }
+          ]
+        },
+        {
+          "timeslot": "evening",
+          "name": "Visite nocturne au temple Toji",
+          "category": "temple",
+          "duration_minutes": 60,
+          "indoor_outdoor": "mixed",
+          "reason": "Alternative à Kiyomizu-dera à cause de la distance.",
+          "sources": [
+            {
+              "url": "https://www.kyoto.travel/en/activities/",
+              "date": "2023-10-15"
+            }
+          ]
+        }
+      ],
+      "assumptions": [
+        "Les activités sont adaptées à un rythme équilibré.",
+        "Les visites à des temples et activités culturelles ont été priorisées."
+      ]
+    },
+    {
+      "city": "Kyoto",
+      "date": "2025-10-12",
+      "meal_windows": [
+        "12:00–14:00",
+        "19:00–21:00"
+      ],
+      "activities": [
+        {
+          "timeslot": "morning",
+          "name": "Visite au temple Fushimi Inari-taisha",
+          "category": "temple",
+          "start_time": "09:00",
+          "duration_minutes": 120,
+          "location_name": "Fushimi Inari-taisha",
+          "address": "68 Fukakusa Yabunouchicho, Fushimi Ward, Kyoto",
+          "indoor_outdoor": "mixed",
+          "weather_notes": "Prévoir des vêtements imperméables.",
+          "cost_eur": "0",
+          "travel_to_next_minutes": 35,
+          "sources": [
+            {
+              "url": "https://www.kyoto.travel/en/activities/",
+              "date": "2023-10-15"
+            }
+          ]
+        },
+        {
+          "timeslot": "afternoon",
+          "name": "Visite au temple Tofuku-ji",
+          "category": "temple",
+          "start_time": "14:30",
+          "duration_minutes": 90,
+          "location_name": "Tofuku-ji",
+          "address": "15 Tofukuji Shimozuzumotocho, Higashiyama Ward, Kyoto",
+          "indoor_outdoor": "mixed",
+          "weather_notes": null,
+          "cost_eur": "4",
+          "travel_to_next_minutes": 20,
+          "sources": [
+            {
+              "url": "https://www.kyoto.travel/en/activities/",
+              "date": "2023-10-15"
+            }
+          ]
+        },
+        {
+          "timeslot": "evening",
+          "name": "Spectacle de lanternes au temple Nanzen-ji",
+          "category": "temple",
+          "start_time": "18:30",
+          "duration_minutes": 120,
+          "location_name": "Nanzen-ji",
+          "address": "Ryoanji, Nanzenji Fukuchi-cho, Sakyo Ward, Kyoto",
+          "indoor_outdoor": "mixed",
+          "weather_notes": "Prévoir une soirée fraîche.",
+          "cost_eur": "5",
+          "travel_to_next_minutes": 25,
+          "sources": [
+            {
+              "url": "https://www.kyoto.travel/en/activities/",
+              "date": "2023-10-15"
+            }
+          ]
+        }
+      ],
+      "alt_options": [
+        {
+          "timeslot": "morning",
+          "name": "Visite guidée des sanctuaires",
+          "category": "culture",
+          "duration_minutes": 90,
+          "indoor_outdoor": "mixed",
+          "reason": "Alternative à Fushimi Inari-taisha.",
+          "sources": [
+            {
+              "url": "https://www.kyoto.travel/en/activities/",
+              "date": "2023-10-15"
+            }
+          ]
+        },
+        {
+          "timeslot": "afternoon",
+          "name": "Atelier de méditation zen",
+          "category": "culture",
+          "duration_minutes": 60,
+          "indoor_outdoor": "indoor",
+          "reason": "Activité alternative culturelle.",
+          "sources": [
+            {
+              "url": "https://www.kyoto.travel/en/activities/",
+              "date": "2023-10-15"
+            }
+          ]
+        },
+        {
+          "timeslot": "evening",
+          "name": "Visite au temple Heian-jingu",
+          "category": "temple",
+          "duration_minutes": 90,
+          "indoor_outdoor": "mixed",
+          "reason": "Alternative à Nanzen-ji.",
+          "sources": [
+            {
+              "url": "https://www.kyoto.travel/en/activities/",
+              "date": "2023-10-15"
+            }
+          ]
+        }
+      ],
+      "assumptions": [
+        "Les activités sont équilibrées sur la journée.",
+        "Les visites de temples ont été priorisées selon l'intérêt exprimé."
+      ]
+    }
+  ],
+  "compliance": {
+    "exclusions_respected": true,
+    "notes": "Aucune ville exclue."
+  },
+  "generation_info": {
+    "generated_at": "2025-01-15",
+    "timezone": "Asia/Tokyo"
+  }
+}
