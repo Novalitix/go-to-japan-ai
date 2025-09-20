@@ -1,0 +1,25 @@
+{
+  "cities": [
+    {
+      "city": "Kyoto",
+      "events": [
+        {
+          "title": "Otsu Hikiyama Festival",
+          "description": "A popular fall festival with parades, lantern displays, and food stalls.",
+          "category": "festival",
+          "date": "2025-10-11",
+          "source_url": "https://japancheapo.com/events/october/",
+          "source_date": "Published date not specified"
+        },
+        {
+          "title": "Jidai Matsuri",
+          "description": "One of Kyoto's three major annual festivals, featuring a parade of citizens in historical garments.",
+          "category": "festival",
+          "date": "2025-10-22",
+          "source_url": "https://www.discoverkyoto.com/event-calendar/october/jidai-matsuri/",
+          "source_date": "Published date not specified"
+        }
+      ]
+    }
+  ]
+}

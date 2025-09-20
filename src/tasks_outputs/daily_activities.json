@@ -1,0 +1,226 @@
+{
+  "planning_context": {
+    "interests": [
+      "temples"
+    ],
+    "pace": "equilibre",
+    "cities_to_exclude": [],
+    "comments": "",
+    "services": [
+      "restaurants",
+      "lodging"
+    ]
+  },
+  "days": [
+    {
+      "city": "Kyoto",
+      "date": "2025-10-11",
+      "meal_windows": [
+        "12:00–14:00",
+        "19:00–21:00"
+      ],
+      "activities": [
+        {
+          "timeslot": "morning",
+          "name": "Visite de Kinkaku-ji",
+          "category": "temple",
+          "start_time": "09:00",
+          "duration_minutes": 120,
+          "location_name": "Kinkaku-ji",
+          "address": "1 Kinkakujicho, Kita Ward, Kyoto, 603-8361, Japan",
+          "indoor_outdoor": "outdoor",
+          "weather_notes": "Ciel partiellement nuageux, frais",
+          "cost_eur": "6",
+          "travel_to_next_minutes": 10,
+          "sources": [
+            {
+              "url": "https://www.insidekyoto.com/kinkaku-ji",
+              "date": "Published date not specified"
+            }
+          ]
+        },
+        {
+          "timeslot": "afternoon",
+          "name": "Visite de Nanzen-ji",
+          "category": "temple",
+          "start_time": "13:30",
+          "duration_minutes": 120,
+          "location_name": "Nanzen-ji",
+          "address": "Zounin-cho, Sakyo Ward, Kyoto, 606-8435, Japan",
+          "indoor_outdoor": "outdoor",
+          "weather_notes": "Conditions idéales pour une visite",
+          "cost_eur": "0",
+          "travel_to_next_minutes": 10,
+          "sources": [
+            {
+              "url": "https://www.insidekyoto.com/nanzen-ji",
+              "date": "Published date not specified"
+            }
+          ]
+        },
+        {
+          "timeslot": "evening",
+          "name": "Dîner à Gion Karyo",
+          "category": "restaurant",
+          "start_time": "18:00",
+          "duration_minutes": 90,
+          "location_name": "Gion Karyo",
+          "address": "4-1 Gionmachi Minamigawa, Higashiyama Ward, Kyoto, 605-0074, Japan",
+          "indoor_outdoor": "indoor",
+          "weather_notes": "",
+          "cost_eur": "70",
+          "travel_to_next_minutes": 10,
+          "sources": [
+            {
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g298564-d6320938-Reviews-Gion_Karyo-Kyoto_Kyoto_Prefecture_Kinki.html",
+              "date": "Published date not specified"
+            }
+          ]
+        }
+      ],
+      "alt_options": [
+        {
+          "timeslot": "morning",
+          "name": "Visite de Ryoan-ji",
+          "category": "temple",
+          "duration_minutes": 90,
+          "indoor_outdoor": "outdoor",
+          "reason": "Alternative proche et célèbre pour son jardin zen",
+          "sources": [
+            {
+              "url": "https://www.insidekyoto.com/ryoan-ji",
+              "date": "Published date not specified"
+            }
+          ]
+        },
+        {
+          "timeslot": "afternoon",
+          "name": "Visite de Eikan-do",
+          "category": "temple",
+          "duration_minutes": 120,
+          "indoor_outdoor": "outdoor",
+          "reason": "Alternative avec une belle vue d'automne",
+          "sources": [
+            {
+              "url": "https://www.insidekyoto.com/eikan-do",
+              "date": "Published date not specified"
+            }
+          ]
+        }
+      ],
+      "assumptions": [
+        "Les heures d'ouverture des temples sont respectées.",
+        "Le rythme équilibré se traduit par un mélange d'activités intérieures et extérieures."
+      ]
+    },
+    {
+      "city": "Kyoto",
+      "date": "2025-10-12",
+      "meal_windows": [
+        "12:00–14:00",
+        "19:00–21:00"
+      ],
+      "activities": [
+        {
+          "timeslot": "morning",
+          "name": "Visite de Kiyomizu-dera",
+          "category": "temple",
+          "start_time": "08:30",
+          "duration_minutes": 120,
+          "location_name": "Kiyomizu-dera",
+          "address": "1 Kiyomizu, Higashiyama Ward, Kyoto, 605-0862, Japan",
+          "indoor_outdoor": "outdoor",
+          "weather_notes": "Conditions idéales pour la visite",
+          "cost_eur": "5",
+          "travel_to_next_minutes": 15,
+          "sources": [
+            {
+              "url": "https://www.insidekyoto.com/kiyomizu-dera",
+              "date": "Published date not specified"
+            }
+          ]
+        },
+        {
+          "timeslot": "afternoon",
+          "name": "Visite de Tofuku-ji",
+          "category": "temple",
+          "start_time": "13:00",
+          "duration_minutes": 90,
+          "location_name": "Tofuku-ji",
+          "address": "15-778 Hanazonocho, Higashiyama Ward, Kyoto, 605-0981, Japan",
+          "indoor_outdoor": "outdoor",
+          "weather_notes": "",
+          "cost_eur": "5",
+          "travel_to_next_minutes": 30,
+          "sources": [
+            {
+              "url": "https://www.insidekyoto.com/tofuku-ji",
+              "date": "Published date not specified"
+            }
+          ]
+        },
+        {
+          "timeslot": "evening",
+          "name": "Dîner au Marché de Nishiki",
+          "category": "restaurant",
+          "start_time": "17:30",
+          "duration_minutes": 90,
+          "location_name": "Nishiki Market",
+          "address": "Nishikikoji-dori, Nakagyō-ku, Kyoto, 604-8054, Japan",
+          "indoor_outdoor": "indoor",
+          "weather_notes": "",
+          "cost_eur": "30",
+          "travel_to_next_minutes": 10,
+          "sources": [
+            {
+              "url": "https://www.insidekyoto.com/nishiki-market",
+              "date": "Published date not specified"
+            }
+          ]
+        }
+      ],
+      "alt_options": [
+        {
+          "timeslot": "morning",
+          "name": "Visite de Kodai-ji",
+          "category": "temple",
+          "duration_minutes": 90,
+          "indoor_outdoor": "outdoor",
+          "reason": "Alternative pour explorer un jardin zen moins fréquenté",
+          "sources": [
+            {
+              "url": "https://www.insidekyoto.com/kodai-ji",
+              "date": "Published date not specified"
+            }
+          ]
+        },
+        {
+          "timeslot": "afternoon",
+          "name": "Visite du sanctuaire Fushimi Inari",
+          "category": "temple",
+          "duration_minutes": 120,
+          "indoor_outdoor": "outdoor",
+          "reason": "Alternative avec des portes torii impressionnantes pour la photographie",
+          "sources": [
+            {
+              "url": "https://www.insidekyoto.com/fushimi-inari-taisha",
+              "date": "Published date not specified"
+            }
+          ]
+        }
+      ],
+      "assumptions": [
+        "Le temps passera principalement à l'extérieur, ce qui est acceptable pendant la saison.",
+        "Les visites des temples se feront à un rythme tranquille."
+      ]
+    }
+  ],
+  "compliance": {
+    "exclusions_respected": true,
+    "notes": ""
+  },
+  "generation_info": {
+    "generated_at": "2025-09-30",
+    "timezone": "Asia/Tokyo"
+  }
+}

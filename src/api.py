@@ -135,10 +135,11 @@ async def health():
     return {"status": "ok"}
 
 
-def run_job(job_id: str, inputs: str):
+def run_job(job_id: str, inputs: dict):
     """Exécution bloquante dans un thread."""
     try:
-        data = json.loads(inputs)  # parse le dict JSON depuis l’URL
+        # data = json.loads(inputs)  # parse le dict JSON depuis l’URL
+        data = inputs
         if not isinstance(data, dict):
             raise ValueError("inputs doit être un objet JSON (dict)")
         output = run(data)
