@@ -158,15 +158,9 @@ curl -X POST "http://localhost:8000/kickoff_post" \
         "travelWith": "solo",
         "pace": "equilibre",
         "firstName": "John",
-<<<<<<< HEAD
         "departureDate": "2026-05-11",
         "departurePeriod": "",
         "returnDate": "2026-05-13",
-=======
-        "departureDate": "2025-10-11",
-        "departurePeriod": "",
-        "returnDate": "2025-10-13",
->>>>>>> 74cde7feb248de26bff1f5d46b6d107a47c1a253
         "duration": 2,
         "citiesToInclude": ["Kyoto"],
         "citiesToExclude": [],
@@ -189,15 +183,9 @@ curl -X POST "http://localhost:8000/kickoff_post" \
   "travelWith": "solo",
   "pace": "equilibre",
   "firstName": "John",
-<<<<<<< HEAD
   "departureDate": "2026-05-11",
   "departurePeriod": "",
   "returnDate": "2026-05-13",
-=======
-  "departureDate": "2025-10-11",
-  "departurePeriod": "",
-  "returnDate": "2025-10-13",
->>>>>>> 74cde7feb248de26bff1f5d46b6d107a47c1a253
   "duration": 2,
   "citiesToInclude": ["Kyoto"],
   "citiesToExclude": [],
