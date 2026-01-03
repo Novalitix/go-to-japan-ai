@@ -121,7 +121,7 @@ class GoToJapan():
             memory=True,
             llm=llm,
             # reasoning=True,
-            max_reasoning_attempts=3
+            # max_reasoning_attempts=3
         )
     
     @agent
@@ -133,7 +133,7 @@ class GoToJapan():
             memory=True,
             llm=llm,
             # reasoning=True,
-            max_reasoning_attempts=3
+            # max_reasoning_attempts=3
         )
     
     @agent
@@ -145,7 +145,7 @@ class GoToJapan():
             memory=True,
             llm=llm,
             # reasoning=True,
-            max_reasoning_attempts=3
+            # max_reasoning_attempts=3
         )
     
     @agent
@@ -157,7 +157,7 @@ class GoToJapan():
             memory=True,
             llm=llm,
             # reasoning=True,
-            max_reasoning_attempts=3
+            # max_reasoning_attempts=3
         )
     
     @agent
@@ -169,7 +169,7 @@ class GoToJapan():
             memory=True,
             llm=llm,
             # reasoning=True,
-            max_reasoning_attempts=3
+            # max_reasoning_attempts=3
         )
     
     @agent
@@ -193,7 +193,7 @@ class GoToJapan():
             memory=True,
             llm=llm,
             # reasoning=True,
-            max_reasoning_attempts=3
+            # max_reasoning_attempts=3
         )
     
     @agent
@@ -205,7 +205,7 @@ class GoToJapan():
             memory=True,
             llm=llm,
             # reasoning=True,
-            max_reasoning_attempts=3
+            # max_reasoning_attempts=3
         )
     
     # @agent
