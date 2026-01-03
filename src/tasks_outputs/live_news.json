@@ -4,20 +4,44 @@
       "city": "Kyoto",
       "events": [
         {
-          "title": "Otsu Hikiyama Festival",
-          "description": "A popular fall festival with parades, lantern displays, and food stalls.",
-          "category": "festival",
-          "date": "2025-10-11",
-          "source_url": "https://japancheapo.com/events/october/",
-          "source_date": "Published date not specified"
+          "title": "Aoi Matsuri",
+          "description": "The Aoi Matsuri, or Hollyhock Festival, is one of the three main annual festivals held in Kyoto. It features a procession beginning at the Imperial Palace and concluding at the Kamo Shrines, showcasing traditional costumes and cultural heritage.",
+          "category": "événement",
+          "date": "2026-05-15",
+          "source_url": "https://en.japantravel.com/kyoto/aoi-matsuri-festival/44242",
+          "source_date": "2026-05-01"
         },
         {
-          "title": "Jidai Matsuri",
-          "description": "One of Kyoto's three major annual festivals, featuring a parade of citizens in historical garments.",
-          "category": "festival",
-          "date": "2025-10-22",
-          "source_url": "https://www.discoverkyoto.com/event-calendar/october/jidai-matsuri/",
-          "source_date": "Published date not specified"
+          "title": "Miyama Rice Planting Festival",
+          "description": "A Shinto ritual held annually to pray for a rich harvest, featuring rice-planting maidens performing traditional practices on the second Sunday of May.",
+          "category": "événement",
+          "date": "2026-05-10",
+          "source_url": "https://en.japantravel.com/kyoto/miyama-rice-planting-festival/71513",
+          "source_date": "2026-05-01"
+        },
+        {
+          "title": "Tourist Tax Increase in Kyoto",
+          "description": "Kyoto will adjust its tourist tax for travelers starting in 2026, aiming to enhance the city's cultural heritage preservation efforts.",
+          "category": "actualité locale",
+          "date": "2026-05-01",
+          "source_url": "https://www.travelandtourworld.com/news/article/thailand-joins-los-angeles-bucharest-edinburgh-and-kyoto-in-slapping-shocking-tourist-taxes-on-travelers-for-2026-prepare-to-pay-more/",
+          "source_date": "2026-05-01"
+        },
+        {
+          "title": "BitSummit PUNCH 2026",
+          "description": "Japan's largest indie game festival will take place at Miyako Messe in Kyoto from May 22 to 24, showcasing the works of independent game developers.",
+          "category": "événement",
+          "date": "2026-05-22",
+          "source_url": "https://micetimes.jp/en/bitsummit-punch-2026-news-2/",
+          "source_date": "2026-05-01"
+        },
+        {
+          "title": "Cultural Events in Kyoto",
+          "description": "A guide on upcoming cultural events in Kyoto, including immersive art exhibits and temple openings throughout 2026.",
+          "category": "actualités culturelles",
+          "date": "2026-05-01",
+          "source_url": "https://www.timeout.com/osaka/things-to-do/best-art-and-cultural-events-in-kyoto-to-look-forward-to-in-2026",
+          "source_date": "2026-05-01"
         }
       ]
     }

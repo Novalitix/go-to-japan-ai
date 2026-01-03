@@ -11,7 +11,7 @@ profiler_task:
     - Durée du voyage (en jours) : {duration}
     - Période de départ : {departurePeriod}
     - Villes à inclure : {citiesToInclude}
-    - Villes à exclure : {citiesToExclude}
+    - Villes à exclure : {citiesToExcluhttps://ad/de}
     - Budget estimé : {budget}
     - Commentaires spécifiques : {comments}
     - Centres d’intérêt : {interests}

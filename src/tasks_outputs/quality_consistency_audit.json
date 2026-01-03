@@ -1,28 +1,79 @@
 {
   "audit_summary": {
-    "status": "pass",
-    "score_percent": 95,
-    "total_issues": 0,
+    "status": "attention",
+    "score_percent": 90,
+    "total_issues": 3,
     "critical_count": 0,
-    "major_count": 0,
-    "minor_count": 0
+    "major_count": 1,
+    "minor_count": 2
   },
-  "inconsistencies": [],
-  "missing_elements": [],
+  "inconsistencies": [
+    {
+      "id": "1",
+      "severity": "major",
+      "component": "activities",
+      "json_path": "/days[0]/activities[1]",
+      "message": "There is potential overlapping of activities at Ginkaku-ji and Kinkaku-ji.",
+      "evidence": null,
+      "suggestion": "Reassess the time allocated to travel between activities to avoid overlapping.",
+      "related_ids": []
+    },
+    {
+      "id": "2",
+      "severity": "minor",
+      "component": "transport",
+      "json_path": "/transport_segments_count",
+      "message": "While bus transfers are accessible, clear instructions on bus lines for each daily itinerary are needed.",
+      "evidence": null,
+      "suggestion": "Provide specific bus route numbers for each activity location.",
+      "related_ids": []
+    },
+    {
+      "id": "3",
+      "severity": "minor",
+      "component": "budget",
+      "json_path": "/total_eur",
+      "message": "The budget is significantly under the estimated total.",
+      "evidence": null,
+      "suggestion": "Consider providing additional quality dining options or activities to enhance the experience.",
+      "related_ids": []
+    }
+  ],
+  "missing_elements": [
+    {
+      "component": "transport",
+      "json_path": "/transport_details",
+      "description": "Specific bus routes and schedules for travel between activities.",
+      "suggestion": "Include detailed bus route information for user convenience."
+    }
+  ],
   "recommendations": [
     {
-      "priority": "medium",
-      "action": "Encourage John to make reservations ahead of time for meals and accommodation.",
-      "rationale": "This will ensure he has guaranteed spots at the restaurants, especially during peak travel times.",
+      "priority": "high",
+      "action": "Reassess activity timing and duration.",
+      "rationale": "To prevent overlapping and ensure John can enjoy each activity fully without rushing.",
       "expected_impact_eur": null,
-      "fixes_issue_ids": []
+      "fixes_issue_ids": [
+        "1"
+      ]
     },
     {
       "priority": "medium",
-      "action": "Suggest purchasing a two-day transport pass for public transportation.",
-      "rationale": "It may offer savings compared to single-ride tickets for various transport needs.",
-      "expected_impact_eur": "9",
-      "fixes_issue_ids": []
+      "action": "Provide clear public transportation instructions.",
+      "rationale": "To help John navigate the city efficiently and make the most of his trip.",
+      "expected_impact_eur": null,
+      "fixes_issue_ids": [
+        "2"
+      ]
+    },
+    {
+      "priority": "low",
+      "action": "Suggest additional dining experiences.",
+      "rationale": "To enhance John's culinary experience in Kyoto and utilize the available budget.",
+      "expected_impact_eur": null,
+      "fixes_issue_ids": [
+        "3"
+      ]
     }
   ],
   "compliance": {
@@ -35,19 +86,19 @@
   },
   "metrics": {
     "days_planned": 2,
-    "activities_count": 6,
-    "activities_with_sources": 6,
-    "transport_segments_count": 5,
-    "transport_with_sources": 5,
-    "accommodations_count": 1,
-    "accommodations_with_sources": 1,
-    "meals_count": 4,
-    "meals_with_sources": 4,
-    "budget_items_count": 5,
-    "budget_items_with_sources": 5
+    "activities_count": 8,
+    "activities_with_sources": 8,
+    "transport_segments_count": 3,
+    "transport_with_sources": 2,
+    "accommodations_count": 2,
+    "accommodations_with_sources": 2,
+    "meals_count": 6,
+    "meals_with_sources": 3,
+    "budget_items_count": 4,
+    "budget_items_with_sources": 4
   },
   "generation_info": {
-    "generated_at": "2025-09-30",
+    "generated_at": "2026-04-29",
     "timezone": "Asia/Tokyo"
   }
 }

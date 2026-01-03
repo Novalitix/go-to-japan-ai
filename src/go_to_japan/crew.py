@@ -120,7 +120,7 @@ class GoToJapan():
             allow_delegation=True,
             memory=True,
             llm=llm,
-            reasoning=True,
+            # reasoning=True,
             max_reasoning_attempts=3
         )
     
@@ -132,7 +132,7 @@ class GoToJapan():
             allow_delegation=True,
             memory=True,
             llm=llm,
-            reasoning=True,
+            # reasoning=True,
             max_reasoning_attempts=3
         )
     
@@ -144,7 +144,7 @@ class GoToJapan():
             allow_delegation=True,
             memory=True,
             llm=llm,
-            reasoning=True,
+            # reasoning=True,
             max_reasoning_attempts=3
         )
     
@@ -156,7 +156,7 @@ class GoToJapan():
             allow_delegation=True,
             memory=True,
             llm=llm,
-            reasoning=True,
+            # reasoning=True,
             max_reasoning_attempts=3
         )
     
@@ -168,7 +168,7 @@ class GoToJapan():
             allow_delegation=True,
             memory=True,
             llm=llm,
-            reasoning=True,
+            # reasoning=True,
             max_reasoning_attempts=3
         )
     
@@ -180,7 +180,7 @@ class GoToJapan():
             allow_delegation=True,
             memory=True,
             llm=llm,
-            reasoning=True,
+            # reasoning=True,
             max_reasoning_attempts=4
         )
     
@@ -192,7 +192,7 @@ class GoToJapan():
             allow_delegation=True,
             memory=True,
             llm=llm,
-            reasoning=True,
+            # reasoning=True,
             max_reasoning_attempts=3
         )
     
@@ -204,7 +204,7 @@ class GoToJapan():
             allow_delegation=True,
             memory=True,
             llm=llm,
-            reasoning=True,
+            # reasoning=True,
             max_reasoning_attempts=3
         )
     
@@ -382,6 +382,6 @@ class GoToJapan():
             verbose=True,
             # memory=True,
             output_log_file="crew_outputs/crew.json",
-            planning=True,
-            planning_llm=llm
+            # planning=True,
+            # planning_llm=llm
         )

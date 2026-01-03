@@ -4,176 +4,282 @@
       "category": "transport",
       "items": [
         {
-          "label": "City Bus 1-Day Pass",
+          "label": "Flight Costs (Round-trip from Paris to Kyoto)",
           "category": "transport",
           "qty": "1",
-          "unit_cost_eur": "25",
-          "total_cost_eur": "25",
-          "notes": "Unlimited rides on city buses.",
+          "unit_cost_eur": "800",
+          "total_cost_eur": "800",
+          "notes": "Includes estimated price for round-trip.",
           "sources": [
             {
-              "url": "https://www.kyoto.travel/",
-              "date": "2025-10-01"
+              "url": "https://www.skyscanner.net/",
+              "date": "2023-10-15"
             }
           ]
         },
         {
-          "label": "Taxi Ride (Approx. 1 km)",
-          "category": "transport",
-          "qty": "3",
-          "unit_cost_eur": "3",
-          "total_cost_eur": "9",
-          "notes": "Estimated for short rides.",
-          "sources": [
-            {
-              "url": "https://www.taxi-kyoto.com/",
-              "date": "2025-10-01"
-            }
-          ]
-        },
-        {
-          "label": "Bicycle Rental",
+          "label": "Local Transport (Kyoto City)",
           "category": "transport",
           "qty": "1",
-          "unit_cost_eur": "6",
-          "total_cost_eur": "6",
-          "notes": "Day rental.",
+          "unit_cost_eur": "50",
+          "total_cost_eur": "50",
+          "notes": "Includes buses and subway for 3 days.",
           "sources": [
             {
-              "url": "https://www.kyoto.travel/",
-              "date": "2025-10-01"
+              "url": "https://www.japantravel.com/",
+              "date": "2023-10-15"
             }
           ]
         }
       ],
-      "subtotal_eur": "40"
+      "subtotal_eur": "850"
     },
     {
       "category": "lodging",
       "items": [
         {
-          "label": "Guesthouse KYOTO COMPASS",
+          "label": "Hotel (2 nights at a mid-range hotel)",
           "category": "lodging",
           "qty": "2",
-          "unit_cost_eur": "37",
-          "total_cost_eur": "74",
-          "notes": "Per night for 2 nights.",
+          "unit_cost_eur": "150",
+          "total_cost_eur": "300",
+          "notes": "Mid-range accommodation for the stay.",
           "sources": [
             {
               "url": "https://www.booking.com/",
-              "date": "2025-10-01"
+              "date": "2023-10-15"
             }
           ]
         }
       ],
-      "subtotal_eur": "74"
+      "subtotal_eur": "300"
     },
     {
       "category": "dining",
       "items": [
         {
-          "label": "Dinner at Gion Karyo",
+          "label": "Breakfast",
           "category": "dining",
-          "qty": "1",
-          "unit_cost_eur": "70",
-          "total_cost_eur": "70",
-          "notes": "Fine dining experience.",
+          "qty": "2",
+          "unit_cost_eur": "10",
+          "total_cost_eur": "20",
+          "notes": "Estimated cost per day for breakfast.",
           "sources": [
             {
               "url": "https://www.tripadvisor.com/",
-              "date": "2025-10-01"
+              "date": "2023-10-15"
             }
           ]
         },
         {
-          "label": "Lunch at Nishiki Market",
+          "label": "Lunch",
           "category": "dining",
-          "qty": "1",
-          "unit_cost_eur": "12",
-          "total_cost_eur": "12",
-          "notes": "Casual dining experience.",
+          "qty": "2",
+          "unit_cost_eur": "15",
+          "total_cost_eur": "30",
+          "notes": "Estimated cost per day for lunch.",
           "sources": [
             {
-              "url": "https://www.insidekyoto.com/",
-              "date": "2025-10-01"
+              "url": "https://www.tripadvisor.com/",
+              "date": "2023-10-15"
+            }
+          ]
+        },
+        {
+          "label": "Dinner",
+          "category": "dining",
+          "qty": "2",
+          "unit_cost_eur": "25",
+          "total_cost_eur": "50",
+          "notes": "Estimated cost per day for dinner.",
+          "sources": [
+            {
+              "url": "https://www.tripadvisor.com/",
+              "date": "2023-10-15"
             }
           ]
         }
       ],
-      "subtotal_eur": "82"
+      "subtotal_eur": "100"
     },
     {
       "category": "activities",
       "items": [
         {
-          "label": "Kinkaku-ji Entrance Fee",
+          "label": "Kinkaku-ji (Golden Pavilion) Entrance Fee",
           "category": "activities",
           "qty": "1",
-          "unit_cost_eur": "6",
-          "total_cost_eur": "6",
-          "notes": "Entrance fee for temple.",
+          "unit_cost_eur": "4",
+          "total_cost_eur": "4",
+          "notes": "Entrance fee for Kinkaku-ji.",
           "sources": [
             {
-              "url": "https://www.insidekyoto.com/kinkaku-ji",
-              "date": "2025-10-01"
+              "url": "https://www.japan-guide.com/",
+              "date": "2023-10-15"
             }
           ]
         },
         {
-          "label": "Visiting Nanzen-ji",
+          "label": "Fushimi Inari Shrine (Free + Snacks)",
           "category": "activities",
           "qty": "1",
-          "unit_cost_eur": "0",
-          "total_cost_eur": "0",
-          "notes": "Entrance is free.",
+          "unit_cost_eur": "20",
+          "total_cost_eur": "20",
+          "notes": "Estimated cost for snacks while visiting.",
           "sources": [
             {
-              "url": "https://www.insidekyoto.com/nanzen-ji",
-              "date": "2025-10-01"
+              "url": "https://www.japan-guide.com/",
+              "date": "2023-10-15"
+            }
+          ]
+        },
+        {
+          "label": "Nijo Castle Entrance Fee",
+          "category": "activities",
+          "qty": "1",
+          "unit_cost_eur": "6",
+          "total_cost_eur": "6",
+          "notes": "Entrance fee for Nijo Castle.",
+          "sources": [
+            {
+              "url": "https://www.japan-guide.com/",
+              "date": "2023-10-15"
             }
           ]
         }
       ],
-      "subtotal_eur": "6"
+      "subtotal_eur": "30"
     }
   ],
-  "total_eur": "202",
+  "total_eur": "1280",
   "difference_from_budget": {
     "budget_input_eur": "5000",
-    "difference_from_budget_eur": "4798",
+    "difference_from_budget_eur": "3720",
     "status": "under"
   },
   "scenarios": [
     {
-      "name": "Mid-range Hotel Option",
-      "description": "Choosing a mid-range hotel instead of a guesthouse would improve comfort but increase costs.",
+      "name": "Reduce Dining Costs",
+      "description": "Opting for cheaper breakfast options to save money.",
       "adjustments": [
         {
-          "operation": "upgrade",
-          "target_category": "lodging",
-          "target_label": "Mid-range Hotel",
-          "description": "Switch to a mid-range hotel priced at 100 EUR per night.",
-          "delta_eur": "52",
+          "operation": "remove",
+          "target_category": "dining",
+          "target_label": "Breakfast",
+          "description": "Decrease daily breakfast cost to 5 EUR, saving 10 EUR over 2 days.",
+          "delta_eur": "10",
           "sources": [
             {
-              "url": "https://www.booking.com/",
-              "date": "2025-10-01"
+              "url": "https://www.tripadvisor.com/",
+              "date": "2023-10-15"
             }
           ]
         }
       ],
-      "delta_eur": "52",
-      "new_total_eur": "254",
+      "delta_eur": "10",
+      "new_total_eur": "1270",
       "pros": [
-        "Improved comfort and amenities."
+        "Saves money without major changes."
       ],
       "cons": [
-        "Higher lodging costs."
+        "Might reduce dining quality."
+      ],
+      "sources": [
+        {
+          "url": "https://www.tripadvisor.com/",
+          "date": "2023-10-15"
+        }
+      ]
+    },
+    {
+      "name": "Opt for Cheaper Accommodation",
+      "description": "Finding lodging at a lower price.",
+      "adjustments": [
+        {
+          "operation": "remove",
+          "target_category": "lodging",
+          "target_label": "Hotel",
+          "description": "Choosing a hotel at 120 EUR per night instead of 150 EUR.",
+          "delta_eur": "60",
+          "sources": [
+            {
+              "url": "https://www.booking.com/",
+              "date": "2023-10-15"
+            }
+          ]
+        }
+      ],
+      "delta_eur": "60",
+      "new_total_eur": "1220",
+      "pros": [
+        "Significant savings."
+      ],
+      "cons": [
+        "May affect comfort or amenities."
       ],
       "sources": [
         {
           "url": "https://www.booking.com/",
-          "date": "2025-10-01"
+          "date": "2023-10-15"
+        }
+      ]
+    },
+    {
+      "name": "Combine Adjustments",
+      "description": "Applying multiple savings strategies together.",
+      "adjustments": [
+        {
+          "operation": "remove",
+          "target_category": "dining",
+          "target_label": "Breakfast",
+          "description": "Reducing breakfast to 5 EUR per day.",
+          "delta_eur": "10",
+          "sources": [
+            {
+              "url": "https://www.tripadvisor.com/",
+              "date": "2023-10-15"
+            }
+          ]
+        },
+        {
+          "operation": "remove",
+          "target_category": "lodging",
+          "target_label": "Hotel",
+          "description": "Choosing lodging at 120 EUR per night.",
+          "delta_eur": "60",
+          "sources": [
+            {
+              "url": "https://www.booking.com/",
+              "date": "2023-10-15"
+            }
+          ]
+        },
+        {
+          "operation": "remove",
+          "target_category": "activities",
+          "target_label": "Kinkaku-ji",
+          "description": "Choosing only one paid activity to save on costs.",
+          "delta_eur": "20",
+          "sources": [
+            {
+              "url": "https://www.japan-guide.com/",
+              "date": "2023-10-15"
+            }
+          ]
+        }
+      ],
+      "delta_eur": "90",
+      "new_total_eur": "1190",
+      "pros": [
+        "Maximizes savings with minimal impact."
+      ],
+      "cons": [
+        "Limited experience during the trip."
+      ],
+      "sources": [
+        {
+          "url": "https://www.tripadvisor.com/",
+          "date": "2023-10-15"
         }
       ]
     }
@@ -181,13 +287,12 @@
   "fx": {
     "base": "EUR",
     "quote": "JPY",
-    "rate": "1",
-    "as_of": "2025-10-01",
+    "rate": "130",
+    "as_of": "2023-10-15",
     "source_url": "https://www.xe.com/"
   },
   "assumptions": [
-    "Total trip duration is 2 days.",
-    "All amounts are rounded to the nearest whole number.",
-    "Traveling solo eliminates group discounts."
+    "John will stay for 2 nights in Kyoto.",
+    "John will dine out for 3 meals each day."
   ]
 }
