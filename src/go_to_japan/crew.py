@@ -120,13 +120,8 @@ class GoToJapan():
             allow_delegation=True,
             memory=True,
             llm=llm,
-<<<<<<< HEAD
             # reasoning=True,
             # max_reasoning_attempts=3
-=======
-            reasoning=True,
-            max_reasoning_attempts=3
->>>>>>> 74cde7feb248de26bff1f5d46b6d107a47c1a253
         )
     
     @agent
@@ -137,13 +132,8 @@ class GoToJapan():
             allow_delegation=True,
             memory=True,
             llm=llm,
-<<<<<<< HEAD
             # reasoning=True,
             # max_reasoning_attempts=3
-=======
-            reasoning=True,
-            max_reasoning_attempts=3
->>>>>>> 74cde7feb248de26bff1f5d46b6d107a47c1a253
         )
     
     @agent
@@ -154,13 +144,8 @@ class GoToJapan():
             allow_delegation=True,
             memory=True,
             llm=llm,
-<<<<<<< HEAD
             # reasoning=True,
             # max_reasoning_attempts=3
-=======
-            reasoning=True,
-            max_reasoning_attempts=3
->>>>>>> 74cde7feb248de26bff1f5d46b6d107a47c1a253
         )
     
     @agent
@@ -171,13 +156,8 @@ class GoToJapan():
             allow_delegation=True,
             memory=True,
             llm=llm,
-<<<<<<< HEAD
             # reasoning=True,
             # max_reasoning_attempts=3
-=======
-            reasoning=True,
-            max_reasoning_attempts=3
->>>>>>> 74cde7feb248de26bff1f5d46b6d107a47c1a253
         )
     
     @agent
@@ -188,13 +168,8 @@ class GoToJapan():
             allow_delegation=True,
             memory=True,
             llm=llm,
-<<<<<<< HEAD
             # reasoning=True,
             # max_reasoning_attempts=3
-=======
-            reasoning=True,
-            max_reasoning_attempts=3
->>>>>>> 74cde7feb248de26bff1f5d46b6d107a47c1a253
         )
     
     @agent
@@ -205,11 +180,7 @@ class GoToJapan():
             allow_delegation=True,
             memory=True,
             llm=llm,
-<<<<<<< HEAD
             # reasoning=True,
-=======
-            reasoning=True,
->>>>>>> 74cde7feb248de26bff1f5d46b6d107a47c1a253
             max_reasoning_attempts=4
         )
     
@@ -221,13 +192,8 @@ class GoToJapan():
             allow_delegation=True,
             memory=True,
             llm=llm,
-<<<<<<< HEAD
             # reasoning=True,
             # max_reasoning_attempts=3
-=======
-            reasoning=True,
-            max_reasoning_attempts=3
->>>>>>> 74cde7feb248de26bff1f5d46b6d107a47c1a253
         )
     
     @agent
@@ -238,13 +204,8 @@ class GoToJapan():
             allow_delegation=True,
             memory=True,
             llm=llm,
-<<<<<<< HEAD
             # reasoning=True,
             # max_reasoning_attempts=3
-=======
-            reasoning=True,
-            max_reasoning_attempts=3
->>>>>>> 74cde7feb248de26bff1f5d46b6d107a47c1a253
         )
     
     # @agent
@@ -421,11 +382,6 @@ class GoToJapan():
             verbose=True,
             # memory=True,
             output_log_file="crew_outputs/crew.json",
-<<<<<<< HEAD
             # planning=True,
             # planning_llm=llm
-=======
-            planning=True,
-            planning_llm=llm
->>>>>>> 74cde7feb248de26bff1f5d46b6d107a47c1a253
         )
