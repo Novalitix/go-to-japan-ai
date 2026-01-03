@@ -1,0 +1,78 @@
+{
+  "audit_summary": {
+    "status": "attention",
+    "score_percent": 70,
+    "total_issues": 3,
+    "critical_count": 1,
+    "major_count": 1,
+    "minor_count": 1
+  },
+  "inconsistencies": [
+    {
+      "id": "1",
+      "severity": "critical",
+      "component": "budget",
+      "json_path": "$.breakdown",
+      "message": "Total budget is not specified.",
+      "evidence": null,
+      "suggestion": "Set a clear budget to ensure adherence to estimated costs.",
+      "related_ids": []
+    },
+    {
+      "id": "2",
+      "severity": "major",
+      "component": "transport",
+      "json_path": "$.transport_segments",
+      "message": "Connections between some activities are unrealistic given the travel times.",
+      "evidence": null,
+      "suggestion": "Review the transport plans to allocate adequate time for travel between locations.",
+      "related_ids": []
+    }
+  ],
+  "missing_elements": [],
+  "recommendations": [
+    {
+      "priority": "high",
+      "action": "Define the total budget for the trip.",
+      "rationale": "Helps in evaluating the cost of activities and choosing affordable options.",
+      "expected_impact_eur": null,
+      "fixes_issue_ids": [
+        "1"
+      ]
+    },
+    {
+      "priority": "medium",
+      "action": "Adjust the itinerary to allow more realistic travel times.",
+      "rationale": "Ensures a smoother travel experience without rushing.",
+      "expected_impact_eur": null,
+      "fixes_issue_ids": [
+        "2"
+      ]
+    }
+  ],
+  "compliance": {
+    "budget_respected": false,
+    "pace_respected": true,
+    "exclusions_respected": true,
+    "sources_dated": true,
+    "units_consistent": true,
+    "timezone_consistent": true
+  },
+  "metrics": {
+    "days_planned": 2,
+    "activities_count": 8,
+    "activities_with_sources": 8,
+    "transport_segments_count": 4,
+    "transport_with_sources": 2,
+    "accommodations_count": 1,
+    "accommodations_with_sources": 1,
+    "meals_count": 4,
+    "meals_with_sources": 4,
+    "budget_items_count": 4,
+    "budget_items_with_sources": 4
+  },
+  "generation_info": {
+    "generated_at": "2023-10-10",
+    "timezone": "Asia/Tokyo"
+  }
+}

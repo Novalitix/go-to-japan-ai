@@ -1,0 +1,50 @@
+{
+  "daily_forecast": [
+    {
+      "date": "2025-10-11",
+      "weather_summary": {
+        "temperatures_moyennes": "Min 17°C, Max 22°C",
+        "precipitations_probables": "Averses possibles avec environ 5 mm de pluie",
+        "phenomenes_particuliers": "N/A"
+      },
+      "recommendations": [
+        {
+          "conseil": "Portez des vêtements légers mais agréables, comme un t-shirt avec une veste légère. Apportez un parapluie ou un imperméable en cas de pluie."
+        },
+        {
+          "conseil": "Des chaussures confortables et imperméables sont recommandées, surtout si vous prévoyez de visiter des lieux en extérieur."
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "weather_summary": {
+        "temperatures_moyennes": "Min 16°C, Max 21°C",
+        "precipitations_probables": "Risques de pluie plus élevés, environ 10 mm",
+        "phenomenes_particuliers": "Possibilité de orages isolés"
+      },
+      "recommendations": [
+        {
+          "conseil": "Préparez-vous pour des conditions humides; portez des vêtements respirants et apportez des vêtements de rechange au cas où vous vous mouillez."
+        },
+        {
+          "conseil": "Un parapluie ou une cape de pluie est essentiel, ainsi que des chaussures qui sèchent rapidement."
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.meteoart.com/asia/japan/kyoto?page=month&month=October",
+      "date_consultation": "2025-01-15"
+    },
+    {
+      "url": "https://voyage.lachainemeteo.com/meteo-voyage/ville-5234/meteo-a-kyoto-en-octobre",
+      "date_consultation": "2025-01-15"
+    },
+    {
+      "url": "https://www.accuweather.com/en/jp/make/2342830/october-weather/2342830",
+      "date_consultation": "2025-01-15"
+    }
+  ]
+}

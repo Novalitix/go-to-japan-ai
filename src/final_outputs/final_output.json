@@ -299,6 +299,7 @@
       "generated_at": "2025-09-30",
       "timezone": "Asia/Tokyo"
     }
+<<<<<<< HEAD
   },
   {
     "version": "1.0",
@@ -660,5 +661,7 @@
       "generated_at": "2026-04-29",
       "timezone": "Asia/Tokyo"
     }
+=======
+>>>>>>> 74cde7feb248de26bff1f5d46b6d107a47c1a253
   }
 ]

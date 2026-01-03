@@ -1,6 +1,7 @@
 {
   "daily_forecast": [
     {
+<<<<<<< HEAD
       "date": "2026-05-11",
       "weather_summary": {
         "temperatures_moyennes": "Max 22°C, Min 15°C",
@@ -13,10 +14,25 @@
         },
         {
           "conseil": "N'oubliez pas votre crème solaire et des lunettes de soleil pour une journée ensoleillée."
+=======
+      "date": "2025-10-11",
+      "weather_summary": {
+        "temperatures_moyennes": "Min 14°C, Max 22°C",
+        "precipitations_probables": "Possibilité de pluie légère, environ 8 mm",
+        "phenomenes_particuliers": "Ciel partiellement nuageux, températures douces"
+      },
+      "recommendations": [
+        {
+          "conseil": "Portez des vêtements en couches; Un pull léger ou une veste est recommandé pour le matin et le soir."
+        },
+        {
+          "conseil": "Apportez un parapluie ou un imperméable en raison de la possibilité de pluie."
+>>>>>>> 74cde7feb248de26bff1f5d46b6d107a47c1a253
         }
       ]
     },
     {
+<<<<<<< HEAD
       "date": "2026-05-12",
       "weather_summary": {
         "temperatures_moyennes": "Max 24°C, Min 16°C",
@@ -29,12 +45,43 @@
         },
         {
           "conseil": "Portez un chapeau pour vous protéger du soleil lors de vos explorations."
+=======
+      "date": "2025-10-12",
+      "weather_summary": {
+        "temperatures_moyennes": "Min 15°C, Max 23°C",
+        "precipitations_probables": "Ciel généralement dégagé, peu ou pas de pluie",
+        "phenomenes_particuliers": "Conditions idéales pour les activités de plein air"
+      },
+      "recommendations": [
+        {
+          "conseil": "Prévoyez des vêtements légers et confortables pour la journée."
+        },
+        {
+          "conseil": "Utilisez de la crème solaire, car l'ensoleillement pourra être important."
+        }
+      ]
+    },
+    {
+      "date": "2025-10-13",
+      "weather_summary": {
+        "temperatures_moyennes": "Min 14°C, Max 21°C",
+        "precipitations_probables": "Peu de chance de pluie, conditions sèches",
+        "phenomenes_particuliers": "Légère brise rafraîchissante"
+      },
+      "recommendations": [
+        {
+          "conseil": "Un pull ou une veste légère sera utile le soir."
+        },
+        {
+          "conseil": "Prenez des chaussures confortables pour explorer la ville."
+>>>>>>> 74cde7feb248de26bff1f5d46b6d107a47c1a253
         }
       ]
     }
   ],
   "sources": [
     {
+<<<<<<< HEAD
       "url": "https://www.accuweather.com/en/jp/kyoto-shi/224436/may-weather/224436",
       "date_consultation": "2026-05-01"
     },
@@ -45,6 +92,22 @@
     {
       "url": "https://www.timeanddate.com/weather/japan/kyoto/ext",
       "date_consultation": "2026-05-01"
+=======
+      "url": "https://www.accuweather.com/en/jp/make/2342830/october-weather/2342830",
+      "date_consultation": "2025-10-01"
+    },
+    {
+      "url": "https://world-weather.info/forecast/japan/kyoto/october-2025/",
+      "date_consultation": "2025-10-01"
+    },
+    {
+      "url": "https://www.agatetravel.com/japan/weather-in-october.html",
+      "date_consultation": "2025-10-01"
+    },
+    {
+      "url": "https://www.insidekyoto.com/kyoto-events-october",
+      "date_consultation": "2025-10-01"
+>>>>>>> 74cde7feb248de26bff1f5d46b6d107a47c1a253
     }
   ]
 }

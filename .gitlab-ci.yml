@@ -1,0 +1,61 @@
+# Deploy Angular Frontend with Docker - GitLab CI
+variables:
+  DOCKER_DRIVER: overlay2
+  DOCKER_TLS_CERTDIR: "/certs"
+
+stages:
+  - build
+  - deploy
+
+build-and-push:
+  stage: build
+  image: docker:latest
+  services:
+    - docker:dind
+  before_script:
+    - echo "Connexion au registre Docker..."
+    - echo "$REGISTRY_PASSWORD" | docker login -u "$REGISTRY_USERNAME" --password-stdin
+  script:
+    - echo "Build de l'image Docker..."
+    - docker build -t "$DOCKER_IMAGE_NAME_MODEL" .
+    - echo "Push de l'image Docker..."
+    - docker push "$DOCKER_IMAGE_NAME_MODEL"
+    - echo "Image creee et poussee avec succes"
+  rules:
+    - if: '$CI_COMMIT_REF_NAME == "release"'
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event" && $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "release"'
+
+# Déploiement sur le VPS distant
+# deploy-to-vps:
+#   stage: deploy
+#   image: alpine:latest
+#   before_script:
+#     - echo "⚙️ Configuration SSH..."
+#     - apk add --no-cache openssh-client
+#     - mkdir -p ~/.ssh
+#     - echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+#     - chmod 600 ~/.ssh/id_rsa
+#     - ssh-keyscan -H "$SERVER_HOST" >> ~/.ssh/known_hosts
+#   script:
+#     - echo "🚀 Déploiement sur le VPS distant..."
+#     - echo "📍 Connexion au serveur..."
+#     - ssh "$SERVER_USER@$SERVER_HOST" "echo 'Connexion SSH établie'"
+#     - echo "🔐 Login au registre sur le serveur..."
+#     - ssh "$SERVER_USER@$SERVER_HOST" "echo '$REGISTRY_PASSWORD' | docker login -u '$REGISTRY_USERNAME' --password-stdin"
+#     - echo "🗑️ Suppression de l'ancien container..."
+#     - ssh "$SERVER_USER@$SERVER_HOST" "docker rm -f '$DOCKER_CONTAINER_NAME_MODEL' || echo 'Container inexistant, ignoré'"
+#     - echo "🗑️ Suppression de l'ancienne image..."
+#     - ssh "$SERVER_USER@$SERVER_HOST" "docker rmi -f '$DOCKER_IMAGE_NAME_MODEL' || echo 'Image inexistante, ignorée'"
+#     - echo "🚀 Redémarrage avec docker-compose..."
+#     - ssh "$SERVER_USER@$SERVER_HOST" "cd '$DOCKER_COMPOSE_PATH' && docker compose -f docker-compose.prod.yml up -d"
+#     - echo "🔍 Vérification du statut..."
+#     - ssh "$SERVER_USER@$SERVER_HOST" "docker ps | grep '$DOCKER_CONTAINER_NAME_MODEL' || echo 'Container non trouvé'"
+#     - echo "✅ Déploiement réussi!"
+#   environment:
+#     name: production
+#     url: http://$SERVER_HOST
+#   needs:
+#     - build-and-push
+#   rules:
+#     - if: $CI_COMMIT_REF_NAME == "release"
+#     - if: $CI_PIPELINE_SOURCE == "merge_request_event" && $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "release"
